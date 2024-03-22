@@ -77,12 +77,14 @@
     }
     
     .ShopCatagory-sort select{
-        border: 2px solid rgb(32, 33, 33);
-        color:rgb(104, 104, 105);
+        border: 1px solid gray;
+        color:black;
         font-weight: bold;
         padding:5px;
         
     }
+
+     
 
     .Filter-dropmenu button{
         padding: 3px 6px;
@@ -973,6 +975,7 @@ grid-template-columns: auto auto auto auto;
      align-self: center;
      margin: 0 5px;
      color:gray;
+     font-size: 13px;
      
 }
 

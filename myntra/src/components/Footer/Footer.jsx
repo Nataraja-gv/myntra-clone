@@ -134,7 +134,7 @@ const Footer = () => {
 
                    <div className='p-seaches'>
                     <p>POPULAR SEARCHES   </p>
-                     
+                       
                    </div>
                
                 <div className='Popular-brand'>

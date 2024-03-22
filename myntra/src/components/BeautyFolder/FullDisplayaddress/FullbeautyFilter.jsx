@@ -154,7 +154,7 @@ const FullbeautyFilter = () => {
            
           <select  className='select' name="filter" id="name">
              
-            <option className='option' value="Recommended"><span>Sort By:</span>Recommended</option>
+            <option className='option' value="Recommended"><span className='Sort-by' style={{color:"gray"}}>Sort By:</span>Recommended</option>
             <option  className='option' value="Whats news">Whats news</option>
             <option  className='option'  value="Popularity">Popularity</option>
             <option className='option' value="price">Price:Low to high</option>

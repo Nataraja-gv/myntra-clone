@@ -766,7 +766,7 @@ cursor: pointer;
 }
 
 
-.Profile ::after{
+/* .Profile ::after{
   content: "";
   position: absolute;
   background-color:rgb(242,106,16);
@@ -779,7 +779,7 @@ cursor: pointer;
 
  .Profile :hover::after{
   width: 100%;
- }
+ } */
 
  .Profile  .p1{
   text-decoration: none;
