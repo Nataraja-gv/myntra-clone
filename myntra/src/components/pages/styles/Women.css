@@ -1,0 +1,223 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.Women-Myntra-Container{
+    width: 100%;
+}
+
+.Women-image-image{
+    width: 100%;
+    
+}
+
+.Biggest-deals h1{
+    font-size: 36px;
+    font-weight: 700;
+    color:rgb(62, 65, 82);
+    line-height: normal;
+    font-style: normal;
+    margin-top: 300px;
+    letter-spacing: 4px;
+    margin-left: 50px;
+}
+
+
+.WCATEGORIES-deals h1{
+    font-size: 36px;
+    font-weight: 700;
+    color:rgb(62, 65, 82);
+    line-height: normal;
+    font-style: normal;
+    margin-top: 40px;
+    letter-spacing: 4px;
+    margin-left: 40px;
+}
+
+
+.WEXPLORE-deals h1{
+    font-size: 36px;
+    font-weight: 700;
+    color:rgb(62, 65, 82);
+    line-height: normal;
+    font-style: normal;
+    margin-top: 40px;
+    letter-spacing: 4px;
+    margin-left: 40px;
+}
+
+
+.WESTERN-WEAR h1{
+    font-size: 36px;
+    font-weight: 700;
+    color:rgb(62, 65, 82);
+    line-height: normal;
+    font-style: normal;
+    margin-top: 40px;
+    letter-spacing: 4px;
+    margin-left: 40px; 
+}
+
+
+.WTrending-deals  h1{
+    font-size: 36px;
+    font-weight: 700;
+    color:rgb(62, 65, 82);
+    line-height: normal;
+    font-style: normal;
+    margin-top: 40px;
+    letter-spacing: 4px;
+    margin-left: 40px; 
+}
+
+.WTrending-deals  h1{
+    font-size: 36px;
+    font-weight: 700;
+    color:rgb(62, 65, 82);
+    line-height: normal;
+    font-style: normal;
+    margin-top: 40px;
+    letter-spacing: 4px;
+    margin-left: 40px; 
+}
+
+
+.TrendSports-deals h1{
+    font-size: 36px;
+    font-weight: 700;
+    color:rgb(62, 65, 82);
+    line-height: normal;
+    font-style: normal;
+    margin-top: 40px;
+    letter-spacing: 4px;
+    margin-left: 40px; 
+}
+
+
+.WomenFootwear-deals h1{
+    font-size: 36px;
+    font-weight: 700;
+    color:rgb(62, 65, 82);
+    line-height: normal;
+    font-style: normal;
+    margin-top: 40px;
+    letter-spacing: 4px;
+    margin-left: 40px; 
+}
+
+
+.WomenAccessories-deals h1{
+    font-size: 36px;
+    font-weight: 700;
+    color:rgb(62, 65, 82);
+    line-height: normal;
+    font-style: normal;
+    margin-top: 40px;
+    letter-spacing: 4px;
+    margin-left: 40px; 
+}
+
+.Footer-Women-Footer{
+    margin-top: 50px;
+}
+
+
+@media screen and (min-width: 768px) and (max-width: 991px)
+{
+    .Biggest-deals h1{
+        font-size: 20px;
+    }
+
+    .WCATEGORIES-deals h1{
+        font-size: 20px;
+    }
+
+    .WEXPLORE-deals h1{
+        font-size: 20px;
+    }
+
+    .WESTERN-WEAR h1{
+        font-size: 20px; 
+    }
+    .WTrending-deals  h1{
+        font-size: 20px;
+    }
+    .TrendSports-deals h1{
+        font-size: 20px;
+    }
+    .WomenFootwear-deals h1{
+        font-size: 20px;
+    }
+
+    .WomenAccessories-deals h1{
+        font-size: 20px;
+    }
+    
+}
+
+
+@media screen and (max-width: 600px) {
+    .Biggest-deals h1{
+        font-size: 14px;
+    }
+
+    .WCATEGORIES-deals h1{
+        font-size: 14px;
+    }
+
+    .WEXPLORE-deals h1{
+        font-size: 14px;
+    }
+
+    .WESTERN-WEAR h1{
+        font-size: 14px; 
+    }
+    .WTrending-deals  h1{
+        font-size: 14px;
+    }
+    .TrendSports-deals h1{
+        font-size: 14px;
+    }
+    .WomenFootwear-deals h1{
+        font-size: 14px;
+    }
+
+    .WomenAccessories-deals h1{
+        font-size: 14px;
+    }
+}
+
+
+@media screen and (min-width: 601px) and (max-width:767px) {
+    .Biggest-deals h1{
+        font-size: 16px;
+    }
+
+    .WCATEGORIES-deals h1{
+        font-size: 16px;
+    }
+
+    .WEXPLORE-deals h1{
+        font-size: 16px;
+    }
+
+    .WESTERN-WEAR h1{
+        font-size: 16px; 
+    }
+    .WTrending-deals  h1{
+        font-size: 16px;
+    }
+    .TrendSports-deals h1{
+        font-size: 16px;
+    }
+    .WomenFootwear-deals h1{
+        font-size: 16px;
+    }
+
+    .WomenAccessories-deals h1{
+        font-size: 16px;
+    }
+
+}

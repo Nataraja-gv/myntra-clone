@@ -1,0 +1,174 @@
+    
+
+.login_container{
+     
+    display:flex;
+     
+    
+}
+
+.login_container .SignUpPage {
+     
+    flex-direction: column;
+    position: absolute;
+    /* box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset; */
+    left:550px;
+    margin-top: 20px;
+    height: 500px;
+    background-color: white;
+    border: 2px solid red;
+}
+.code-image .code-image-image{
+    width:300px;
+    height: 120px;
+}
+.login-content .L1{
+    font-weight:bold;
+}
+.login-content .login-para{
+    text-align: start;
+    margin-top: 20px;
+    margin-left: 22px;
+    font-size: 13px;
+    margin-bottom: 10px;
+}
+
+.login-content  .phoneno-input{
+      margin-left: 20px;
+      width: 250px;
+      border: none;
+      border:2px solid rgb(198, 191, 191);
+      height: 30px;
+      margin-top: -10px;
+      outline: none;
+}
+
+.login-content-policy{
+    font-size: 10px;
+}
+
+.login-content-policy{
+    text-align: center;
+    margin-top: 20px;
+    color:gray
+}
+
+.login-content-policy span{
+    color:rgb(165, 11, 98);
+    font-weight: bold;
+}
+
+.btn-btn-login .btn-btn{
+    width:250px;
+    margin-left: 20px;
+    height: 30px;
+    border: none;
+    background-color: rgb(174, 18, 88);
+    opacity: 0.8;
+    color:white;
+    font-size: 10px;
+    font-weight: bolder;
+}
+
+p.get-help{
+    font-size: 12px;
+    color:gray;
+    margin-left: 20px;
+    margin-top: 20px;
+}
+
+p.get-help span{
+    color:rgb(165, 11, 98);
+    font-weight: bold;
+    
+}
+
+@media screen  and (min-width :1150px)  and (max-width :1423px){
+
+    .login_container .SignUpPage {
+     
+        flex-direction: column;
+        position: absolute;
+        /* box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset; */
+        left:450px;
+        margin-top: 30px;
+        height: 600px;
+        justify-content: center;
+        background-color: white;
+        border: 2px solid rgb(138, 135, 135);
+    }
+ 
+
+
+}
+
+
+@media screen and (min-width: 991px) and (max-width: 1150px) 
+{
+
+
+    .login_container .SignUpPage {
+     
+        flex-direction: column;
+        position: absolute;
+        /* box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset; */
+        left:350px;
+        margin-top: 20px;
+        height: 450px;
+        background-color: white;
+        border: 2px solid rgb(114, 112, 112);
+        justify-content: center;
+    }
+}
+
+
+
+@media screen and (min-width: 768px) and (max-width: 991px) 
+{
+
+    .login_container .SignUpPage {
+     
+        flex-direction: column;
+        position: absolute;
+        /* box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset; */
+        left:250px;
+        margin-top: 80px;
+        height: 400px;
+        background-color: white;
+        border: 2px solid rgb(114, 112, 112);
+        justify-content: center;
+    }
+
+}
+
+
+@media screen and (max-width: 600px) {
+    .login_container .SignUpPage {
+     
+        flex-direction: column;
+        position: absolute;
+        /* box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset; */
+        left:150px;
+        margin-top: 50px;
+        height: 380px;
+        background-color: white;
+        border: 2px solid rgb(114, 112, 112);
+        justify-content: center;
+    }
+}
+
+
+@media screen and (min-width: 601px) and (max-width:768px) {
+    .login_container .SignUpPage {
+     
+        flex-direction: column;
+        position: absolute;
+        /* box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset; */
+        left:180px;
+        margin-top: 80px;
+        height: 400px;
+        background-color: white;
+        border: 2px solid rgb(114, 112, 112);
+        justify-content: center;
+    }
+}

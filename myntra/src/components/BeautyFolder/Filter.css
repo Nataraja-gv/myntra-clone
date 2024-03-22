@@ -1,0 +1,208 @@
+.Filterimage-Conatiner{
+    display: flex;
+     margin-top: -40px;
+    width:100%;
+    flex-grow: 200px;
+     
+     
+}
+
+.FilterSection{
+    flex-basis: 300px;
+    position: sticky;
+    top:-200px     
+  
+}
+ 
+i{
+    font-size: 10px;
+ color:rgb(187, 184, 184);
+ font-style: italic;
+}
+ 
+
+.ShopCategory-displaySection{
+    flex: 1;
+    
+}
+
+.category-radio{
+    text-align: center;
+    gap:-4px;
+    }
+
+.category-radio h5{
+    display: flex;
+    text-align: start;
+    font-weight: bold;
+}
+
+ 
+.category-radio .category-filter{
+    display: flex;
+    flex-direction: column;
+    border-bottom: 1px solid gray;
+    border-top: 1px solid gray;
+    border-right: 1px solid gray;
+    padding-bottom: 20px; 
+    padding-top: 10px;
+    
+}
+.category-filter  span input[type="radio"]{
+    accent-color: red;
+    margin-right: 10px;
+    width: 15px;
+    height: 15px;
+    margin-left: 20px;
+}
+
+.category-radio .category-filter span{
+   text-align: start;
+   font-weight: 700;
+   line-height: 5px;
+   font-size: 14px;
+   margin-bottom: 5px;
+    color:black;
+    
+}
+
+
+.category-radio .category-filter input{
+    
+
+}
+
+.category-checkout  .category-checkout {
+    display: flex;
+    flex-direction: column;
+    
+    border-bottom: 1px solid gray;
+    border-right: 1px solid gray;
+    padding-bottom: 20px; 
+}
+
+.category-checkout h5{
+    display: flex;
+    text-align: start;
+    font-weight: bold;
+    margin: 10px 0 ;
+    margin-left: 25px;
+     
+}
+
+.category-checkout .category-checkout input{
+    margin-right: 2px;
+    margin-left: 25px;
+    margin-bottom: 10px;
+    margin-right: 10px;
+    accent-color: red;
+     
+}
+
+
+.category-checkout .category-checkout  span{
+     
+    font-weight: 700;
+    line-height: normal;
+    color:gray;
+    font-size: 14px;
+    
+}
+ .category-price .category-rangePrice{
+
+    display: flex;
+    flex-direction: column;
+    
+    border-bottom: 1px solid gray;
+    border-right: 1px solid gray;
+    padding-bottom: 20px;
+ }
+
+ .category-price h5{
+    display: flex;
+    text-align: start;
+    font-weight: bold;
+    margin: 10px 0 ;
+    margin-left: 25px;
+     
+}
+
+ .category-price .category-rangePrice span{
+    font-weight: bolder;
+    font-size: 15px;
+    margin-right: 10px;
+    color:gray;
+    
+     
+ }
+
+ .category-price .category-rangePrice input{
+    margin-right: 2px;
+    margin-left: 25px;
+    margin-bottom: 10px;
+    margin-right: 10px;
+    accent-color: red;
+}
+.category-color h5{
+    display: flex;
+    text-align: start;
+    font-weight: bold;
+    margin: 10px 0 ;
+    margin-left: 25px;
+}
+
+.category-color .category-color-color{
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 20px;
+    border-bottom: 1px solid gray;
+    border-right: 1px solid gray;
+}
+.category-color .category-color-color input{
+    
+    margin-right: 10px;
+    accent-color: red;
+}
+.category-color .category-color-color span{
+    font-weight: bolder;
+    font-size: 15px;
+    margin-left: 25px;
+    
+}
+
+
+.category-Discount-Range h5{
+    display: flex;
+    text-align: start;
+    font-weight: bold;
+    margin: 10px 0 ;
+    margin-left: 25px;
+    
+     
+}
+
+.category-Discount-Range .category-range span{
+    font-weight: bolder;
+    font-size: 15px;
+    text-align: start;
+    margin-left: 25px;
+    color:gray;
+
+}
+.category-Discount-Range .category-range input{
+    margin-right: 10px;
+    accent-color: red;
+    margin-bottom: 10px;
+
+    
+}
+
+.category-Discount-Range .category-range{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+    border-bottom: 1px solid gray;
+    border-right: 1px solid gray;
+    padding-bottom: 20px;
+}
+

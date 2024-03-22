@@ -1,0 +1,151 @@
+@media screen  and (min-width :1150px)  and (max-width :1423px)
+{
+    .Full-beauty-filter-section{
+        position: relative;
+    
+    }
+    
+    .Filter-dropmenu{
+        gap:30px;
+
+    }
+
+    .Filter-title p{
+        font-size: 20px;
+        margin-left: 35px;
+    }
+
+    .dropdown-Country{
+        top:250px;
+        left:190px; 
+    }
+
+    .dropdown-Size{
+        top:150px;
+        left:190px;
+    }
+
+
+    .ShopCatagory-sort{
+        display:flex;
+        justify-content: flex-end;
+        
+        margin-right: 100px;
+          
+    }
+
+    .ShopCatagory-sort .select{
+        font-size: 12px;
+        outline: none;
+        line-height: 3px;
+        width:200px;
+        height: auto;
+        /* background-color: aquamarine; */
+       
+         
+    }
+
+    .ShopCatagory-sort select .option{
+        font-size: 12px;
+        width:20px;
+        height: auto;
+        /* background-color: aquamarine; */
+
+    }
+  
+    .Filterimage-Conatiner{
+        display:grid;
+        grid-template-columns: 250px auto;
+         position: relative;
+         
+    }
+
+    .FilterSection{
+        position: absolute;
+        top:0;
+        left:0;
+        bottom: 0;
+        transition: all 0.5s ease;
+        
+       
+    }
+
+    .gender-list li{
+        font-size: 14px;
+    }
+
+    .Category-products-list li{
+        font-size: 14px;
+    }
+
+    .Brand-products-list li{
+        font-size: 14px;
+    }
+
+    .Price-products-list li{
+        font-size: 14px;
+    }
+
+    .color-filter-lists  li{
+        font-size: 14px;
+    }
+
+    .rating-rate span{
+        font-size:14px;
+    }
+
+    .Beauty-card-Container{
+    margin-left: 250px;
+    }
+
+    .Beauty-card-content{
+        display: grid;
+     grid-template-columns: auto auto auto;
+     row-gap: 20px;
+   column-gap: 35px;
+    }
+
+     
+
+
+
+.Beauty-Product-image{
+        width: 200px;
+        height: 180px;
+        margin-left: 20px;
+        margin-bottom: 15px;
+         
+    }
+
+     .Beauty-hr{
+         display: none;
+     }
+
+     .pagination-pagination{
+        justify-content: center;
+        gap:200px;
+        margin-left: 400px;
+     } 
+
+     .pagination-pagination .page p{
+        font-size: 14px;
+    }
+
+    .Pagination-number li{
+        text-decoration: none;
+        list-style-type: none;   
+        /* display:inline-block; */
+        padding: 0px 5px;
+        font-size: 14px;
+        font-weight: bold;
+        cursor: pointer;  
+         
+          
+        }
+    
+
+
+
+
+     
+}

@@ -1,0 +1,158 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+.MensImages-container{
+    position: relative;
+    width:100%;
+    height: 200px;
+    border: 2px solid white;
+    border-radius: 10px;
+    transition: all 1s ease;
+    margin-top: 10px;
+    
+}
+
+.MensImages{
+    width:100%;
+    height: 400px;
+}
+
+
+.mens-dispaly-index .mens-index-btn {
+    border: none;
+    outline: none;
+    background: transparent;
+    
+     
+}
+
+.MensImages-container .mens-dispaly-index{
+    display: flex; 
+    justify-content: center;
+    gap:5px;
+    
+    
+    
+    /* margin-top: 2px; */
+}
+.mens-index-btn .dotBtn{
+    cursor: pointer;
+     fill: gray;
+    font-size: 15px;
+    transition: scale 100ms ease-in-out;
+    cursor: pointer;
+
+     
+}
+
+.mens-index-btn .DotFill{
+    font-size: 15px;
+    fill:gray;
+    cursor: pointer;
+
+}
+
+.dotBtn:hover{
+    scale:1.2;
+}
+
+
+@media screen  and (min-width :1150px)  and (max-width :1423px){
+
+    .MensImages{
+        width:100%;
+        height: 350px;
+         
+       margin-top: 20px;
+       /* border: 2px solid red; */
+    }
+}
+
+
+
+@media screen and (min-width: 991px) and (max-width: 1150px) 
+{
+    .MensImages{
+        width:100%;
+        height: 350px;
+         
+       margin-top: 20px;
+       
+    }
+
+
+}
+
+
+@media screen and (min-width: 768px) and (max-width: 991px) 
+{
+    .MensImages{
+        width:100%;
+        height: 350px;
+         
+       margin-top: 20px;
+       /* border: 2px solid red; */
+    }    
+    
+    
+
+}
+ 
+
+
+
+ 
+
+@media screen and (max-width: 600px){
+    .MensImages{
+        width:100%;
+        height:190px;
+        border-radius: 5px;
+        margin-top: 20px ;
+    }  
+
+     
+
+    
+     .mens-index-btn .dotBtn{
+        font-size: 10px;
+     }
+
+
+     .mens-index-btn .DotFill{
+        font-size: 10px;
+     }
+     .dotBtn:hover{
+        scale:1.2;
+    }
+}
+
+
+@media screen and (min-width:601px) and (max-width:767px)
+{
+    .MensImages{
+        width:100%;
+        height:250px;
+        border-radius: 5px;
+        margin-top: 20px ;
+    }  
+    
+     .mens-index-btn .dotBtn{
+        font-size: 10px;
+     }
+
+
+     .mens-index-btn .DotFill{
+        font-size: 10px;
+     }
+     .dotBtn:hover{
+        scale:1.2;
+    }
+}
+
+
+ 

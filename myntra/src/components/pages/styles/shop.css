@@ -1,0 +1,452 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.Shop-Myntra-Container{
+    width: 100%;
+    /* overflow-y: scroll; */
+    margin-top: 30px;
+    transition: all 0.2s ease-in;
+  
+}
+
+.shop1{
+    width: 90%;
+    height: 400px;
+    margin-left: 5%;
+    margin-right:5%;
+    opacity: 0.9;
+}
+
+.Shop2-coupan{
+
+}
+
+.image-coupan{
+    width: 100%;
+    height: 250px;
+}
+
+.image-crazy{
+    width: 100%;
+    height: 100px;
+}
+
+
+.image-flat{
+    position: fixed;
+    right: 0;
+    bottom: 100px;
+    width:50px;
+    height: 300px;
+    z-index: 1;
+}
+
+
+
+.image-shopby{
+    width: 100%;
+}
+
+
+
+.bell-bell{
+    position: fixed;
+    right: 50px;
+    bottom: 50px;
+    width: 40px;
+    height: 40px;
+    color:rgb(6, 174, 230);
+    animation-name: bell;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    z-index: 1;
+}
+
+@keyframes bell {
+    0%,100%{transform: rotate(50deg); }
+    10%,90%{transform: rotate(-50deg);}
+    20%,80%{transform: rotate(50deg);}
+    30% ,70%{transform: rotate(-50deg);}
+   
+    
+}
+
+.slider1{
+    position: absolute;
+    left:0;
+}
+
+.shopby-container{
+    margin-top: 120px;
+    width: 100%;
+}
+
+.shopby{
+    width: 100%;
+}
+
+
+.MyntaApp-container {
+    width: 100%;
+    height: 200px;
+}
+.MyntraApp{
+    width: 92%;
+    height: 180px;
+    display: grid;
+    justify-content: center;
+    margin: 20px auto;
+}
+
+.Shop-More-about-myntra{
+    display: none;
+}
+
+
+@media screen  and (min-width :1150px)  and (max-width :1423px)
+{
+
+    .Shop-Myntra-Container{
+        width: 100%;
+        /* overflow-y: scroll; */
+        margin-top: 30px;
+        transition: all 0.2s ease-in;
+      
+    }
+    
+
+    .MyntraApp{
+        width: 87%;
+        height: 150px;
+        display: grid;
+    
+        justify-content: center;
+        margin: 20px auto;
+    }
+
+    .Shop-More-about-myntra{
+        display: none;
+    }
+
+}
+
+
+
+@media screen and (min-width: 991px) and (max-width: 1150px) 
+{
+
+    .Shop-Myntra-Container{
+        width: 100%;
+        /* overflow-y: scroll; */
+        margin-top: 30px;
+        transition: all 0.2s ease-in;
+      
+    }
+
+
+    .MyntraApp{
+        width: 100%;
+        height: 120px;
+        display: grid;
+    
+        justify-content: center;
+        margin: 20px auto;
+    }
+
+
+    .shop1{
+        width: 90%;
+        height: 330px;
+        margin-left: 5%;
+        margin-right:5%;
+        opacity: 0.9;
+    }
+    
+    .Shop2-coupan{
+    
+    }
+    
+    .image-coupan{
+        width: 100%;
+        height: 200px;
+    }
+    
+    .image-crazy{
+        width: 100%;
+        height: 85px;
+    }
+    
+    
+    .image-flat{
+        position: fixed;
+        right: 0;
+        bottom: 100px;
+        width:40px;
+        height: 250px;
+        z-index: 1;
+    }
+    
+    .image-shopby{
+        width: 100%;
+        margin-top: -250px;
+    }
+
+
+    .bell-bell{
+        position: fixed;
+        right: 45px;
+        bottom: 70px;
+        width: 25px;
+        height: 30px;
+
+    }
+
+    .Shop-More-about-myntra{
+        display: none;
+    }
+
+}
+
+
+@media screen and (min-width: 768px) and (max-width: 991px) 
+{
+    .shop1{
+        width: 90%;
+        height: 330px;
+        margin-left: 5%;
+        margin-right:5%;
+        opacity: 0.9;
+    }
+
+
+    .MyntraApp{
+        width: 95%;
+        height: 100px;
+        display: grid;
+    
+        justify-content: center;
+        margin: 20px auto;
+    }
+
+
+    .image-coupan{
+        width: 100%;
+        height: 200px;
+    }
+    
+    .image-crazy{
+        width: 100%;
+        height: 85px;
+    }
+    
+    
+    .image-flat{
+        position: fixed;
+        right: 0;
+        top: 250px;
+        width:40px;
+        height: 250px;
+        z-index: 1;
+    }
+    
+    .image-shopby{
+        width: 100%;
+        margin-top: -250px;
+    }
+
+
+    .shopby-container{
+        margin-top: -1px;
+    }
+
+
+    .shopby-container{
+        margin-top: 100px;
+    }
+   
+
+    .bell-bell{
+        position: fixed;
+        right: 45px;
+        top: 450px;
+        width: 25px;
+        height: 30px;
+
+    }
+  
+
+    .Shop-More-about-myntra{
+        display: none;
+    }
+
+}
+
+
+@media screen and (max-width: 600px){
+
+
+    .Shop-Myntra-Container{
+    width: 100%;
+    /* overflow-y: scroll; */
+    margin-top: 30px;
+    transition: all 0.2s ease-in;
+  
+}
+
+
+.shop1{
+    width: 90%;
+    height: 200px;
+    margin-left: 5%;
+    margin-right:5%;
+    opacity: 0.9;
+}
+
+.image-coupan{
+    width: 100%;
+    height: 150px;
+}
+.image-crazy{
+    width: 100%;
+    height: 80px;
+}
+
+.image-flat{
+    position: fixed;
+    right: 0;
+    bottom: 100px;
+    width:30px;
+    height: 250px;
+    z-index: 1;
+}
+
+.shopby{
+    width: 100%;
+    margin-top: 90px;
+     
+}
+.shopby-container{
+    margin-top: 30px;
+    
+}
+
+
+.MyntraApp{
+    width: 83%;
+    height: 100px;
+    display: grid;
+     border-radius: 4px;
+    justify-content: center;
+}
+
+.Footer{
+    display: none;
+}
+
+.Shop-More-about-myntra{
+    display:block;
+    background-color:white;
+}
+.Shop-More-about-myntra ul li{
+    font-size: 18px;
+    letter-spacing: 2px;
+    font-weight: 700;
+    font-style: normal;
+    line-height: normal;
+    margin-bottom: 10px;
+    margin-left: 30px;
+    list-style-type: none;
+}
+
+.footerarrow{
+    width: 30px;
+    height: 30px;
+    margin-bottom:  -8px;
+
+}
+
+
+}
+
+@media screen and (min-width: 601px) and (max-width:767px) {
+
+    .shop1{
+        width: 80%;
+        height: 200px;
+        margin-left: 10%;
+        margin-right:10%;
+        opacity: 0.9;
+    }
+
+    .image-coupan{
+        width: 100%;
+        height: 200px; 
+    }
+    .image-crazy{
+        width: 100%;
+        height: 80px;
+    }
+    .image-flat{
+        position: fixed;
+        right: 0;
+        bottom: 100px;
+        width:30px;
+        height: 250px;
+        z-index: 1;
+    }
+
+    .shopby-container{
+        margin-top: 5px;
+        
+    }
+
+    .bell-bell{
+        width: 30px;
+        height: 30px;
+        right: 40px;
+       bottom: 70px;
+    }
+
+    .shopby-container{
+        margin-top: 80px;
+    }
+
+    .MyntraApp{
+        width: 92%;
+        height: 100px;
+    }
+
+    .Footer{
+        display: none;
+    }
+
+    .Shop-More-about-myntra{
+        display:block;
+        background-color:white;
+        
+         
+    }
+    .Shop-More-about-myntra ul li{
+        font-size: 18px;
+        letter-spacing: 2px;
+        font-weight: 700;
+        font-style: normal;
+        line-height: normal;
+        margin-bottom: 10px;
+        margin-left: 30px;
+        list-style-type: none;
+        align-self: center;
+    }
+    
+    .footerarrow{
+        width: 30px;
+        height: 30px;
+        margin-bottom:  -8px;
+    
+    }
+    
+    
+}

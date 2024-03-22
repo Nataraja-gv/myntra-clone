@@ -1,0 +1,120 @@
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+.Indianwear-image-container{
+    width: 100%;
+}
+.Indianwear-Items{
+    display: grid;
+    grid-template-columns: auto auto auto auto auto  ;
+    justify-content:center;
+    gap:30px
+}
+
+
+.Img-Indianwear-img{
+    width:230px;
+    height: 280px;
+    margin-top: 50px;
+
+
+}
+
+@media screen  and (min-width :1150px)  and (max-width :1423px)
+{
+    .Img-Indianwear-img{
+        width:190px;
+        height: 250px;
+        margin-top: 50px;
+    
+    
+    }
+}
+
+
+@media screen and (min-width: 991px) and (max-width: 1150px) 
+{
+ 
+    .Indianwear-image-container{
+        width: 100%;
+    }
+    .Indianwear-Items{
+        display: grid;
+        grid-template-columns: auto auto auto   ;
+        justify-content:center;
+        gap:40px
+    }
+    
+    
+    .Img-Indianwear-img{
+        width:250px;
+        height: 290px;
+        margin-top: 50px;
+    
+    
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px) 
+{
+    .Indianwear-Items{
+        display: grid;
+        grid-template-columns: auto auto auto   ;
+        justify-content:center;
+        gap:30px
+    }
+    
+    
+    .Img-Indianwear-img{
+        width:200px;
+        height: 250px;
+        margin-top: 50px;
+    
+    
+    }
+}
+
+
+@media screen and (max-width:600px) {
+
+    .Indianwear-Items{
+        display: grid;
+        grid-template-columns: auto auto    ;
+        justify-content:center;
+        gap:30px
+    }
+    
+    
+    .Img-Indianwear-img{
+        width:180px;
+        height: 250px;
+        margin-top: 30px;
+    
+    
+    }
+    
+}
+
+@media screen and (min-width: 600px) and (max-width:767px)
+{
+    .Indianwear-Items{
+        display: grid;
+        grid-template-columns: auto auto auto   ;
+        justify-content:center;
+        gap:30px
+    }
+    
+    
+    .Img-Indianwear-img{
+        width:150px;
+        height: 220px;
+        margin-top: 30px;
+    
+    
+    }
+}

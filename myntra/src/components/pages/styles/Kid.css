@@ -1,0 +1,83 @@
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.kid-main-container{
+    width: 100%;
+    font-family: Assistant, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    
+}
+
+.Favourite-deals-brands h1{
+    font-size: 36px;
+    font-weight: 700;
+    color:rgb(62, 65, 82);
+    line-height: normal;
+    font-style: normal;
+    margin-top: 280px;
+    letter-spacing: 4px;
+    margin-left: 70px;
+}
+
+.TopPicks-deals-brands h1{
+    font-size: 36px;
+    font-weight: 700;
+    color:rgb(62, 65, 82);
+    line-height: normal;
+    font-style: normal;
+    margin-top: 50px;
+    letter-spacing: 4px;
+    margin-left: 70px;
+}
+
+.Iconic-deals-brands h1{
+    font-size: 36px;
+    font-weight: 700;
+    color:rgb(62, 65, 82);
+    line-height: normal;
+    font-style: normal;
+    margin-top: 50px;
+    letter-spacing: 4px;
+    margin-left: 70px;
+}
+
+.Kid-footer-footer{
+    margin-top: 100px;
+}
+
+
+
+@media screen and (max-width:600px)
+ 
+{
+    .Favourite-deals-brands h1{
+        font-size: 20px;
+        margin-top: 120px;
+    }
+
+    .TopPicks-deals-brands h1{
+        font-size: 20px;
+    }
+
+    .Iconic-deals-brands h1{
+        font-size: 20px;
+    }
+}
+
+@media screen and (min-width: 601px) and (max-width:767px) {
+    .Favourite-deals-brands h1{
+        font-size: 20px;
+        margin-top:50px;
+    }
+
+    .TopPicks-deals-brands h1{
+        font-size: 20px;
+    }
+
+    .Iconic-deals-brands h1{
+        font-size: 20px;
+    }
+}

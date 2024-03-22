@@ -1,0 +1,217 @@
+
+
+.get-inspired-container{
+    background-color: #E0E0E0;
+    margin-top: 20px;
+}
+
+.get-Items{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    margin-top: 50px;
+    justify-content: center;
+    gap:15px;
+}
+
+
+.Image-Image-Get{
+    margin-top: 50px;
+}
+
+.get-inspired-title .title{
+    font-size: 80px;
+    text-align: center;
+    font-family: "Tangerine", cursive;
+    font-weight: 700;
+    font-style: 25px;
+    padding-top: 40px;
+    
+    
+
+}
+
+ 
+
+.get-inspired-title .subTitle{
+    font-size: 20px;
+    text-align: center;
+
+}
+
+.Img-Get-img{
+    width: 400px;
+    height: 300px;
+}
+
+
+.Img-Get-img:hover{
+    transform: scale(1.05); 
+    transition: 0.5s ease-in-out;
+     
+ }
+
+.Image-Image-Get .getdescription{
+    text-align: center;
+    font-size: 20px;
+    font-weight:bolder;
+    color:rgb(40, 44, 63);
+    line-height: normal;
+    font-style: normal;
+    margin-top: 10px;
+    
+}
+
+.Image-Image-Get  .line{
+    text-align: center;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: normal;
+    color:rgb(40, 44, 63);
+    margin-bottom: 100px;
+}
+
+
+@media screen  and (min-width :1150px)  and (max-width :1423px)
+{
+
+    .Img-Get-img{
+        width: 350px;
+        height: 250px;
+    }
+
+
+    .Image-Image-Get .getdescription{
+        font-size: 18px;
+    }
+
+
+    .Image-Image-Get  .line{
+        font-size: 18px;
+    }
+}
+
+
+@media screen and (min-width: 991px) and (max-width: 1150px) 
+{
+    .Img-Get-img{
+        width: 280px;
+        height: 220px;
+    }
+
+
+    .Image-Image-Get .getdescription{
+        font-size: 16px;
+    }
+
+
+    .Image-Image-Get  .line{
+        font-size: 16px;
+    }
+
+}
+
+
+@media screen and (min-width: 768px) and (max-width:1149px){
+    .Img-Get-img{
+        width: 200px;
+        height: 220px;
+    }
+
+
+    .Image-Image-Get .getdescription{
+        font-size: 14px;
+    }
+
+
+    .Image-Image-Get  .line{
+        font-size: 14px;
+    }
+}
+
+
+@media screen and (max-width:600px)
+{
+    .get-Items{
+        display: grid;
+        grid-template-columns: auto;
+}
+
+.get-inspired-title .title{
+    font-size: 50px;
+}
+
+.get-inspired-title .subTitle{
+    font-size: 14px;
+}
+
+.Img-Get-img{
+    width: 250px;
+    height: 180px;
+}
+
+.Image-Image-Get .getdescription{
+    font-size: 12px;
+}
+
+
+.Image-Image-Get  .line{
+    font-size: 10px;
+}
+
+.get-Items{
+    margin-top: 20px;
+    gap:5px
+}
+
+.Image-Image-Get{
+    margin-top: 20px;
+}
+ 
+}
+
+@media screen and (min-width: 601px) and (max-width:767px) 
+{
+
+
+    .get-Items{
+        display: grid;
+        grid-template-columns: auto auto;
+        
+}
+
+.get-inspired-title .title{
+    font-size: 50px;
+}
+
+.get-inspired-title .subTitle{
+    font-size: 14px;
+}
+
+ 
+    
+
+.Img-Get-img{
+    width: 230px;
+    height: 180px;
+    margin: 5px;
+}
+
+.Image-Image-Get .getdescription{
+    font-size: 12px;
+}
+
+
+.Image-Image-Get  .line{
+    font-size: 10px;
+}
+
+.get-Items{
+    margin-top: 20px;
+    gap:5px
+}
+
+.Image-Image-Get{
+    margin-top: 20px;
+}
+
+}

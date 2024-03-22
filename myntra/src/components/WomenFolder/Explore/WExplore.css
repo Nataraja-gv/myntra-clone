@@ -1,0 +1,128 @@
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+.WExplore-image-container{
+    width: 100%;
+}
+.WExplore-Items{
+    display: grid;
+    grid-template-columns: auto auto auto auto auto ;
+    justify-content: space-evenly;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+
+.Img-WExplore-img{
+    width:250px;
+    height: 350px;
+    margin-top: 50px;
+
+
+}
+@media screen  and (min-width :1150px)  and (max-width :1423px)
+{
+    .WExplore-Items{
+        display: grid;
+        grid-template-columns: auto auto auto  ;
+        justify-content: space-evenly;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    
+    
+    .Img-WExplore-img{
+        width:300px;
+        height: 370px;
+        margin-top: 50px;
+    
+    
+    }
+}
+
+
+@media screen and (min-width: 991px) and (max-width: 1150px) 
+{
+
+    .WExplore-Items{
+        display: grid;
+        grid-template-columns: auto auto auto  ;
+        justify-content: space-evenly;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    
+    
+    .Img-WExplore-img{
+        width:300px;
+        height: 370px;
+        margin-top: 50px;
+    
+    
+    }
+
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px)
+{
+    .WExplore-Items{
+        display: grid;
+        grid-template-columns: auto auto auto  ;
+        justify-content: space-evenly;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    
+    
+    .Img-WExplore-img{
+        width:200px;
+        height: 300px;
+        margin-top: 50px;
+    
+    
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .WExplore-Items{
+        display: grid;
+        grid-template-columns: auto auto auto  ;
+        justify-content: space-evenly;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    
+    
+    .Img-WExplore-img{
+        width:130px;
+        height: 180px;
+        margin-top: 30px;
+    
+    
+    }
+}
+
+@media screen and (min-width: 601px) and (max-width:767px) {
+    .WExplore-Items{
+        display: grid;
+        grid-template-columns: auto auto auto  ;
+        justify-content: space-evenly;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    
+    
+    .Img-WExplore-img{
+        width:150px;
+        height: 180px;
+        margin-top: 30px;
+    
+    
+    }
+
+}
