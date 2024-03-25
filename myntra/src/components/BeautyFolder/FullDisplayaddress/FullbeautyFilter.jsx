@@ -75,141 +75,44 @@ const FullbeautyFilter = () => {
              
           </div>
 
-          <div className='filter-sort-container'>
-             <div className='Filter-title'>
+          
+             
+{/* second section */}
+        <div className='Filterimage-Conatiner'>
+
+         
+            <div className='FilterSection' >
+              <div className='Filter-title'>
                 <p>FILTERS</p>
              </div>
-
-             <div className='Filter-dropmenu'>
-                <div className='Bundles-content'>
-                <button className='Bundles-btn' onClick={BundlesHandler}>Bundles {!arrowOpen ? <MdOutlineKeyboardArrowDown className='arrowDown' />:<MdOutlineKeyboardArrowUp className='arrowUp'/>}</button>
-                 {arrowOpen &&<div class="dropdown-Bundles">
-                    <div className='checkbox1'>
-                      <input type="checkbox"  className='checkbox' name="Bundles"/><label>Bundles</label> 
-                    </div>
-
-                    <div className='checkbox1'>
-                      <input type="checkbox" className='checkbox' name="Single-Style"/> <label>Single Style</label>
-                    </div>
-                   </div>}
-                </div>
-
-                <div className='Country-content'>
-                <button class="Country-btn" onClick={CountryHandler}>Country of Origin{!countryOpen ? <MdOutlineKeyboardArrowDown className='arrowDown' />:<MdOutlineKeyboardArrowUp className='arrowUp'/>}</button> 
-                {countryOpen &&<div class="dropdown-Country">
-                    <div className='checkbox2'>
-                      <input type="checkbox" className='checkbox' name="Bundles"/>All Countries
-                    </div>
-
-                    <div className='checkbox2'>
-                      <input type="checkbox" className='checkbox' name="Single-Style"/>India
-                    </div>
-                   </div>}
-            
-                </div>
-
-                <div className='Size-content'>
-                <button class="Size-btn" onClick={SizeHandler}>Size{!sizeopen?<MdOutlineKeyboardArrowDown className='arrowDown' />:<MdOutlineKeyboardArrowUp className='arrowUp'/>}</button>
-                {sizeopen &&<div class="dropdown-Size">
-                    <div className='checkbox3'>
-                      <input type="checkbox" className='checkbox'name="Bundles"/>S
-                    </div>
-
-                    <div className='checkbox3'>
-                      <input type="checkbox"  className='checkbox'name="Single-Style"/>M
-                    </div>
-
-                    <div className='checkbox3'>
-                      <input type="checkbox" className='checkbox'name="Bundles"/>L
-                    </div>
-
-                    <div className='checkbox3'>
-                      <input type="checkbox"  className='checkbox'name="Single-Style"/>XL
-                    </div>
-
-
-
-                    <div className='checkbox3'>
-                      <input type="checkbox"  className='checkbox'name="Single-Style"/>XXL
-                    </div>
-
-                    <div className='checkbox3'>
-                      <input type="checkbox"  className='checkbox'name="Single-Style"/>XXXL
-                    </div>
-
-                    <div className='checkbox3'>
-                      <input type="checkbox"  className='checkbox'name="Single-Style"/>XS
-                    </div>
-
-                    <div className='checkbox3'>
-                      <input type="checkbox"  className='checkbox'name="Single-Style"/>XM
-                    </div>
-                   </div>}
-                </div>
-             </div>
-
-
-             <div className='ShopCatagory-sort'>
-         <form>
-           
-          <select  className='select' name="filter" id="name">
-             
-            <option className='option' value="Recommended"><span className='Sort-by' style={{color:"gray"}}>Sort By:</span>Recommended</option>
-            <option  className='option' value="Whats news">Whats news</option>
-            <option  className='option'  value="Popularity">Popularity</option>
-            <option className='option' value="price">Price:Low to high</option>
-            <option className='option' value="price">Price: high to low</option>
-          </select>
-         </form>
-
-       </div> 
-          </div>
-
-
-
-
-
-
-     {/* second section */}
-        <div className='Filterimage-Conatiner'>
-            <div className='FilterSection' >
-
               <div className='vertical-filter-section'>
                 <ul className='gender-list'>
                    <li>
-                   <label className='Gender-male-radio'>
-                   <input type="radio" value="men,men women" name="gender"/>
-                   Men
-                   </label>
+                       <input type="radio" value="men,men women" name="gender"/>
+                       <label for="men">Men</label>
+                           
                    </li>
 
 
                    <li>
-                   <label className='Gender-female-radio'>
-                   <input type="radio" value="men,men women"  name="gender"/>
-                   Women
-                   </label>
-
+                       <input type="radio" value="men,men women" name="gender"/>
+                       <label for="men">Women</label>
+                           
                    </li>
 
-
+                  
+                   <li>
+                       <input type="radio" value="men,men women" name="gender"/>
+                       <label for="men">Boys</label>
+                           
+                   </li>
 
                    <li>
-                   <label className='Gender-Boys-radio'>
-                   <input type="radio" value="men,men women"  name="gender"/>
-                   Boys
-                   </label>
-
+                       <input type="radio" value="men,men women" name="gender"/>
+                       <label for="men">Girls</label>
+                           
                    </li>
-
-
-                   <li>
-                   <label className='Gender-girls-radio'>
-                   <input type="radio" value="men,men women"  name="gender"/>
-                   Girls
-                   </label>
-
-                   </li>
+                    
                 </ul>
 
               </div>
@@ -225,20 +128,18 @@ const FullbeautyFilter = () => {
 
 <ul className="Category-products-list">
 <li> 
-  <label className="Lipstick-Product">
-    <input type='checkbox' value="lipstick" />
-    Lipstick
-    <span className='number'>
-      (12391)
-    </span>
-  </label>
+  <label className='Lipstick-Product'> 
+    <input type='checkbox' value="lipstick"/>
+      Lipstick  
+    <span className='number'>(12391)</span>
+   </label>
 </li>  
 
 
 <li> 
-  <label className="NailPolish-Product">
+   <label className='Nailpolish-Product'> 
     <input type='checkbox' value="NailPolish"/>
-    NailPolish
+     NailPolish
     <span className='number'>
       (10391)
     </span>
@@ -689,6 +590,147 @@ const FullbeautyFilter = () => {
 
 
  {/* products display section */}
+
+ <div className='products-display-container-section'> 
+
+ <div className='dropdown-dropdown-menu-conatiner'>
+ 
+ <div className='Filter-dropmenu'>
+                <div className='Bundles-content'>
+                <button className='Bundles-btn' onClick={BundlesHandler}>Bundles {!arrowOpen ? <MdOutlineKeyboardArrowDown className='arrowDown' />:<MdOutlineKeyboardArrowUp className='arrowUp'/>}</button>
+                 {arrowOpen &&<div class="dropdown-Bundles">
+                    <div className='checkbox1'>
+                      <input type="checkbox"  className='checkbox' name="Bundles"/><label>Bundles</label> 
+                    </div>
+
+                    <div className='checkbox1'>
+                      <input type="checkbox" className='checkbox' name="Single-Style"/> <label>Single Style</label>
+                    </div>
+                   </div>}
+                </div>
+
+                <div className='Country-content'>
+                <button class="Country-btn" onClick={CountryHandler}>Country of Origin{!countryOpen ? <MdOutlineKeyboardArrowDown className='arrowDown' />:<MdOutlineKeyboardArrowUp className='arrowUp'/>}</button> 
+                {countryOpen &&<div class="dropdown-Country">
+                    <div className='checkbox2'>
+                      <input type="checkbox" className='checkbox' name="Bundles"/><label>All Countries</label> 
+                    </div>
+
+                    <div className='checkbox2'>
+                      <input type="checkbox" className='checkbox' name="Single-Style"/> <label>India</label>
+                    </div>
+                   </div>}
+            
+                </div>
+
+                <div className='Size-content'>
+                <button class="Size-btn" onClick={SizeHandler}>Size{!sizeopen?<MdOutlineKeyboardArrowDown className='arrowDown' />:<MdOutlineKeyboardArrowUp className='arrowUp'/>}</button>
+                {sizeopen &&<div class="dropdown-Size">
+                    <div className='checkbox3'>
+                      <input type="checkbox" className='checkbox'name="Bundles"/><label>S</label>
+                    </div>
+
+                    <div className='checkbox3'>
+                      <input type="checkbox"  className='checkbox'name="Single-Style"/><label>M</label>
+                    </div>
+
+                    <div className='checkbox3'>
+                      <input type="checkbox" className='checkbox'name="Bundles"/><label>L</label>
+                    </div>
+
+                    <div className='checkbox3'>
+                      <input type="checkbox"  className='checkbox'name="Single-Style"/><label>XL</label>
+                    </div>
+
+
+
+                    <div className='checkbox3'>
+                      <input type="checkbox"  className='checkbox'name="Single-Style"/><label>XXL</label>
+                    </div>
+
+                    <div className='checkbox3'>
+                      <input type="checkbox"  className='checkbox'name="Single-Style"/><label>XXXL</label>
+                    </div>
+
+                    <div className='checkbox3'>
+                      <input type="checkbox"  className='checkbox'name="Single-Style"/><label>XS</label>
+                    </div>
+
+                    <div className='checkbox3'>
+                      <input type="checkbox"  className='checkbox'name="Single-Style"/><label>XM</label>
+                    </div>
+                   </div>}
+                </div>
+  </div>
+
+
+  <div className='ShopCatagory-sort'>
+   <div className='Sort-sort-by'>
+     Sort by: 
+     
+     <select  className='sort-list'>
+      
+      <option>
+       <label class="sort-label"> 
+         Recommended  
+       </label>
+        
+      </option>
+
+
+
+
+      <option> 
+      <label class="sort-label "> 
+      What's New
+      </label>
+      </option>
+
+      <option>
+      <label class="sort-label ">
+          Popularity 
+        </label>
+      </option>
+
+
+      <option>
+      <label class="sort-label ">
+      Better Discount </label>
+      </option>
+
+      <option>
+      <label class="sort-label ">
+      Price: High to Low  </label>
+      </option>
+
+      <option>
+      <label class="sort-label ">
+      Price: Low to High 
+      </label>
+      </option>
+
+      <option>
+      <label class="sort-label ">
+      Customer Rating  
+      </label>
+      </option>
+          
+      
+     </select>
+     
+      
+      
+      
+  </div>
+         
+          
+
+  </div> 
+        
+ </div>
+     
+ 
+
  <div className='Beauty-card-Container'>
           <div className='Beauty-card-content'>
              {
@@ -728,7 +770,7 @@ const FullbeautyFilter = () => {
           </div>
 
 
-          <hr className='Beauty-hr'/>
+          
 
           <div className='pagination-pagination'>
             <div className='page'>
@@ -765,6 +807,7 @@ const FullbeautyFilter = () => {
           
         </div> 
 
+        </div>
         </div>
     );
 }

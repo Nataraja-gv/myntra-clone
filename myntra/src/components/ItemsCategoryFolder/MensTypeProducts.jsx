@@ -1,15 +1,27 @@
 import React, { useContext } from 'react';
-import {MenstypeDress} from './MensTypeContext.jsx'
+//  import ContextMenProvider from '../../components/ContextFolder/ContextMen.jsx';
+import{ menContext }from '../../components/ContextFolder/ContextMen.jsx';
 
 const MensTypeProducts = (props) => {
-    const {CategoryProducts}=useContext(MenstypeDress)
+    const {Products}=useContext(menContext)
+
     return (
+
+      
         <div className=''>
-            {CategoryProducts.map((item,index)=>{
+            {Products.map((item,index)=>{
                 if(props.category===item.category){
                     return(
-                        <h1>hello</h1>
+                        
+                        <div key={index}>
+
+                        <img src={item.Image}/>
+                        </div>
                     )
+                }
+
+                else{
+                    return null;
                 }
             })}
         </div>
@@ -17,6 +29,7 @@ const MensTypeProducts = (props) => {
             
         
     );
+ 
 }
 
 export default MensTypeProducts;

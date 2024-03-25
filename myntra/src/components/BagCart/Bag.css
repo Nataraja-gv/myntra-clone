@@ -116,8 +116,124 @@ ol {
 
 @media screen  and (min-width :1150px)  and (max-width :1423px)
 {
+    .bag-second-section{
+        left:40%;
+    }
 
 }
+
+@media screen  and (min-width :992px)  and (max-width :1149px){
+    .bag-second-section{
+        /* border:2px solid red; */
+        display:  inline-block;
+        position: relative;
+        left:40%;
+        margin: 50px auto auto;
+    }
+    
+}
+
+@media  only screen  and (min-width :768px)  and (max-width :992px)
+{
+    .Bag-first-section {
+        gap:100px
+    }
+
+    .bag-ol-section ol{
+        display: flex;
+        gap:10px;
+        font-size: 14px;
+        margin-top: 20px;
+    }
+    .checkout-steps .dotted{
+        width:15px;
+        
+     }
+
+     .secureContainer .secure{
+        font-size: 14px;
+     }
+
+     .secureContainer img {
+        width:20px;
+        height: 20px;
+        vertical-align:middle; 
+     }
+    
+     .bag-second-section{
+        
+         left:40%;
+     }
+}
+
+
+@media  only screen  and (min-width :600px)  and (max-width :767px)
+{
+
+    .Bag-first-section {
+        gap:100px
+    }
+
+    .bag-ol-section ol{
+        display: flex;
+        gap:10px;
+        font-size: 14px;
+        margin-top: 20px;
+    }
+    .checkout-steps .dotted{
+        width:15px;
+        
+     }
+
+     .secureContainer .secure{
+        font-size: 14px;
+     }
+
+     .secureContainer img {
+        width:20px;
+        height: 20px;
+        vertical-align:middle; 
+     }
+    .bag-second-section{
+        
+        left:30%;
+    }
+}
+
+@media screen and (max-width:600px){
+
+    .Bag-first-section {
+        gap:80px
+    }
+
+    .bag-ol-section ol{
+        display: flex;
+        gap:10px;
+        font-size: 10px;
+        margin-top: 20px;
+    }
+    .checkout-steps .dotted{
+        width:10px;
+        
+     }
+
+     .secureContainer .secure{
+        font-size: 10px;
+     }
+
+     .secureContainer img {
+        width:15px;
+        height: 15px;
+        vertical-align:middle; 
+     }
+    .bag-second-section{
+        
+    left:20%;
+    }
+}
+
+
+
 
 
  

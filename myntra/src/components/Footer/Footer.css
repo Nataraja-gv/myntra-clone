@@ -181,6 +181,7 @@
   display: flex;
   flex-direction: column;
   margin-top: 50px;
+  
    
 }
 
@@ -674,13 +675,15 @@ margin-left: 210px;
         display: none;
     }
 
+     
+
     .POPULAR-SEARCHES .p-seaches p{
         font-size: 12px;
         font-weight: 700;
         line-height: normal;
         color:rgb(40, 44, 63);
-        margin-left: 125px;     
-             
+        text-align: start;    
+         justify-content: center;    
         }
 
 

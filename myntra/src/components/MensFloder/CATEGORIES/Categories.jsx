@@ -5,7 +5,8 @@ import './Categories.css';
 
 
 
-const Categories = () => {
+const Categories = (props) => {
+    console.log("hello world")
     return (
         <div className='category-image-container'>
             <div className='Category-Items'>
@@ -15,7 +16,7 @@ const Categories = () => {
       <div className=' '>
           <div className='Image-Image-category' key={index} >
            
-         <Link to=''>    <img src={item.Image} alt="" className='Img-category-img' /></Link>  
+         <Link to = {`/Men/${props.category}`}>    <img src={item.Image} alt="" className='Img-category-img' /></Link>  
                 
           </div>
       </div>

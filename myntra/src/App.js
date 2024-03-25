@@ -12,7 +12,8 @@ import Navigation   from './components/Navbar/Navigation.jsx'
 import Wishlist from './components/Wishlist/Wishlist.jsx'
 import Bag from './components/BagCart/Bag.jsx'
 // import SideBar from './components/pages/SideBar.jsx'
- import MensTypeProducts from './components/ItemsCategoryFolder/MensTypeContext.jsx' 
+
+ import MensTypeProducts from './components/ItemsCategoryFolder/MensTypeProducts.jsx' 
 function App() {
   return (
     <div>
@@ -30,11 +31,14 @@ function App() {
         <Route path="/Beauty" element={<Beauty/>}></Route>
         <Route path="/wishlist" element={<Wishlist/>}></Route>
         <Route path="/Bag" element={<Bag/>}></Route>
-
-
-        <Route path={`/men/shirt`} element={<MensTypeProducts/>} category="shirt"></Route>
-        <Route path="/Men/tshirt" element={<MensTypeProducts/>} category="Tshirt"></Route>
-        <Route path="/jeans" element={<MensTypeProducts/>} category="jeans"></Route>
+     
+         <Route path='/product' element={<MensTypeProducts/>}>
+          <Route path=":productid" element={ <MensTypeProducts category="shirt"/>}  ></Route>
+          <Route path=":productid" element={ <MensTypeProducts category="tshirt"/>}  ></Route>
+          <Route path=":productid" element={ <MensTypeProducts  category="jeans"/>} ></Route>
+         </Route>  
+             
+        
         
         
       </Routes>

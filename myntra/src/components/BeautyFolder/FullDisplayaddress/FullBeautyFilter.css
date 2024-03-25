@@ -48,161 +48,10 @@
         font-weight: 700;
     }
 
-    .filter-sort-container{
-        display: flex;
-        justify-content: space-between;
-        margin-bottom: 50px;
-    }
-
-    .Filter-dropmenu{
-        display: flex;
-        gap:40px;
-        margin-left: -200px;
-    }
-
-    .Filter-title p{
-        font-size: 22px;
-        font-weight: 700;
-        color: rgb(0, 0, 0);
-        line-height: normal;
-        margin-left: 30px;
-    }
-
-    .ShopCatagory-sort{
-        display:flex;
-        justify-content: flex-end;
-        
-        margin-right: 50px;
-          
-    }
-    
-    .ShopCatagory-sort select{
-        border: 1px solid gray;
-        color:black;
-        font-weight: bold;
-        padding:5px;
-        
-    }
-
-     
-
-    .Filter-dropmenu button{
-        padding: 3px 6px;
-        border-radius: 25px;
-        outline: none;
-        border: none;
-        background: none;
-    }
-
-    .Filter-dropmenu button:hover{
-        background-color: rgb(220, 223, 223);
-        transition: all 0.5s ease-in;
-
-    }
-
-    .arrowDown{
-        color:gray;
-         vertical-align: middle;
-         font-size: 25px;
-    }
-
-    .arrowUp{
-        color:gray;
-         vertical-align: middle;
-         font-size: 25px;
-    }
-
-
-    .checkbox1 label{
-        font-size: 20px;
-        text-align: center;
-        align-self: center;
-    }
-    .dropdown-Bundles{
-        display: flex;
-        gap:30px;
-        position: absolute;
-        top:150px;
-        /* border: 2px solid red; */
-        padding: 10px;
-         margin-top: 10px;
-         /* z-index: 1; */
-    }
      
 
      
-
-    .dropdown-Bundles .checkbox{
-      width: 15px;  
-      height: 15px;
-      align-self: center; 
-      margin-right: 10px;
-     }
-
-      
-
-     
-
-     /* country */
-
-      
-
-     .checkbox2 label{
-        font-size: 20px;
-        text-align: center;
-        align-self: center;
-    }
-    .dropdown-Country{
-        display: flex;
-        gap:30px;
-        position: absolute;
-        top:150px;
-        left:300px;
-        /* border: 2px solid red; */
-        padding: 10px;
-         margin-top: 10px;
-         /* padding-bottom: 10px; */
-         /* z-index: 1; */
-    }
-
-    .dropdown-Country .checkbox{
-      width: 15px;  
-      height: 15px;
-      align-self: center; 
-      margin-right: 10px;
-      
-     }
-     
-
-
-     .checkbox3 label{
-        font-size: 20px;
-        text-align: center;
-        align-self: center;
-    }
-    .dropdown-Size{
-        display: grid;
-        grid-template-columns: auto auto auto auto auto auto auto auto;
-        gap:30px;
-        position: absolute;
-        top:150px;
-        left:300px;
-        /* border: 2px solid red; */
-        padding: 10px;
-         margin-top: 10px;
-         /* z-index: 1; */
-          
-    }
-
-    .dropdown-Size .checkbox{
-      width: 15px;  
-      height: 15px;
-      align-self: center; 
-      margin-right: 10px;
-     }
-         
-
-     
+ 
 
     
 
@@ -230,20 +79,27 @@
     display: flex;
     margin-top: -40px;
     width:100%;
-     
     position: relative;
-     
-     
-}
+    }
 
 .FilterSection{
-    flex-basis: 350px;
+    flex-basis: 280px;
     height: 100%;
     position: sticky;
      top:-205px;
-     transition: all 0.5s ease;
+    transition: all 0.5s ease;
       
      
+}
+
+
+.Filter-title{
+    margin-left: 30px;
+    font-size: 20px;
+    font-weight: 700;
+    color:rgb(0, 0, 0);
+    line-height: normal;
+    margin-top: 20px;
 }
 
 .vertical-filter-section{
@@ -265,25 +121,21 @@
 }
 
 .gender-list li{
-    font-size: 15px;
-    margin-bottom: 7px;
-    align-self: center;
-    /* vertical-align: middle; */
-}
- 
-.gender-list label{ 
-    cursor: pointer;
-    color: #282c3f;
-    font-weight: 700;
-    vertical-align: middle;
- 
+    /* border-bottom:1px solid red; */
 }
 
-.gender-list input[type="radio"]{
-    margin: 0 16px 0 0;
-    width: 15px ;
+.vertical-filter-section .gender-list input[type="radio"]{
+    margin: 0 10px 0 0;
+    vertical-align:middle; 
+    width:15px;
     height: 15px;
-    padding: 100px;
+     
+}
+.gender-list  li label{
+    font-size: 14px;
+    font-weight: 700;
+    align-self: center;
+    vertical-align:middle;  
 }
 
 
@@ -339,10 +191,10 @@
     display: block;
     font-size: 12px;
     height: 35px;
-    width: 90%;
+    width: 85%;
     position: absolute;
     top: 10px;
-     
+     margin-right: 20px;
     padding: 6px 33px 6px 14px;
      border: none;
      outline: none; 
@@ -350,6 +202,7 @@
       transition: 0.3s ease;
      border-radius: 15px;
     background-color: #f5f5f6;
+    border: none;
 
 }
 
@@ -359,8 +212,8 @@
     display: inline-block;
     position: absolute;
     cursor: pointer;
-    right: 0px;
-    top: 7px;
+    right: 10px;
+    top: 9px;
     z-index: 1;
     transform: scale(.7);
     margin-right: 10px;
@@ -385,29 +238,24 @@
     list-style-type: none;
      
 }
-.Category-products-list li{
-    font-size: 16px;
+.Category-products-list label{
+    font-size: 14px;
     margin-bottom: 10px;
     font-weight: 400;
     font-style: normal;
     /* display: list-item; */
     vertical-align: middle;
+    
 }
 
 
-.Lipstick-Product {
-    display: block;
-    width: 95%;
-    cursor: pointer;
-    min-height: 17px;
-    color: #282c3f;
-    align-self: center;
-}
-
+ 
 .Category-products-list input{
     margin: 0 16px 0 0;
    width:18px;
    height: 18px;
+   vertical-align: middle;
+   accent-color: red;
 }
 
 .Category-products-list .number{
@@ -468,7 +316,7 @@
     display: block;
     font-size: 12px;
     height: 35px;
-    width: 90%;
+    width: 85%;
     position: absolute;
     top: 10px;
      
@@ -479,7 +327,7 @@
       transition: 0.3s ease;
      border-radius: 15px;
     background-color: #f5f5f6;
-
+   border: none;
 }
 
  
@@ -488,8 +336,8 @@
     display: inline-block;
     position: absolute;
     cursor: pointer;
-    right: 0px;
-    top: 7px;
+    right: 10px;
+    top: 9px;
     z-index: 1;
     transform: scale(.7);
     margin-right: 10px;
@@ -505,7 +353,7 @@
 }
 
 .Brand-products-list li{
-    font-size: 16px;
+    font-size: 14px;
     margin-bottom: 10px;
     font-weight: 400;
     font-style: normal;
@@ -527,6 +375,8 @@
     margin: 0 16px 0 0;
    width:18px;
    height: 18px;
+   vertical-align: middle;
+   accent-color: red;
 }
 
 .Brand-products-list .number{
@@ -578,11 +428,13 @@
     margin: 0 16px 0 0;
    width:18px;
    height: 18px;
+   vertical-align: middle;
+   accent-color: red;
 }
 
 
 .Price-products-list li{
-    font-size: 16px;
+    font-size: 14px;
     margin-bottom: 10px;
     font-weight: 400;
     font-style: normal;
@@ -617,10 +469,10 @@
     border-radius: 50%;
     display: inline-block;
     margin-right: 8px;
-    margin-left: 27px;
+    margin-left:15px;
     cursor: pointer;
     border: 0.5px solid gray;
- 
+    vertical-align: middle;
 }
 
 
@@ -631,10 +483,11 @@
     border-radius: 50%;
     display: inline-block;
     margin-right: 8px;
-    margin-left: 27px;
+    margin-left: 15px;
     cursor: pointer;
     border: 0.5px solid gray;
- 
+    vertical-align: middle;
+   
 }
 
 
@@ -647,10 +500,11 @@
     border-radius: 50%;
     display: inline-block;
     margin-right: 8px;
-    margin-left: 27px;
+    margin-left: 15px;
     cursor: pointer;
     border: 0.5px solid gray;
- 
+    vertical-align: middle;
+    
 }
 
 .color-Black-icon{
@@ -660,10 +514,11 @@
     border-radius: 50%;
     display: inline-block;
     margin-right: 8px;
-    margin-left: 27px;
+    margin-left: 15px;
     cursor: pointer;
     border: 0.5px solid gray;
- 
+    vertical-align: middle;
+    
 }
 
 
@@ -674,10 +529,11 @@
     border-radius: 50%;
     display: inline-block;
     margin-right: 8px;
-    margin-left: 27px;
+    margin-left: 15px;
     cursor: pointer;
     border: 0.5px solid gray;
- 
+    vertical-align: middle;
+    
 }
 
 
@@ -688,10 +544,11 @@
     border-radius: 50%;
     display: inline-block;
     margin-right: 8px;
-    margin-left: 27px;
+    margin-left: 15px;
     cursor: pointer;
     border: 0.5px solid gray;
- 
+    vertical-align: middle;
+   
 }
 
 .color-Green-icon{
@@ -701,10 +558,11 @@
     border-radius: 50%;
     display: inline-block;
     margin-right: 8px;
-    margin-left: 27px;
+    margin-left: 15px;
     cursor: pointer;
     border: 0.5px solid gray;
- 
+    vertical-align: middle;
+   
 }
 
 
@@ -745,10 +603,10 @@
     display: block;
     font-size: 12px;
     height: 35px;
-    width: 90%;
+    width: 85%;
     position: absolute;
     top: 10px;
-     
+      
     padding: 6px 33px 6px 14px;
      border: none;
      outline: none; 
@@ -756,7 +614,8 @@
       transition: 0.3s ease;
      border-radius: 15px;
     background-color: #f5f5f6;
-
+    vertical-align: middle;
+    border: none;
 }
 
  
@@ -765,8 +624,8 @@
     display: inline-block;
     position: absolute;
     cursor: pointer;
-    right: 0px;
-    top: 7px;
+    right: 10px;
+    top: 9px;
     z-index: 1;
     transform: scale(.7);
     margin-right: 10px;
@@ -782,11 +641,11 @@
      
 }
 .color-filter-lists  li{
-    font-size: 16px;
+    font-size: 14px;
     margin-bottom: 10px;
     font-weight: 400;
     font-style: normal;
-    /* display: list-item; */
+    
     vertical-align: middle;
 }
 
@@ -801,9 +660,11 @@
 }
 
 .color-filter-lists  input{
-    margin: 0 5px 0 0;
+    margin: 0 0px 0 0;
    width:18px;
    height: 18px;
+   vertical-align: middle;
+  accent-color: red;
 }
 
 .color-product-label  .number{
@@ -850,7 +711,7 @@
      
 }
 .Discount-range-lists   li{
-    font-size: 16px;
+    font-size: 14px;
     margin-bottom: 10px;
     font-weight: 400;
     font-style: normal;
@@ -872,10 +733,199 @@
     margin: 0 13px 0 0;
    width:16px;
    height: 16px;
+   vertical-align: middle;
+   accent-color: red;
 }
 
 
 /* product display css */
+
+
+.products-display-container-section .dropdown-dropdown-menu-conatiner{
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: space-between;
+     margin-top: 20px;
+      
+}
+
+.Filter-dropmenu{
+    display: flex;
+    justify-content: space-between; 
+    float: left;
+     
+} 
+
+.Bundles-btn{
+    border: none;
+    outline: none;
+    padding: 5px 10px;
+    border-radius: 15px;
+    font-size: 16px;
+    background: transparent;
+    color: rgb(54, 53, 53);
+    cursor: pointer;
+     position: relative;
+}
+
+.Filter-dropmenu :hover .Bundles-btn{
+    background-color: #F5F4F2;
+}
+ 
+.dropdown-Bundles{
+    display:flex;
+    position: absolute;
+    left:300px;
+    margin-top:10px;
+   
+}
+
+.Filter-dropmenu .checkbox{
+     margin-right: 15px;
+    vertical-align: middle;
+    width:20px;
+    height: 20px;
+    accent-color: red;
+    background-color: white;
+}
+
+
+.checkbox1 label{
+    font-size: 16px;
+    font-weight: 400;
+    line-height: normal;
+    vertical-align: middle;
+    margin-right: 40px;
+}
+  
+
+.arrowDown{
+    font-size: 18px;
+    vertical-align: middle;
+    color: rgb(54, 53, 53);
+     
+}
+
+.arrowUp{
+    font-size: 18px;
+    vertical-align: middle;
+
+}
+
+.Country-btn{
+    border: none;
+    outline: none;
+    padding: 5px 10px;
+    border-radius: 15px;
+    font-size: 16px;
+    background: transparent;
+    color: rgb(54, 53, 53);
+    cursor: pointer;
+    position: relative;
+}
+
+
+.dropdown-Country{
+    display:flex;
+    position: absolute;
+    left:300px;
+    margin-top:10px;
+    
+}
+
+
+.checkbox2 label{
+    font-size: 16px;
+    font-weight: 400;
+    line-height: normal;
+    vertical-align: middle;
+    margin-right: 40px;
+}
+.Filter-dropmenu :hover .Country-btn{
+    background-color: #F5F4F2;
+}
+
+.Size-btn{
+    border: none;
+    outline: none;
+    padding: 5px 10px;
+    border-radius: 15px;
+    font-size: 16px;
+    background: transparent;
+    color: rgb(54, 53, 53);
+    cursor: pointer;
+    position: relative;
+}
+
+.Filter-dropmenu :hover .Size-btn{
+    background-color: #F5F4F2;
+}
+
+.dropdown-Size{
+    display:flex;
+    position: absolute;
+    left:300px;
+    margin-top:10px;
+
+}
+
+.checkbox3 label{
+    font-size: 16px;
+    font-weight: 400;
+    line-height: normal;
+    vertical-align: middle;
+    margin-right: 40px;
+}
+
+ .ShopCatagory-sort{
+    display: inline-block;
+    float: right;
+    margin-right: 30px;
+    margin-bottom: 0;
+    margin-top: -7px;
+    position: relative;
+    top: 5px;
+ }
+
+ .Sort-sort-by {
+    padding: 9px 14px;
+    font-size: 14px;
+    color: #282c3f;
+    cursor: pointer;
+    position: relative;
+    width: 255px;
+    
+    box-sizing: border-box;
+    border-radius: 2px;
+    background-color: #fff;
+    border: 1px solid #d4d5d9;
+ }
+
+.Sort-sort-by  span{
+    text-transform: capitalize;
+    font-weight: 700;
+    color: #282c3f; 
+}
+.sort-list {
+    width: 175px;
+     background-color: #fff;
+     outline: none;
+     border: none;
+    position: absolute;
+    /* top: 33px; */
+    /* left: 1px; */
+    /* margin: 0; */
+    /* padding: 16px 0; */
+    /* z-index: 2; */
+    /* border: 1px solid #d4d5d9; */
+     
+     
+}
+ 
+
+ 
+ 
+
 
 
 .Beauty-card-Container{
@@ -894,6 +944,8 @@ grid-template-columns: auto auto auto auto;
  row-gap: 20px;
  column-gap: 20px;
  margin:0 20px;
+  
+ /* border-top: 1px solid #edebef;; */
  /* background-color: aqua; */
 }
 
@@ -924,10 +976,10 @@ grid-template-columns: auto auto auto auto;
  } */
 
 .Beauty-Product-image{
-    width: 180px;
-    height: 200px;
-    margin-left: 20px;
-    margin-bottom: 15px;
+    width : 180px;
+    height : 200px;
+    margin-left : 20px;
+    margin-bottom : 15px;
      
 }
 
@@ -990,21 +1042,34 @@ grid-template-columns: auto auto auto auto;
     justify-content: center;
     gap:160px;
     margin-top: 50px;
+    text-align: center;
+    border-top: 1px solid #edebef;
+    padding-top: 24px;
+    padding-bottom: 50px;
+    color: #282c3f;
+    
 }
 
 .pagination-pagination .page p{
     align-self: center;
-    color: gray;
-    font-size: 18px;
-    font-weight: 400;
+     
     cursor: pointer;  
+    color: #535766;
+    font-size: 14px;
+    float: left;
+    margin-top: 15px;
+    margin-right: 15px;
+    cursor: default;
+    font-weight: 400;
+
 
 }
 
 .Pagination-number{
     display: flex;
    justify-content: center;
-   gap:15px;
+    gap:15px;
+    
 
 }
 
@@ -1020,15 +1085,19 @@ cursor: pointer;
   
 }
 .Pagination-number li.active{
-    background-color: black;
-    color:white;
-    border-radius: 5px;
+     
+    font-weight: 700;
+    color: #fff;
+    letter-spacing: .4px;
+    border-radius: 2px;
+    background-color: #282c3f
 }
 
 .Pagination-number li:hover:not(.active){
      background-color: gray;
-    border-radius: 5px;
+    border-radius: 2px;
     color: white;
+     
 }
 
 .pagination-next{
@@ -1044,13 +1113,14 @@ cursor: pointer;
 .pagination-next li{
  list-style-type: none;
  font-weight: bolder; 
- cursor: pointer;  
+ cursor: pointer; 
+ vertical-align: middle; 
 }
 
-.pagination-pagination:hover .pagination-next    {
+ .pagination-pagination:hover .pagination-next  {
     border-color: black;
+  }
      
-}
 
 
  
@@ -1073,54 +1143,7 @@ cursor: pointer;
     
     }
     
-    .Filter-dropmenu{
-        gap:30px;
-        margin-left: 20px;
-
-    }
-
-    .Filter-title p{
-        font-size: 20px;
-        margin-left: 35px;
-    }
-
-    .dropdown-Country{
-        top:150px;
-        left:280px; 
-    }
-
-    .dropdown-Size{
-        top:150px;
-        left:280px;
-    }
-
-
-    .ShopCatagory-sort{
-        display:flex;
-        justify-content: flex-end;
-        
-        margin-right: 100px;
-          
-    }
-
-    .ShopCatagory-sort .select{
-        font-size: 12px;
-        outline: none;
-        line-height: 3px;
-        width:200px;
-        height: auto;
-        /* background-color: aquamarine; */
-       
-         
-    }
-
-    .ShopCatagory-sort select .option{
-        font-size: 12px;
-        width:20px;
-        height: auto;
-        /* background-color: aquamarine; */
-
-    }
+      
 
     .FilterSection{
         flex-basis: 250px;
@@ -1175,6 +1198,7 @@ cursor: pointer;
     height: 25px;
     width: 80%;
     top:15px;
+    
 }
 
 .filter-search-inputBox::placeholder {
@@ -1184,8 +1208,8 @@ cursor: pointer;
 
 .filter-category-section .filter-search-icon{
     padding:3px 3px;
-    right: 8px;
-    top: 11px;
+    right: 18px;
+    top: 11.5px;
 }
 
 .search-logo{
@@ -1208,8 +1232,8 @@ cursor: pointer;
 .Brand-category-section .Brand-search-inputBox{
 font-size: 12px;
 height: 25px;
-width: 82%;
-top:15px;
+width: 83%;
+top:16px;
 }
 
 .Brand-search-inputBox::placeholder {
@@ -1219,8 +1243,8 @@ font-size: 10px;
 
 .Brand-category-section .Brand-search-icon{
 padding:3px 3px;
-right: 8px;
-top: 11px;
+right: 18px;
+top: 11.5px;
 }
 
 /* color */
@@ -1245,15 +1269,15 @@ font-size: 10px;
 
 .color-searchinput-searchicon .color-searhIcon{
 padding:3px 3px;
-right: 8px;
-top: 11px;
+right: 18px;
+top: 11.5px;
 }
     
 
 
 
     .Beauty-card-content{
-  grid-template-columns: auto  auto auto;
+  grid-template-columns: auto auto auto auto;
   row-gap: 20px;
   column-gap: 0px;
   /* border: 2px solid red; */
@@ -1302,27 +1326,10 @@ top: 11px;
 @media screen and (min-width: 991px) and (max-width: 1150px) 
 {
 
-    .Filter-title p{
-        font-size: 16px;
-        margin-left: 35px;
-    }
-
-    .Filter-dropmenu{
-        margin-left: 30px; 
-    }
-    .dropdown-Country{
-        top:150px;
-        left:200px; 
-    }
-
-    .dropdown-Size{
-        top:150px;
-        left:200px;
-    }
-
     
-    .FilterSection{
-        flex-basis: 250px;
+
+     .FilterSection{
+        flex-basis: 280px;
         height: 100%;
         position: sticky;
         top:-205px;
@@ -1330,56 +1337,27 @@ top: 11px;
           
     }
 
+    .Filter-title{
+        font-size: 16px;
+    }
+
     .gender-list li{
         font-size: 12px;
     }
-
-    .Category-products-list li{
-        font-size: 12px;
+    .vertical-filter-section .gender-list input[type="radio"]{
+        width: 14px;
+        height: 14px;
     }
 
-    .Brand-products-list li{
-        font-size: 12px;
-    }
-
-    .Price-products-list li{
-        font-size: 12px;
-    }
-
-    .color-filter-lists  li{
-        font-size: 12px;
-    }
-
-    .Price-products-list li{
-        font-size: 10px;
-    }
-     
-    .Discount-range-lists   li{
-        font-size:12px ;
-    }
-   
-    .Category-products-list input{
-        margin: 0 16px 0 0;
-        width:12px;
-       height: 12px;
-    }
-
-    .Price-products-list input{
-        margin: 0 16px 0 0;
-       width:12px;
-       height: 12px;
-    }
-    
-
-.filter-category-section .filter-search-inputBox{
+    .filter-category-section .filter-search-inputBox{
     font-size: 12px;
     height: 25px;
-    width: 80%;
+    width: 85%;
     top:15px;
 }
 
 .filter-search-inputBox::placeholder {
-    font-size: 10px;
+    font-size: 8px;
 
 }
 
@@ -1399,6 +1377,14 @@ top: 11px;
     height:20px ;
 }
 
+.Category-products-list .number{
+    font-size: 8px;
+}
+
+.Category-products-list label{
+    font-size: 12px;
+}
+
 
 .Brand-products-list input{
     margin: 0 16px 0 0;
@@ -1409,12 +1395,12 @@ top: 11px;
 .Brand-category-section .Brand-search-inputBox{
 font-size: 12px;
 height: 25px;
-width: 82%;
+width: 85%;
 top:15px;
 }
 
 .Brand-search-inputBox::placeholder {
-font-size: 10px;
+font-size: 8px;
 
 }
 
@@ -1424,23 +1410,42 @@ right: 8px;
 top: 11px;
 }
 
+.Brand-products-list label{
+    font-size: 12px;
+}
+
+.Brand-products-list .number{
+    font-size: 8px;
+}
+
+.Brand-products-list input{
+    margin: 0 16px 0 0;
+   width:18px;
+   height: 18px;
+
+}
+
+.Price-products-list li{
+    font-size: 12px;
+}
+
 /* color */
 .color-filter-lists  input{
     margin: 0 1px 0 0;
-    width:14px;
-   height: 14px;
+    width:18px;
+   height: 18px;
 }
 
 .color-searchinput-searchicon .color-input-search-input{
 font-size: 12px;
 height: 25px;
-width: 82%;
+width: 85%;
 top:15px;
 
 }
 
 .color-input-search-input::placeholder {
-font-size: 10px;
+font-size: 8px;
 
 }
 
@@ -1449,10 +1454,39 @@ padding:3px 3px;
 right: 8px;
 top: 11px;
 }
+
+.color-filter-lists  li{
+    font-size: 12px;
+}
     
+.Discount-range-lists li{
+    font-size: 12px;
+}
+
+.dropdown-Bundles{
+    left:270px;
+    margin-top:8px;
+}
+
+.Filter-dropmenu .checkbox{
+    width:16px;
+    height: 16px;
+}
+
+.dropdown-Country{
+    left:270px;
+    margin-top: 8px;
+}
 
 
+.dropdown-Size{
+    left:270px;
+    margin-top: 8px;
+}
 
+.checkbox3 label{
+    margin-right: 30px;
+}
 
     .Beauty-card-content{
         grid-template-columns: auto  auto auto;
@@ -1512,137 +1546,33 @@ top: 11px;
         font-size: 14px;
        }
 
+       .Filter-title{
+        font-size: 14px;
+       }
 
-    .Filter-dropmenu{
-        gap:30px;
-        margin-left: 20px;
-
-    }
-
-    .Filter-title p{
-        font-size: 20px;
-        margin-left: 30px;
-    }
-
-    .ShopCatagory-sort{
-      margin-right: 30px;  
-    }
-
-    .ShopCatagory-sort select
-{
-    border: 1px solid rgb(32, 33, 33);
-    font-weight: 400;
-   padding:3px;
-   font-size: 12px;
-}
-
-.Filter-dropmenu button{
-    padding: 2px 5px;
-    border-radius: 20px;
-   
-}
-
-.arrowDown{
-    font-size: 20px;
-}
-
-.arrowUp{
-    font-size: 20px;
-}
-
-.checkbox1 label{
-    font-size: 16px;
-}
-
-.dropdown-Bundles{
-   top:135px;
-   left: 160px
-}
-
-.dropdown-Bundles .checkbox
-{
- width:13px;
- height: 13px;
-}
-
-.dropdown-Country{
-    top:140px;
-    left:160px; 
-}
-
-.checkbox2 {
-    font-size: 16px;
-}
-
-.dropdown-Country .checkbox{
-    width:13px;
-    height: 13px; 
-}
-
-.dropdown-Size{
-    top:140px;
-    left:160px;
-}
-
-.checkbox3 {
-    font-size: 16px;
-}
-
-.dropdown-Size .checkbox{
-    width:13px;
-    height: 13px; 
-}
-
-.FilterSection{
-    flex-basis: 200px;
-
-}
-
-.gender-list li{
-    font-size: 12px;
-}
-
-.Category-products-list li{
-    font-size: 12px;
-}
-
-.Brand-products-list li{
-    font-size: 12px;
-}
-
-.Price-products-list li{
-    font-size: 12px;
-}
-
-.color-filter-lists  li{
-    font-size: 12px;
-}
-
-.Price-products-list label{
-    font-size: 8px;
-}
-
-.Discount-range-lists   li{
-    font-size:12px ;
-}
-
+    
 .gender-list li{
     font-size: 12px;
 
 }
 
-.gender-list input[type="radio"]{
-    margin: 0 8px 0 0;
-    width: 12px ;
+.vertical-filter-section .gender-list input[type="radio"]{
+    width:12px;
     height: 12px;
 
-} 
+}
+
+.gender-list  li label{
+    font-size: 12px;
+}
+
 
 
 .Category-products-list input{
     margin: 0 5px 0 0;
     width:12px;
    height: 12px;
+   
 }
 
 .category-section-header{
@@ -1662,8 +1592,9 @@ top: 11px;
 .filter-category-section .filter-search-inputBox{
 font-size: 12px;
 height: 25px;
-width: 80%;
+width: 82%;
 top:15px;
+/* border: 2px solid red; */
 
 }
 
@@ -1674,9 +1605,12 @@ font-size: 8px;
 
 .filter-category-section .filter-search-icon{
 padding:3px 3px;
-right: -5px;
-top: 11.5px;
+right: 8px;
+top: 11px;
 padding:3px 3px;
+}
+.Category-products-list label{
+    font-size: 12px;
 }
 
 .search-logo{
@@ -1705,7 +1639,7 @@ height: 12px;
 
 .Brand-products-list li{
     font-size: 12px;
-    text-transform: lowercase;
+    text-transform:capitalize;
 }
 
 .Brand-products-list .number{
@@ -1721,7 +1655,7 @@ height: 12px;
 .Brand-category-section .Brand-search-inputBox{
 font-size: 12px;
 height: 25px;
-width: 80%;
+width: 82%;
 top:15px;
 }
 
@@ -1732,7 +1666,7 @@ font-size: 8px;
 
 .Brand-category-section .Brand-search-icon{
 padding:3px 3px;
-right: -3px;
+right: 8px;
 top: 11px;
 }
 
@@ -1885,6 +1819,63 @@ font-size: 8px;
    height: 12px;
 }
 
+
+.products-display-container-section .dropdown-dropdown-menu-conatiner{
+    grid-template-columns: auto ;
+    justify-content: center
+}
+
+.dropdown-Bundles{
+    left:250px;
+    margin-top: 8px;
+
+}
+.Filter-dropmenu .checkbox{
+    width: 14px;
+    height: 14px;
+}
+
+.dropdown-Country{
+    left:250px;
+    margin-top: 8px;
+  margin-right: 10px;
+}
+
+.dropdown-Size{
+    left:250px;
+    margin-top: 0px; 
+}
+.checkbox3 .checkbox{
+    width: 16px;
+    height: 16px;
+    margin-right: 2px;
+}
+
+.checkbox3 label{
+    font-size: 12px;
+    margin-right: 15px;
+    text-transform: capitalize;
+}
+
+
+.ShopCatagory-sort{
+    position: absolute;
+    top:-80px;
+    right: 0;
+}
+
+.Sort-sort-by{
+    width:230px
+}
+
+.sort-list{
+    width:150px;
+    font-size: 14px;
+   margin-top: 3px;
+    
+}
+
+
 .Beauty-card-content{
     grid-template-columns: auto  auto auto;
     row-gap: 20px;
@@ -1893,7 +1884,7 @@ font-size: 8px;
       }
 
       .Beauty-Product-image{
-        width: 100px;
+        width: 110px;
         height: 140px;
         margin-left: 10px;
         margin-bottom: 15px;
@@ -1918,27 +1909,30 @@ font-size: 8px;
 }
 
 .Beauty-Product-amount .newamount{
-    font-size: 12px;
+    font-size: 10px;
 }
 
 .Beauty-Product-amount .oldamount
 {
-    font-size: 12px;
+    font-size: 9px;
 }
 .Beauty-Product-amount .offer{
-    font-size: 11px;
+    font-size: 7px;
 }
 
 .pagination-pagination{
-    gap:0px
-   } 
+    gap:0px;
+    display:grid;
+    grid-template-columns: auto auto auto;
+    justify-content: space-around;
+} 
 
    .pagination-pagination .page p{
-    align-self: center;
     vertical-align: center;
-    /* margin-top: 10px; */
-    margin-right:30px ;
-    font-size: 12px;
+    margin-top: 2px;
+    margin-right: 15px;
+     
+     
    }
    .Pagination-number{
     gap:5px;
@@ -1992,159 +1986,31 @@ font-size: 8px;
        }
 
 
-       .Filter-dropmenu{
-            gap:10px;
-            
-             
-          }
-
-          .Filter-dropmenu{
-            position: absolute;
-            left:400px;
-          }  
-
-
-
-       .Filter-title p{
-        font-size: 16px;
-        margin-left: 10px;
+       .FilterSection{
+        flex-basis: 260px;
        }
 
-       .ShopCatagory-sort{
-        position: absolute;
-        top:0px;
-        right: 10px; 
+       .Filter-title{
+        font-size: 14px;
+       }  
+
+
+       .vertical-filter-section .gender-list input[type="radio"]
+       {
+           margin: 0 8px 0 0;
+           width: 12px ;
+           height: 12px;
+       
+       } 
+   
+       .gender-list  li label{
+           font-size: 12px;
+       }
         
-      }
-
-      .ShopCatagory-sort select
-      {
-          border: 1px solid rgb(32, 33, 33);
-          font-weight: 400;
-         padding:3px;
-         font-size: 12px;
-      }
-  
-
-      
-    
-    .arrowDown{
-        font-size: 20px;
-    }
-    
-    .arrowUp{
-        font-size: 20px;
-    }
-
-     
-
-    .Filter-dropmenu button{
-        padding: 3px 3px;
-        border-radius: 25px;
-        font-size: 12px;
-         
-    }
-
-     
-    
-    .checkbox1 label{
-        font-size: 12px;
-    }
-    
-    .dropdown-Bundles{
-       top:10px;
-       left: -20px
-    }
-    
-    .dropdown-Bundles .checkbox
-    {
-     width:10px;
-     height: 10px;
-    }
-    
-    .dropdown-Country{
-        top:20px;
-        left:-30px; 
-    }
-    
-    .checkbox2 {
-        font-size: 12px;
-    }
-    
-    .dropdown-Country .checkbox{
-        width:10px;
-        height: 10px; 
-    }
-    
-    .dropdown-Size{
-        top:20px;
-        left:-40px;
-        gap:10px;
-    }
-    
-    .checkbox3 {
-        font-size: 10px;
-        align-self: center;
-    }
-    
-    .dropdown-Size .checkbox{
-        width:10px;
-        height: 10px;
-        margin-right: 3px; 
-    }
-
-
-    .FilterSection{
-        flex-basis: 230px;
-    
-    }
-     
-    .gender-list li{
-        font-size: 12px;
-    }
-    
-    .Category-products-list li{
-        font-size: 12px;
-    }
-    
-    .Brand-products-list li{
-        font-size: 12px;
-    }
-    
-    .Price-products-list li{
-        font-size: 10px;
-    }
-    
-    .color-filter-lists  li{
-        font-size: 12px;
-    }
-    
-    .Price-filter-section ul li{
-        font-size: 8px;
-        
-    }
-    
-    .Discount-range-lists   li{
-        font-size:12px ;
-    }
-    
-    .gender-list li{
-        font-size: 12px;
-    
-    }
-    
-    .gender-list input[type="radio"]{
-        margin: 0 8px 0 0;
-        width: 12px ;
-        height: 12px;
-    
-    } 
-    
-    
     .Category-products-list input{
         margin: 0 5px 0 0;
         width:12px;
-       height: 12px;
+        height: 12px;
     }
     
     .category-section-header{
@@ -2153,7 +2019,7 @@ font-size: 8px;
     }
     
     .Category-products-list .number{
-        font-size: 8px;
+        font-size: 7px;
     }
     
     .Category-more{
@@ -2176,8 +2042,8 @@ font-size: 8px;
     
     .filter-category-section .filter-search-icon{
     padding:3px 3px;
-    right: -5px;
-    top: 11.5px;
+    right: 2px;
+    top: 12px;
     padding:3px 3px;
     }
     
@@ -2190,6 +2056,10 @@ font-size: 8px;
     width:20px;
     height:20px ;
     background-color: transparent;
+    }
+
+    .Category-products-list label{
+        font-size: 10px;
     }
     
     
@@ -2207,11 +2077,11 @@ font-size: 8px;
     
     .Brand-products-list li{
         font-size: 12px;
-        text-transform: lowercase;
+        text-transform:capitalize;
     }
     
     .Brand-products-list .number{
-        font-size: 8px;
+        font-size: 7px;
     
     }
     
@@ -2234,8 +2104,8 @@ font-size: 8px;
     
     .Brand-category-section .Brand-search-icon{
     padding:3px 3px;
-    right: -3px;
-    top: 11px;
+    right: 2px;
+    top: 12px;
     }
     
     .Price-header{
@@ -2244,17 +2114,17 @@ font-size: 8px;
     
     
     .Price-products-list input{
-        margin: 0 8px 0 0;
-       width:12px;
-       height: 12px;
+        margin: 0 2px 0 0;
+       width:10px;
+       height: 10px;
     }
     
     .Price-products-list li{
-        font-size: 12px;
+        font-size: 8px;
     } 
     
     .Price-products-list .number{
-        font-size: 8px;
+        font-size: 7px;
     }
     
     
@@ -2336,7 +2206,7 @@ font-size: 8px;
     .color-searchinput-searchicon .color-input-search-input{
     font-size: 12px;
     height: 25px;
-    width: 82%;
+    width: 80%;
     top:15px;
     
     }
@@ -2353,14 +2223,17 @@ font-size: 8px;
      
     .color-searchinput-searchicon .color-searhIcon{
     padding:3px 3px;
-    right: -3px;
-    top: 11px;
+    right: 2px;
+    top: 12px;
     }
+
+
     .color-filter-lists  input{
     
         margin: 0 0px 0 0;
         width:12px;
         height: 12px;
+
     }
     
     .color-product-label  .number{
@@ -2386,6 +2259,90 @@ font-size: 8px;
        width:12px;
        height: 12px;
     }
+
+    .products-display-container-section .dropdown-dropdown-menu-conatiner{
+        grid-template-columns: auto ;
+        justify-content: center
+    }
+    
+    .dropdown-Bundles{
+        left:200px;
+        margin-top: 4px;
+    
+    }
+
+    .Bundles-btn{
+        font-size: 14px;
+    }
+    .Country-btn{
+        font-size: 14px;
+    }
+
+    .Size-btn{
+        font-size: 14px;
+    }
+
+    .dropdown-Bundles label{
+        font-size: 14px;
+    }
+    .Filter-dropmenu .checkbox{
+        width: 10px;
+        height: 10px;
+    }
+    
+    .dropdown-Country{
+        left:200px;
+        margin-top: 5px;
+        margin-right: 10px;
+    }
+
+    .dropdown-Country label{
+        font-size: 14px;
+    }
+    
+    .dropdown-Size{
+        left:200px;
+        margin-top: 2px; 
+    }
+    .checkbox3 .checkbox{
+        width: 10px;
+        height: 10px;
+        margin-right: 1px;
+        vertical-align: middle;
+        margin-top: 2px;
+    }
+    
+    .checkbox3 label{
+        font-size: 12px;
+        margin-right:8px;
+        text-transform: capitalize;
+        vertical-align: middle;
+    }
+    
+    
+    .ShopCatagory-sort{
+        position: absolute;
+        top:-50px;
+        right: 0;
+    }
+    
+    .Sort-sort-by{
+        width:180px;
+    padding: 5px 7px;
+
+    }
+
+    .Sort-sort-by  span{
+        font-size: 12px;
+    }
+    
+    .sort-list{
+        width:100px;
+        font-size: 14px;
+       margin-top: 3px;
+        
+    }
+    
     
     .Beauty-card-content{
         grid-template-columns: auto auto   ;
@@ -2395,7 +2352,7 @@ font-size: 8px;
           }
     
           .Beauty-Product-image{
-            width: 90px;
+            width: 80px;
             height: 130px;
             margin-left: 10px;
             margin-bottom: 15px;
@@ -2465,32 +2422,47 @@ font-size: 8px;
     
        } */
     
-       .Beauty-hr{
-        display: none;
-       }
-     
-    .pagination-next{
-        padding: 2px 10px;
-        display:inline-flex;
-        position: absolute;
-        right: 30px;
+       .pagination-pagination{
+        display: grid;
+        grid-template-columns: auto auto;
+        justify-content: space-around;
          
-    
-       }
-    
-       .pagination-next li{
-        font-size: 12px;
-       }
-    
-       .pagination-next  .arrow-next{
-        font-size: 12px;
-        margin-bottom: -1.5px;
-       }
+      }
 
 
+       
 
 
-    
+      .pagination-pagination .page p{
+        
+        margin-top: 5px;
+       
+      }
+      .Pagination-number{
+        display: none;
+        
+      }
+      
+      .pagination-next{
+        vertical-align: middle;
+       padding: 5px 10px;
+
+      }
+     
+      .pagination-next p{
+       font-size: 12px;
+       
+
+      }
+
+      .pagination-next  .arrow-next{
+       align-self: center;
+       font-size: 12px;
+       vertical-align: top;
+       margin-top: 2.5px; 
+       
+         
+    }
 
 }
 
@@ -2520,153 +2492,26 @@ font-size: 8px;
        }
 
 
-       .Filter-dropmenu{
-            gap:10px;
-            
-             
-          }
-
-          .Filter-dropmenu{
-            position: absolute;
-            left:400px;
-          }  
-
-
-
-       .Filter-title p{
-        font-size: 16px;
-        margin-left: 10px;
+      .FilterSection{
+        flex-basis:auto;
        }
-
-       .ShopCatagory-sort{
-        position: absolute;
-        top:0px;
-        right: 10px; 
-        
-      }
-
-      .ShopCatagory-sort select
-      {
-          border: 1px solid rgb(32, 33, 33);
-          font-weight: 400;
-         padding:3px;
-         font-size: 12px;
-      }
-  
-
-      
-    
-    .arrowDown{
-        font-size: 20px;
-    }
-    
-    .arrowUp{
-        font-size: 20px;
-    }
-
      
-
-    .Filter-dropmenu button{
-        padding: 3px 3px;
-        border-radius: 25px;
-        font-size: 12px;
-         
-    }
-
+       .Filter-title{
+        font-size: 14px;
+       }
      
     
-    .checkbox1 label{
-        font-size: 12px;
-    }
-    
-    .dropdown-Bundles{
-       top:10px;
-       left: -15px
-    }
-    
-    .dropdown-Bundles .checkbox
+.vertical-filter-section .gender-list input[type="radio"]
     {
-     width:10px;
-     height: 10px;
-    }
-    
-    .dropdown-Country{
-        top:20px;
-        left:-18px; 
-    }
-    
-    .checkbox2 {
-        font-size: 12px;
-    }
-    
-    .dropdown-Country .checkbox{
-        width:10px;
-        height: 10px; 
-    }
-    
-    .dropdown-Size{
-        top:20px;
-        left:-18px;
-        gap:8px;
-    }
-    
-    .checkbox3 {
-        font-size: 10px;
-        align-self: center;
-    }
-    
-    .dropdown-Size .checkbox{
-        width:10px;
-        height: 10px;
-        margin-right: 3px; 
-    }
-
-
-    .FilterSection{
-        flex-basis: 280px;
-    
-    }
-     
-    .gender-list li{
-        font-size: 12px;
-    }
-    
-    .Category-products-list li{
-        font-size: 12px;
-    }
-    
-    .Brand-products-list li{
-        font-size: 12px;
-    }
-    
-    .Price-products-list li{
-        font-size: 10px;
-    }
-    
-    .color-filter-lists  li{
-        font-size: 12px;
-    }
-    
-    .Price-filter-section ul li{
-        font-size: 8px;
-        
-    }
-    
-    .Discount-range-lists   li{
-        font-size:12px ;
-    }
-    
-    .gender-list li{
-        font-size: 12px;
-    
-    }
-    
-    .gender-list input[type="radio"]{
         margin: 0 8px 0 0;
         width: 12px ;
         height: 12px;
     
     } 
+
+    .gender-list  li label{
+        font-size: 12px;
+    }
     
     
     .Category-products-list input{
@@ -2681,7 +2526,7 @@ font-size: 8px;
     }
     
     .Category-products-list .number{
-        font-size: 8px;
+        font-size: 7px;
     }
     
     .Category-more{
@@ -2710,14 +2555,17 @@ font-size: 8px;
     }
     
     .search-logo{
-    width:18px;
-    height:18px ;
+    width:16px;
+    height:16px ;
     }
     
     .cancel-logo{
-    width:20px;
-    height:20px ;
+    width:16px;
+    height:16px ;
     background-color: transparent;
+    }
+    .Category-products-list label{
+        font-size: 12px;
     }
     
     
@@ -2734,12 +2582,12 @@ font-size: 8px;
     
     
     .Brand-products-list li{
-        font-size: 12px;
-        text-transform: lowercase;
+        font-size: 10px;
+        text-transform: capitalize;
     }
     
     .Brand-products-list .number{
-        font-size: 8px;
+        font-size: 7px;
     
     }
     
@@ -2778,11 +2626,11 @@ font-size: 8px;
     }
     
     .Price-products-list li{
-        font-size: 12px;
+        font-size: 10px;
     } 
     
     .Price-products-list .number{
-        font-size: 8px;
+        font-size: 7px;
     }
     
     
@@ -2914,6 +2762,70 @@ font-size: 8px;
        width:12px;
        height: 12px;
     }
+
+
+    .products-display-container-section .dropdown-dropdown-menu-conatiner{
+        grid-template-columns: auto ;
+        justify-content: center
+    }
+    
+    .dropdown-Bundles{
+        left:200px;
+        margin-top: 4px;
+    
+    }
+
+    .dropdown-Bundles label{
+        font-size: 14px;
+    }
+    .Filter-dropmenu .checkbox{
+        width: 10px;
+        height: 10px;
+    }
+    
+    .dropdown-Country{
+        left:200px;
+        margin-top: 8px;
+        margin-right: 10px;
+    }
+
+    .dropdown-Country label{
+        font-size: 14px;
+    }
+    
+    .dropdown-Size{
+        left:200px;
+        margin-top: 0px; 
+    }
+    .checkbox3 .checkbox{
+        width: 10px;
+        height: 10px;
+        margin-right: 2px;
+    }
+    
+    .checkbox3 label{
+        font-size: 14px;
+        margin-right: 15px;
+        text-transform: capitalize;
+    }
+    
+    
+    .ShopCatagory-sort{
+        position: absolute;
+        top:-50px;
+        right: 0;
+    }
+    
+    .Sort-sort-by{
+        width:230px
+    }
+    
+    .sort-list{
+        width:150px;
+        font-size: 14px;
+       margin-top: 3px;
+        
+    }
     
     .Beauty-card-content{
         grid-template-columns: auto auto   ;
@@ -2959,66 +2871,41 @@ font-size: 8px;
         font-size: 5px;
     }
 
-      
+    .pagination-pagination{
+         display: grid;
+         grid-template-columns: auto auto;
+         justify-content: space-around;
+       
+       }
 
 
-
-     .pagination-pagination{
-        gap:0px;
-        display:flex;
-        justify-content: start;
-       } 
-    
        .pagination-pagination .page p{
         align-self: center;
         vertical-align: center;
-        margin-left: 30px;
+        margin-top: 10px;
+        margin-right:20px ;
         
-        font-size: 14px;
+        
        }
-
        .Pagination-number{
-        /* gap:2px;
-        margin-left: 10px;
-        margin-top: 20px;
-        display: flex; */
-        display: none;
-    
+         display: none;
        }
-    
-       /* .Pagination-number li{
-        font-size: 10px;
-       padding: 2px 5px;
        
-    
-       } */
-    
-       .Beauty-hr{
-        display: none;
+       .pagination-next{
+         vertical-align: middle;
        }
-     
-     .pagination-next{
-        padding: 2px 10px;
-        display:inline-flex;
-        position: absolute;
-        right: 30px;
-         
-    
-       }
-    
-       .pagination-next li{
+      
+       .pagination-next p{
         font-size: 12px;
-       }
-    
-       .pagination-next  .arrow-next{
-        font-size: 12px;
-        margin-bottom: -1.5px;
-       }
-
-
         
 
+       }
 
-
-
+       .pagination-next  .arrow-next{
+        align-self: center;
+        font-size: 12px;
+        vertical-align: top;
+        margin-top: 2.5px; 
+          
+     }
 }
