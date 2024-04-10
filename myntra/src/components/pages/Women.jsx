@@ -1,6 +1,7 @@
 import React from 'react';
 import './styles/Women.css'
 // import womenbanner from '../images/women1.png'
+import './styles/heading.css'
 import WBiggest from '../../components/WomenFolder/BiggestDeals/WBiggest.jsx'
 import WCategories from '../WomenFolder/CATEGORIES/WCategories.jsx';
  import WomenSliderdata from '../../components/WomenSilder1/WomenSliderdata.jsx'
@@ -17,14 +18,12 @@ import Footer from  '../../components/Footer/Footer.jsx'
  const Women = () => {
     return (
         <div className='Women-Myntra-Container'>
-        {/* <div className='Women-image'>
-          <img src={womenbanner} alt='' className='Women-image-image'/>
-        </div> */}
+         
         <div className='Women-sider-conatiner'>
         <WomenSliderdata/>
         </div>
 
-        <div className='Biggest-deals'>
+        <div className='heading-bold '>
           <h1>BIGGEST DEALS ON TOP BRANDS</h1>
         </div>
 
@@ -33,7 +32,7 @@ import Footer from  '../../components/Footer/Footer.jsx'
         </div>
 
 
-        <div className='WCATEGORIES-deals'>
+        <div className='heading-bold'>
           <h1> CATEGORIES TO BAG</h1>
         </div>
 
@@ -41,7 +40,7 @@ import Footer from  '../../components/Footer/Footer.jsx'
           <WCategories/>
         </div>
 
-        <div className='WEXPLORE-deals'>
+        <div className='heading-bold'>
           <h1>EXPLORE TOP BRANDS</h1>
         </div>
 
@@ -50,7 +49,7 @@ import Footer from  '../../components/Footer/Footer.jsx'
           <WExplore/>
         </div>
 
-        <div className='WESTERN-WEAR'>
+        <div className='heading-bold'>
           <h1>TRENDING IN WESTERN WEAR</h1>
         </div>
 
@@ -58,7 +57,7 @@ import Footer from  '../../components/Footer/Footer.jsx'
           <TrendWestern/>
         </div>
 
-        <div className='WTrending-deals'>
+        <div className='heading-bold'>
           <h1>TRENDING IN INDIAN WEAR</h1>
         </div>
 
@@ -68,7 +67,7 @@ import Footer from  '../../components/Footer/Footer.jsx'
         </div>   
 
 
-        <div className='TrendSports-deals'>
+        <div className='heading-bold'>
           <h1>TRENDING IN SPORTS  WEAR</h1>
         </div>
 
@@ -77,7 +76,7 @@ import Footer from  '../../components/Footer/Footer.jsx'
           <WsportsTrend/>
         </div>  
 
-        <div className='WomenFootwear-deals'>
+        <div className='heading-bold'>
           <h1> TRENDING IN FOOTWEAR</h1>
         </div>
 
@@ -88,7 +87,7 @@ import Footer from  '../../components/Footer/Footer.jsx'
         </div> 
 
 
-        <div className='WomenAccessories-deals'>
+        <div className='heading-bold'>
           <h1> TRENDING IN ACCESSORIES</h1>
         </div>
 

@@ -1,4 +1,4 @@
- import  i1 from './indiawomen1.png'
+ import  i1 from './indianwomen1.png'
  import i2 from './indianwomen2.png'
  import i3 from './indianwomen3.png'
  import i4 from './indianwomen4.png'

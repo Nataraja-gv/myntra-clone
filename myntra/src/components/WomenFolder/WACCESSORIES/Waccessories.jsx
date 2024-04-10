@@ -1,19 +1,15 @@
 import React from 'react';
 import './Waccessories.css'
 import WaccessoriesImage from './Waccessoriesdata.jsx'
+import Item from '../../ITEM/Item.jsx'
 const WAccessories = () => {
     return (
         <div className='WAccessories-image-container'>
         <div className='WAccssories-Items'>
 
 {WaccessoriesImage.map((item,index)=>{
-return(
-  <div className=' '>
-      <div className='Image-Image-WAccssories' key={index}>
-           <img src={item.Image} alt="" className='Img-WAccssories-img' />
-      </div>
-  </div>
-)
+    return <Item key={index} image={item.Image} />
+ 
 })}
 </div>
     </div>

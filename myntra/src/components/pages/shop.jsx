@@ -1,65 +1,53 @@
 import React, { useState } from 'react'
 import './styles/shop.css';
 import shop1 from '../images/shop1.png'
-import coupan from '../images/coupons corner.png' 
-import crazy from '../images/crazy.png'
-import flat from '../images/flatoffer.png'
+ import Coupan from '../Coupans/Coupan.jsx' 
+ import flat from '../images/flatoffer.png'
 import { LuBellRing } from "react-icons/lu";
-import Carzydata  from '../crazyDeals/Cdata.jsx';
-import shopby from '../images/Shopby.png'
 import ShopBy from '../ShopBy/ShopBy.jsx'
 import MyntraApp from '../images/MyntraAppBanner.png'
 import Footer from '../Footer/Footer.jsx'
 import { MdKeyboardArrowDown } from "react-icons/md";
 import { MdKeyboardArrowUp } from "react-icons/md";
-// import Navigation from '../../components/Navbar/Navigation.jsx'
-// import Navigation  from '../../components/Navbar/Navigation.jsx'
+import Crazy from '../crazyDeals/CrazySlide.jsx'
 
 function Shop() {
    const[footerdropmenu,setFooterDropMenu]=useState(false)
 
   return (
     <div className='Shop-Myntra-Container'>
-   
-         
-       
 
-      <div className='Shop1-image'>
+       <div className='Shop1-image'>
         <img src={shop1} alt='' className='shop1'/>
       </div>
 
-
-      <div className='Shop2-coupan'>
-        <img src={coupan} alt='' className='image-coupan'/>
+      <div className=''>
+        <Coupan/>
       </div>
 
-      <div className='Shop2-crazy'>
-        <img src={crazy} alt='' className='image-crazy'/>
+      <div className='heading-bold'>
+          <h1 className='h1'>BIGGEST DEALS ON TOP BRANDS</h1>
       </div>
 
+     <div className=''>
+        <Crazy/>
+     </div>
 
-      <div className='Shop2-flat'>
+
+    <div className='Shop2-flat'>
         <img src={flat} alt='' className='image-flat'/>
-      </div>
+    </div>
 
 
-      <div className='Shop2-flat'>
+    <div className='Shop2-flat'>
+
         <LuBellRing  title='latest offer'  className='bell-bell'/>
            
       </div>
        
 
       <div className=''>
-        <Carzydata className="slider1"/>
-      </div>
-
-      <div className='shopby-container'>
-        <img src={shopby} alt=""  className='shopby'/>
-      </div>
-
-      <div className=''>
         <ShopBy className="Shopby-in-Shop"/>
-         
       </div> 
 
 
@@ -74,12 +62,11 @@ function Shop() {
       </ul>    
       </div>       
  
-      <div className='Footer'>
-        <Footer/>
-      </div>
+      
        
-       
+      <Footer className='Footer'/>
     </div>
+    
   )
 }
 

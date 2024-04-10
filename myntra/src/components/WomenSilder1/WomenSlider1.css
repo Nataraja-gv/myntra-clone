@@ -13,6 +13,7 @@
     border-radius: 10px;
     transition: all 1s ease;
     margin-top: 20px;
+    margin-bottom: 300px;
 }
 
 .WomenImages{
@@ -27,14 +28,17 @@
     background: transparent;
      
 }
-
 .women-dispaly-index{
+position: absolute;
+left:45%;
+}
+/* .women-dispaly-index{
     display: flex; 
     justify-content: center;
-    gap:5px;
+    gap:5px; */
     
     /* margin-top: 2px; */
-}
+/* } */
 .women-dispaly-index .dotBtn{
     cursor: pointer;
      fill: gray;
@@ -56,101 +60,7 @@
 
 
 
-.WomenImages-container{
-    position: relative;
-    width:100%;
-    height: 200px;
-    border: 2px solid white;
-    border-radius: 10px;
-    transition: all 1s ease;
-    margin-top: 20px;
-}
 
-
-@media screen  and (min-width :1150px)  and (max-width :1423px)
-{
-    .WomenImages{
-        width:100%;
-        height: 400px;
-        margin-top: 30px;
-        border-radius: 4px;
-    }
-    
-    
-}
-
-@media screen and (min-width: 991px) and (max-width: 1150px) 
-{
-    /* .WomenImages-container{
-        border: 2px solid red;
-    } */
-         
-    .WomenImages{
-        width:100%;
-        height: 350px;
-        margin-top: 30px;
-        border-radius: 4px;
-    }
-    
-}
-
-@media screen and (min-width: 768px) and (max-width: 991px) 
-{
-    .WomenImages{
-        width:100%;
-        height: 300px;
-        margin-top: 40px;
-        border-radius: 4px;
-    }
-
-    .women-dispaly-index .dotBtn{
-        font-size: 12px;
-    }
-
-    .women-dispaly-index .DotFill{
-        font-size: 12px;
-    }
-    
-}
-
-
-@media screen and (max-width: 600px){
-     
-    .WomenImages{
-        width:100%;
-        height: 200px;
-        margin-top: 10px;
-        border-radius: 4px;
-    }
-
-    .women-dispaly-index .dotBtn{
-        font-size: 10px;
-    }
-
-    .women-dispaly-index .DotFill{
-        font-size: 10px;
-    }
-     
-}
-
-@media screen and (min-width: 601px) and (max-width:767px) {
-  
-    .WomenImages{
-        width:100%;
-        height: 200px;
-        margin-top: 10px;
-        border-radius: 4px;
-    }
-
-    .women-dispaly-index .dotBtn{
-        font-size: 10px;
-    }
-
-    .women-dispaly-index .DotFill{
-        font-size: 10px;
-    }
-
-}
 
 
  

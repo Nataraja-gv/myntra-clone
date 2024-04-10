@@ -1,0 +1,30 @@
+.addmore-main-container{
+    display: flex;
+     border: 1px solid rgb(227, 225, 225);
+     margin: 10px;
+     margin-top: 10px;
+     padding: 10px;
+     border-radius: 4px;
+     justify-content: space-between;
+     align-items: center;
+     
+}
+
+  
+
+
+.addmore-text{
+    display: flex;
+     
+}
+.addmore-wishlist-txt{
+    font-size: 14px;
+    font-weight: 700;
+     align-self: center;
+     margin-left: 10px;
+}
+
+.add-more-right-arrow{
+     display: flex;
+     justify-items: end;
+}

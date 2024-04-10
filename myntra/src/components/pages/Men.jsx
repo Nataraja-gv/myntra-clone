@@ -1,6 +1,6 @@
 import React from 'react';
 import './styles/Men.css';
-// import  menbanner from '../images/men1.png'
+ import './styles/heading.css'
 import Biggest from '../../components/MensFloder/BiggestDeals/Biggest.jsx';
 import Categories  from '../../components/MensFloder/CATEGORIES/Categories.jsx';
 import  MensSliderBarData from '../../components/MensSliderbar1/MensSliderBarData.jsx'
@@ -11,20 +11,19 @@ import  Indianwear from '../../components/MensFloder/INDIANWEAR/indianwear.jsx'
 import Footwear from '../../components/MensFloder/Footwear/Footwear.jsx' 
 import Accessories from '../../components/MensFloder/ACCESSORIES/accessories.jsx'
 import Footer from '../../components/Footer/Footer.jsx'
-
+import Holi from '../../components/Holi/Holi.jsx'
+import Puma from '../../components/Puma/Puma.jsx'
+import HoverBeauty from '../HoverComponent/HoverBeauty.jsx'
 
 const Men = () => {
     return (
         <div className='Men-Myntra-Container'>
-        {/* <div className='men-image'>
-           <img src={menbanner} alt='' className='Men-image-image'/> 
-           
-        </div> */}
+         
         <div className='Men-Slider-Container'>
           <MensSliderBarData/>
           </div>
 
-          <div className='Biggest-deals'>
+          <div className='heading-bold'>
           <h1 className='h1'>BIGGEST DEALS ON TOP BRANDS</h1>
         </div>
 
@@ -32,7 +31,7 @@ const Men = () => {
           <Biggest/>
         </div>
 
-        <div className='CATEGORIES-deals'>
+        <div className='heading-bold '>
           <h1> CATEGORIES TO BAG</h1>
         </div>
 
@@ -42,7 +41,7 @@ const Men = () => {
         </div>
 
 
-        <div className='EXPLORE-deals'>
+        <div className='heading-bold'>
           <h1>EXPLORE TOP BRANDS</h1>
         </div>
 
@@ -52,7 +51,7 @@ const Men = () => {
         </div>
 
 
-        <div className='LUXE-deals'>
+        <div className='heading-bold'>
           <h1>MYNTRA LUXE</h1>
         </div>
 
@@ -62,7 +61,7 @@ const Men = () => {
         </div>
 
 
-        <div className='Trending-deals'>
+        <div className='heading-bold'>
           <h1>TRENDING IN SPORTS  WEAR</h1>
         </div>
 
@@ -72,7 +71,7 @@ const Men = () => {
         </div>
 
 
-        <div className='Trending-deals'>
+        <div className='heading-bold'>
           <h1>TRENDING IN INDIAN WEAR</h1>
         </div>
 
@@ -82,7 +81,7 @@ const Men = () => {
         </div>
 
 
-        <div className='Trending-deals'>
+        <div className='heading-bold'>
           <h1> TRENDING IN FOOTWEAR</h1>
         </div>
 
@@ -92,7 +91,7 @@ const Men = () => {
         </div>
 
 
-        <div className='Trending-deals'>
+        <div className='heading-bold'>
           <h1> TRENDING IN ACCESSORIES</h1>
         </div>
 
@@ -100,6 +99,16 @@ const Men = () => {
         <div className='Accressories-deals-container'>
           <Accessories/>
         </div>
+
+        <div className='Holi-deals-container'>
+          <Holi/>
+        </div>
+
+        <div className='Puma-deals-container'>
+          <Puma/>
+        </div>
+
+       
 
         <div className='Footer-mens-Footer'>
           <Footer/>

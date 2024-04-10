@@ -1,5 +1,8 @@
+
+
 .Full-beauty-filter-section{
     position: relative;
+    width: 100%;
 
 }
 
@@ -83,11 +86,18 @@
     }
 
 .FilterSection{
-    flex-basis: 280px;
+    flex-basis: 300px;
     height: 100%;
     position: sticky;
-     top:-205px;
+    top:-1000px;
+    bottom: 0px;
     transition: all 0.5s ease;
+    /* width: 252px;
+    min-width: 252px;
+    z-index: 4;
+    position:relative;
+    margin-bottom: 10px;
+    margin-top: 10px; */
       
      
 }
@@ -740,6 +750,10 @@
 
 /* product display css */
 
+.products-display-container-section{
+    width: 100%;
+}
+
 
 .products-display-container-section .dropdown-dropdown-menu-conatiner{
     display: grid;
@@ -761,7 +775,7 @@
     outline: none;
     padding: 5px 10px;
     border-radius: 15px;
-    font-size: 16px;
+    font-size: 14px;
     background: transparent;
     color: rgb(54, 53, 53);
     cursor: pointer;
@@ -775,8 +789,8 @@
 .dropdown-Bundles{
     display:flex;
     position: absolute;
-    left:300px;
-    margin-top:10px;
+    left:260px;
+    /* margin-top:10px; */
    
 }
 
@@ -817,7 +831,7 @@
     outline: none;
     padding: 5px 10px;
     border-radius: 15px;
-    font-size: 16px;
+    font-size: 14px;
     background: transparent;
     color: rgb(54, 53, 53);
     cursor: pointer;
@@ -828,8 +842,8 @@
 .dropdown-Country{
     display:flex;
     position: absolute;
-    left:300px;
-    margin-top:10px;
+    left:260px;
+    /* margin-top:10px; */
     
 }
 
@@ -850,7 +864,7 @@
     outline: none;
     padding: 5px 10px;
     border-radius: 15px;
-    font-size: 16px;
+    font-size: 14px;
     background: transparent;
     color: rgb(54, 53, 53);
     cursor: pointer;
@@ -864,8 +878,8 @@
 .dropdown-Size{
     display:flex;
     position: absolute;
-    left:300px;
-    margin-top:10px;
+    left:260px;
+     
 
 }
 
@@ -894,69 +908,116 @@
     cursor: pointer;
     position: relative;
     width: 255px;
-    
     box-sizing: border-box;
     border-radius: 2px;
     background-color: #fff;
     border: 1px solid #d4d5d9;
  }
 
-.Sort-sort-by  span{
-    text-transform: capitalize;
-    font-weight: 700;
-    color: #282c3f; 
-}
-.sort-list {
-    width: 175px;
-     background-color: #fff;
-     outline: none;
-     border: none;
+ .shop-catagory-dropmenu{
+    list-style-type: none;
     position: absolute;
-    /* top: 33px; */
-    /* left: 1px; */
-    /* margin: 0; */
-    /* padding: 16px 0; */
-    /* z-index: 2; */
-    /* border: 1px solid #d4d5d9; */
-     
-     
-}
- 
-
- 
- 
+    border-bottom: 1px solid #d4d5d9;
+    border-left: 1px solid #d4d5d9;
+    border-right: 1px solid #d4d5d9;
+   
+    width: 255px;
+    z-index: 1;
+    background-color: white;
+    left:-0.6px;
 
 
+
+ }
+
+ .shop-catagory-dropmenu li{
+    line-height:40px;
+    font-size: 14px;
+    margin-left: 15px;
+ }
+
+
+ .sort-downarrow{
+    font-size: 25px;
+    margin-left: 30px;
+    vertical-align: middle;
+ }
 
 .Beauty-card-Container{
     width:100%;
     font-family: Assistant, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-    /* overflow: scroll; */
     margin-top: 30px;
+    /* border:1px solid red; */
       
 }
 
- 
+.HoverBeautyHover{
+    position: relative;
+}
+
+.viewsimilar-main-container ul{
+    display: flex;
+    position: absolute;
+    right: 20px;
+    top:200px;
+    border: 1px solid #dadada;
+    background-color: #fff;
+    border-radius: 20px;
+    align-items: center;
+    width:40px;
+    height: 40px;
+    text-align: center;
+    line-height: 33px;
+    cursor: pointer;
+    transition: all 0.02s ease-in-out;
+    overflow: hidden;
+}
+
+.viewsimilar-main-container:hover ul{
+    width: 150px;
+}
+
+.viewsimilar-main-container .view-first-image{
+    width:16px;
+    height: 16px;
+    align-self: center;
+    margin-left: 10px;
+
+}
+
+.view-text{
+    font-weight: 700;
+    color: #ff517b;
+    vertical-align: middle;
+    visibility: visible;
+    margin-left: 10px;
+    font-size: 14px;
+
+}
+
+
 
 .Beauty-card-content{
-display: grid;
-grid-template-columns: auto auto auto auto;
- row-gap: 20px;
- column-gap: 20px;
- margin:0 20px;
-  
- /* border-top: 1px solid #edebef;; */
+ display: grid;
+ grid-template-columns: auto auto auto auto;
  /* background-color: aqua; */
+ justify-content:space-evenly;
+ row-gap: 100px;
+ /* border: 1px solid green; */
+ 
+  
 }
 
 .Card-Card-Beauty{
-    /* border: 2px solid red; */
-    padding: 20px;
+     
     cursor: pointer;
-
+    position: relative;
+    /* border: 1px solid green; */
+    
 }
 
-.Card-Card-Image :hover {
+ .Card-Card-Image :hover {
+
    transform: scale(1.03);
    transition: 0.3s ease-in-out;
    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
@@ -969,18 +1030,15 @@ grid-template-columns: auto auto auto auto;
 
  }
 
- /* .Card-Card-Image{
-    border: none;
-    outline: none;
-    background: transparent;
- } */
+
+
+ 
 
 .Beauty-Product-image{
-    width : 180px;
-    height : 200px;
-    margin-left : 20px;
+    width : 228px;
+    height : 250px;
     margin-bottom : 15px;
-     
+    /* border: 2px solid yellow;     */
 }
 
 .rating-rate span{
@@ -1136,1776 +1194,4 @@ cursor: pointer;
  }
 
 
-@media screen  and (min-width :1150px)  and (max-width :1423px)
-{
-    .Full-beauty-filter-section{
-        position: relative;
-    
-    }
-    
-      
-
-    .FilterSection{
-        flex-basis: 250px;
-        height: 100%;
-        position: sticky;
-        top:-205px;
-        transition: all 0.5s ease;
-          
-         
-    }
-
-    .Filterimage-Conatiner{
-        padding-right: -50px;
-    }
-
-    .gender-list li{
-        font-size: 12px;
-    }
-
-    .Category-products-list li{
-        font-size: 12px;
-    }
-
-    .Brand-products-list li{
-        font-size: 12px;
-    }
-
-    .Price-products-list li{
-        font-size: 12px;
-    }
-
-    .color-filter-lists  li{
-        font-size: 12px;
-    }
-
-    .Price-products-list li{
-        font-size: 10px;
-    }
-   
-    .Discount-range-lists   li{
-        font-size:12px ;
-    }
-
-    .Category-products-list input{
-        margin: 0 16px 0 0;
-        width:12px;
-       height: 12px;
-    }
-
-.filter-category-section .filter-search-inputBox{
-    font-size: 12px;
-    height: 25px;
-    width: 80%;
-    top:15px;
-    
-}
-
-.filter-search-inputBox::placeholder {
-    font-size: 10px;
-
-}
-
-.filter-category-section .filter-search-icon{
-    padding:3px 3px;
-    right: 18px;
-    top: 11.5px;
-}
-
-.search-logo{
-    width:20px;
-    height:20px ;
-}
-
-.cancel-logo{
-    width:20px;
-    height:20px ;
-}
-
-
-.Brand-products-list input{
-    margin: 0 16px 0 0;
-    width:12px;
-   height: 12px;
-}
-
-.Brand-category-section .Brand-search-inputBox{
-font-size: 12px;
-height: 25px;
-width: 83%;
-top:16px;
-}
-
-.Brand-search-inputBox::placeholder {
-font-size: 10px;
-
-}
-
-.Brand-category-section .Brand-search-icon{
-padding:3px 3px;
-right: 18px;
-top: 11.5px;
-}
-
-/* color */
-.color-filter-lists  input{
-    margin: 0 1px 0 0;
-    width:14px;
-   height: 14px;
-}
-
-.color-searchinput-searchicon .color-input-search-input{
-font-size: 12px;
-height: 25px;
-width: 82%;
-top:15px;
-
-}
-
-.color-input-search-input::placeholder {
-font-size: 10px;
-
-}
-
-.color-searchinput-searchicon .color-searhIcon{
-padding:3px 3px;
-right: 18px;
-top: 11.5px;
-}
-    
-
-
-
-    .Beauty-card-content{
-  grid-template-columns: auto auto auto auto;
-  row-gap: 20px;
-  column-gap: 0px;
-  /* border: 2px solid red; */
-    }
-
-
-    .Card-Card-Beauty{
-        /* border: 2px solid red; */
-    /* padding: 5px; */
-    cursor: pointer;
-    }
-
-    .Beauty-Product-image{
-        width: 150px;
-        height: 170px;
-        margin-left: 20px;
-        margin-bottom: 15px;
-         /* border: 1px solid green; */
-    }
-
-   .pagination-pagination{
-    gap:40px
-   }   
-   
-   
-   .pagination-pagination .page p{
-    align-self: center;
-    vertical-align: center;
-    margin-top: 10px;
-    
-   }
-   .Pagination-number{
-    gap:10px;
-
-   }
-   
-   .pagination-next{
-    padding: 8px 18px;
-
-   }
-
-
-}
-
-
-@media screen and (min-width: 991px) and (max-width: 1150px) 
-{
-
-    
-
-     .FilterSection{
-        flex-basis: 280px;
-        height: 100%;
-        position: sticky;
-        top:-205px;
-        transition: all 0.5s ease;
-          
-    }
-
-    .Filter-title{
-        font-size: 16px;
-    }
-
-    .gender-list li{
-        font-size: 12px;
-    }
-    .vertical-filter-section .gender-list input[type="radio"]{
-        width: 14px;
-        height: 14px;
-    }
-
-    .filter-category-section .filter-search-inputBox{
-    font-size: 12px;
-    height: 25px;
-    width: 85%;
-    top:15px;
-}
-
-.filter-search-inputBox::placeholder {
-    font-size: 8px;
-
-}
-
-.filter-category-section .filter-search-icon{
-    padding:3px 3px;
-    right: 8px;
-    top: 11px;
-}
-
-.search-logo{
-    width:20px;
-    height:20px ;
-}
-
-.cancel-logo{
-    width:20px;
-    height:20px ;
-}
-
-.Category-products-list .number{
-    font-size: 8px;
-}
-
-.Category-products-list label{
-    font-size: 12px;
-}
-
-
-.Brand-products-list input{
-    margin: 0 16px 0 0;
-    width:12px;
-   height: 12px;
-}
-
-.Brand-category-section .Brand-search-inputBox{
-font-size: 12px;
-height: 25px;
-width: 85%;
-top:15px;
-}
-
-.Brand-search-inputBox::placeholder {
-font-size: 8px;
-
-}
-
-.Brand-category-section .Brand-search-icon{
-padding:3px 3px;
-right: 8px;
-top: 11px;
-}
-
-.Brand-products-list label{
-    font-size: 12px;
-}
-
-.Brand-products-list .number{
-    font-size: 8px;
-}
-
-.Brand-products-list input{
-    margin: 0 16px 0 0;
-   width:18px;
-   height: 18px;
-
-}
-
-.Price-products-list li{
-    font-size: 12px;
-}
-
-/* color */
-.color-filter-lists  input{
-    margin: 0 1px 0 0;
-    width:18px;
-   height: 18px;
-}
-
-.color-searchinput-searchicon .color-input-search-input{
-font-size: 12px;
-height: 25px;
-width: 85%;
-top:15px;
-
-}
-
-.color-input-search-input::placeholder {
-font-size: 8px;
-
-}
-
-.color-searchinput-searchicon .color-searhIcon{
-padding:3px 3px;
-right: 8px;
-top: 11px;
-}
-
-.color-filter-lists  li{
-    font-size: 12px;
-}
-    
-.Discount-range-lists li{
-    font-size: 12px;
-}
-
-.dropdown-Bundles{
-    left:270px;
-    margin-top:8px;
-}
-
-.Filter-dropmenu .checkbox{
-    width:16px;
-    height: 16px;
-}
-
-.dropdown-Country{
-    left:270px;
-    margin-top: 8px;
-}
-
-
-.dropdown-Size{
-    left:270px;
-    margin-top: 8px;
-}
-
-.checkbox3 label{
-    margin-right: 30px;
-}
-
-    .Beauty-card-content{
-        grid-template-columns: auto  auto auto;
-        row-gap: 20px;
-        column-gap: 0px;
-        /* border: 2px solid red; */
-          }
-
-
-    .pagination-pagination{
-        gap:5px
-       }
-
-
-       .pagination-pagination .page p{
-        align-self: center;
-        vertical-align: center;
-        margin-top: 10px;
-        margin-right:20px ;
-        
-       }
-       .Pagination-number{
-        gap:10px;
-    
-       }
-       
-       .pagination-next{
-        padding: 5px 12px;
-    
-       }
-    
-}
-
-
-@media screen and (min-width: 768px) and (max-width: 991px) 
-{
-
-    .first-left-side1 p{
-        font-size: 14px;
-    }
-
-    .first-left-side1 p span{
-        font-size: 14px;
-    }
-
-    .Beauty-Main-firstcontainer{
-        margin-top: 15px;
-       } 
-
-
-       .first-left-side2 p{
-        font-size: 14px;
-       }
-
-
-       .first-left-side2 p span{
-        font-size: 14px;
-       }
-
-       .Filter-title{
-        font-size: 14px;
-       }
-
-    
-.gender-list li{
-    font-size: 12px;
-
-}
-
-.vertical-filter-section .gender-list input[type="radio"]{
-    width:12px;
-    height: 12px;
-
-}
-
-.gender-list  li label{
-    font-size: 12px;
-}
-
-
-
-.Category-products-list input{
-    margin: 0 5px 0 0;
-    width:12px;
-   height: 12px;
-   
-}
-
-.category-section-header{
-    font-size: 12px;
-    margin: 0 0 18px;
-}
-
-.Category-products-list .number{
-    font-size: 8px;
-}
-
-.Category-more{
-    font-size: 12px;
-    margin-left: 15px;
-}
-
-.filter-category-section .filter-search-inputBox{
-font-size: 12px;
-height: 25px;
-width: 82%;
-top:15px;
-/* border: 2px solid red; */
-
-}
-
-.filter-search-inputBox::placeholder {
-font-size: 8px;
-
-}
-
-.filter-category-section .filter-search-icon{
-padding:3px 3px;
-right: 8px;
-top: 11px;
-padding:3px 3px;
-}
-.Category-products-list label{
-    font-size: 12px;
-}
-
-.search-logo{
-width:18px;
-height:18px ;
-}
-
-.cancel-logo{
-width:20px;
-height:20px ;
-background-color: transparent;
-}
-
-
-.Brand-section-header{
-    font-size: 12px;
-}
-
-
-.Brand-products-list input{
-margin: 0 8px 0 0;
-width:12px;
-height: 12px;
-}
-
-
-.Brand-products-list li{
-    font-size: 12px;
-    text-transform:capitalize;
-}
-
-.Brand-products-list .number{
-    font-size: 8px;
-
-}
-
-.Brand-more{
-    font-size: 12px;
-    margin-left: 15px;
-}
-
-.Brand-category-section .Brand-search-inputBox{
-font-size: 12px;
-height: 25px;
-width: 82%;
-top:15px;
-}
-
-.Brand-search-inputBox::placeholder {
-font-size: 8px;
-
-}
-
-.Brand-category-section .Brand-search-icon{
-padding:3px 3px;
-right: 8px;
-top: 11px;
-}
-
-.Price-header{
-    font-size: 12px;
-}
-
-
-.Price-products-list input{
-    margin: 0 8px 0 0;
-   width:12px;
-   height: 12px;
-}
-
-.Price-products-list li{
-    font-size: 12px;
-} 
-
-.Price-products-list .number{
-    font-size: 8px;
-}
-
-
-/* color */
-.color-white-icon{
-    width:12px;
-    height: 12px;
-    margin-right: 2px;
-    margin-left: 6px;
-
-}
-
-.color-Pink-icon{
-    width:12px;
-    height: 12px;
-    margin-right: 2px;
-    margin-left: 6px;
-
-}
-
-.color-Multi-icon{
-    width:12px;
-    height: 12px;
-    margin-right: 2px;
-    margin-left: 6px;
-
-
-}
-
-.color-Black-icon{
-    width:12px;
-    height: 12px;
-    margin-right: 2px;
-    margin-left: 6px;
-
-
-}
-
-
-.color-Brown-icon{
-    width:12px;
-    height: 12px;
-    margin-right: 2px;
-    margin-left: 6px;
-
-
-}
-
-.color-Red-icon{
-    width:12px;
-    height: 12px;
-    margin-right: 2px;
-    margin-left: 6px;
-
-
-} 
-
-.color-Green-icon{
-    width:12px;
-    height: 12px;
-    margin-right: 2px;
-    margin-left: 6px;
-
-
-}
-
-.color-filter-lists  input{
-margin: 0 1px 0 0;
-width:14px;
-height: 14px;
-}
-
-
-.color-header{
-    font-size: 12px;
-}
-
-
-.color-searchinput-searchicon .color-input-search-input{
-font-size: 12px;
-height: 25px;
-width: 82%;
-top:15px;
-
-}
-
-.color-input-search-input::placeholder {
-font-size: 8px;
-
-}
-
-.color-filter-lists  li{
-    font-size: 12px;
-}
-
  
-.color-searchinput-searchicon .color-searhIcon{
-padding:3px 3px;
-right: -3px;
-top: 11px;
-}
-.color-filter-lists  input{
-
-    margin: 0 0px 0 0;
-    width:12px;
-    height: 12px;
-}
-
-.color-product-label  .number{
-font-size: 8px;
-}
-
-.Color-more{
-    font-size: 12px;
-    margin-left: 15px;
-}
-
-.Discount-header{
-    font-size: 12px;
-     margin-left: -10px;
-
-}
-.Discount-range-lists   li{
-    font-size: 12px;
-}
-
-.Discount-range-lists   input{
-    margin: 0 8px 0 0;
-   width:12px;
-   height: 12px;
-}
-
-
-.products-display-container-section .dropdown-dropdown-menu-conatiner{
-    grid-template-columns: auto ;
-    justify-content: center
-}
-
-.dropdown-Bundles{
-    left:250px;
-    margin-top: 8px;
-
-}
-.Filter-dropmenu .checkbox{
-    width: 14px;
-    height: 14px;
-}
-
-.dropdown-Country{
-    left:250px;
-    margin-top: 8px;
-  margin-right: 10px;
-}
-
-.dropdown-Size{
-    left:250px;
-    margin-top: 0px; 
-}
-.checkbox3 .checkbox{
-    width: 16px;
-    height: 16px;
-    margin-right: 2px;
-}
-
-.checkbox3 label{
-    font-size: 12px;
-    margin-right: 15px;
-    text-transform: capitalize;
-}
-
-
-.ShopCatagory-sort{
-    position: absolute;
-    top:-80px;
-    right: 0;
-}
-
-.Sort-sort-by{
-    width:230px
-}
-
-.sort-list{
-    width:150px;
-    font-size: 14px;
-   margin-top: 3px;
-    
-}
-
-
-.Beauty-card-content{
-    grid-template-columns: auto  auto auto;
-    row-gap: 20px;
-    column-gap: 0px;
-    /* border: 2px solid red; */
-      }
-
-      .Beauty-Product-image{
-        width: 110px;
-        height: 140px;
-        margin-left: 10px;
-        margin-bottom: 15px;
-         /* border: 1px solid green; */
-    }
-
-    .rating-rate span{
-        font-size: 12px;
-    }
-    .rating-rate .greenstar {
-        width: 12px;
-        height: 12px;
-    }
-  
-.Bauty-Product-title{
-    font-size: 15px;
-}
-
-.Beauty-Product-Discription header{
-    font-size: 12px;
-
-}
-
-.Beauty-Product-amount .newamount{
-    font-size: 10px;
-}
-
-.Beauty-Product-amount .oldamount
-{
-    font-size: 9px;
-}
-.Beauty-Product-amount .offer{
-    font-size: 7px;
-}
-
-.pagination-pagination{
-    gap:0px;
-    display:grid;
-    grid-template-columns: auto auto auto;
-    justify-content: space-around;
-} 
-
-   .pagination-pagination .page p{
-    vertical-align: center;
-    margin-top: 2px;
-    margin-right: 15px;
-     
-     
-   }
-   .Pagination-number{
-    gap:5px;
-
-   }
-
-   .Pagination-number li{
-    font-size: 10px;
-   padding: 2px 5px;
-
-   }
-
- 
-.pagination-next{
-    padding: 2px 10px;
-
-   }
-
-   .pagination-next li{
-    font-size: 12px;
-   }
-
-   .pagination-next  .arrow-next{
-    font-size: 12px;
-    margin-bottom: -1.5px;
-   }
-}
-
-
-@media screen and (max-width: 600px){
-
-    .first-left-side1 p{
-        font-size: 13px;
-    }
-
-    .first-left-side1 p span{
-        font-size: 13px;
-    }
-
-    .first-left-side2{
-        margin-top: -15px;
-    }
-
-    .first-left-side2 p{
-        font-size: 13px;
-       }
-
-
-       .first-left-side2 p span{
-        font-size: 13px;
-       }
-
-
-       .FilterSection{
-        flex-basis: 260px;
-       }
-
-       .Filter-title{
-        font-size: 14px;
-       }  
-
-
-       .vertical-filter-section .gender-list input[type="radio"]
-       {
-           margin: 0 8px 0 0;
-           width: 12px ;
-           height: 12px;
-       
-       } 
-   
-       .gender-list  li label{
-           font-size: 12px;
-       }
-        
-    .Category-products-list input{
-        margin: 0 5px 0 0;
-        width:12px;
-        height: 12px;
-    }
-    
-    .category-section-header{
-        font-size: 12px;
-        margin: 0 0 18px;
-    }
-    
-    .Category-products-list .number{
-        font-size: 7px;
-    }
-    
-    .Category-more{
-        font-size: 12px;
-        margin-left: 15px;
-    }
-    
-    .filter-category-section .filter-search-inputBox{
-    font-size: 12px;
-    height: 25px;
-    width: 80%;
-    top:15px;
-    
-    }
-    
-    .filter-search-inputBox::placeholder {
-    font-size: 8px;
-    
-    }
-    
-    .filter-category-section .filter-search-icon{
-    padding:3px 3px;
-    right: 2px;
-    top: 12px;
-    padding:3px 3px;
-    }
-    
-    .search-logo{
-    width:18px;
-    height:18px ;
-    }
-    
-    .cancel-logo{
-    width:20px;
-    height:20px ;
-    background-color: transparent;
-    }
-
-    .Category-products-list label{
-        font-size: 10px;
-    }
-    
-    
-    .Brand-section-header{
-        font-size: 12px;
-    }
-    
-    
-    .Brand-products-list input{
-    margin: 0 8px 0 0;
-    width:12px;
-    height: 12px;
-    }
-    
-    
-    .Brand-products-list li{
-        font-size: 12px;
-        text-transform:capitalize;
-    }
-    
-    .Brand-products-list .number{
-        font-size: 7px;
-    
-    }
-    
-    .Brand-more{
-        font-size: 12px;
-        margin-left: 15px;
-    }
-    
-    .Brand-category-section .Brand-search-inputBox{
-    font-size: 12px;
-    height: 25px;
-    width: 80%;
-    top:15px;
-    }
-    
-    .Brand-search-inputBox::placeholder {
-    font-size: 8px;
-    
-    }
-    
-    .Brand-category-section .Brand-search-icon{
-    padding:3px 3px;
-    right: 2px;
-    top: 12px;
-    }
-    
-    .Price-header{
-        font-size: 12px;
-    }
-    
-    
-    .Price-products-list input{
-        margin: 0 2px 0 0;
-       width:10px;
-       height: 10px;
-    }
-    
-    .Price-products-list li{
-        font-size: 8px;
-    } 
-    
-    .Price-products-list .number{
-        font-size: 7px;
-    }
-    
-    
-    /* color */
-    .color-white-icon{
-        width:12px;
-        height: 12px;
-        margin-right: 2px;
-        margin-left: 6px;
-    
-    }
-    
-    .color-Pink-icon{
-        width:12px;
-        height: 12px;
-        margin-right: 2px;
-        margin-left: 6px;
-    
-    }
-    
-    .color-Multi-icon{
-        width:12px;
-        height: 12px;
-        margin-right: 2px;
-        margin-left: 6px;
-    
-    
-    }
-    
-    .color-Black-icon{
-        width:12px;
-        height: 12px;
-        margin-right: 2px;
-        margin-left: 6px;
-    
-    
-    }
-    
-    
-    .color-Brown-icon{
-        width:12px;
-        height: 12px;
-        margin-right: 2px;
-        margin-left: 6px;
-    
-    
-    }
-    
-    .color-Red-icon{
-        width:12px;
-        height: 12px;
-        margin-right: 2px;
-        margin-left: 6px;
-    
-    
-    } 
-    
-    .color-Green-icon{
-        width:12px;
-        height: 12px;
-        margin-right: 2px;
-        margin-left: 6px;
-    
-    
-    }
-    
-    .color-filter-lists  input{
-    margin: 0 1px 0 0;
-    width:14px;
-    height: 14px;
-    }
-    
-    
-    .color-header{
-        font-size: 12px;
-    }
-    
-    
-    .color-searchinput-searchicon .color-input-search-input{
-    font-size: 12px;
-    height: 25px;
-    width: 80%;
-    top:15px;
-    
-    }
-    
-    .color-input-search-input::placeholder {
-    font-size: 8px;
-    
-    }
-    
-    .color-filter-lists  li{
-        font-size: 12px;
-    }
-    
-     
-    .color-searchinput-searchicon .color-searhIcon{
-    padding:3px 3px;
-    right: 2px;
-    top: 12px;
-    }
-
-
-    .color-filter-lists  input{
-    
-        margin: 0 0px 0 0;
-        width:12px;
-        height: 12px;
-
-    }
-    
-    .color-product-label  .number{
-    font-size: 8px;
-    }
-    
-    .Color-more{
-        font-size: 12px;
-        margin-left: 15px;
-    }
-    
-    .Discount-header{
-        font-size: 12px;
-         margin-left: -10px;
-    
-    }
-    .Discount-range-lists   li{
-        font-size: 12px;
-    }
-    
-    .Discount-range-lists   input{
-        margin: 0 8px 0 0;
-       width:12px;
-       height: 12px;
-    }
-
-    .products-display-container-section .dropdown-dropdown-menu-conatiner{
-        grid-template-columns: auto ;
-        justify-content: center
-    }
-    
-    .dropdown-Bundles{
-        left:200px;
-        margin-top: 4px;
-    
-    }
-
-    .Bundles-btn{
-        font-size: 14px;
-    }
-    .Country-btn{
-        font-size: 14px;
-    }
-
-    .Size-btn{
-        font-size: 14px;
-    }
-
-    .dropdown-Bundles label{
-        font-size: 14px;
-    }
-    .Filter-dropmenu .checkbox{
-        width: 10px;
-        height: 10px;
-    }
-    
-    .dropdown-Country{
-        left:200px;
-        margin-top: 5px;
-        margin-right: 10px;
-    }
-
-    .dropdown-Country label{
-        font-size: 14px;
-    }
-    
-    .dropdown-Size{
-        left:200px;
-        margin-top: 2px; 
-    }
-    .checkbox3 .checkbox{
-        width: 10px;
-        height: 10px;
-        margin-right: 1px;
-        vertical-align: middle;
-        margin-top: 2px;
-    }
-    
-    .checkbox3 label{
-        font-size: 12px;
-        margin-right:8px;
-        text-transform: capitalize;
-        vertical-align: middle;
-    }
-    
-    
-    .ShopCatagory-sort{
-        position: absolute;
-        top:-50px;
-        right: 0;
-    }
-    
-    .Sort-sort-by{
-        width:180px;
-    padding: 5px 7px;
-
-    }
-
-    .Sort-sort-by  span{
-        font-size: 12px;
-    }
-    
-    .sort-list{
-        width:100px;
-        font-size: 14px;
-       margin-top: 3px;
-        
-    }
-    
-    
-    .Beauty-card-content{
-        grid-template-columns: auto auto   ;
-        row-gap: 20px;
-        column-gap: 10px;
-        /* border: 2px solid red; */
-          }
-    
-          .Beauty-Product-image{
-            width: 80px;
-            height: 130px;
-            margin-left: 10px;
-            margin-bottom: 15px;
-             /* border: 1px solid green; */
-        }
-    
-        .rating-rate span{
-            font-size: 10px;
-        }
-        .rating-rate .greenstar {
-            width: 10px;
-            height: 10px;
-        }
-      
-    .Bauty-Product-title{
-        font-size: 12px;
-    }
-    
-    .Beauty-Product-Discription header{
-        font-size: 10px;
-    
-    }
-    
-    .Beauty-Product-amount .newamount{
-        font-size: 8px;
-    }
-    
-    .Beauty-Product-amount .oldamount
-    {
-        font-size: 8px;
-    }
-    .Beauty-Product-amount .offer{
-        font-size: 5px;
-    }
-
-
-
-
-
-     .pagination-pagination{
-        gap:0px;
-        display:flex;
-        justify-content: start;
-       } 
-    
-       .pagination-pagination .page p{
-        align-self: center;
-        vertical-align: center;
-        margin-left: 30px;
-        
-        font-size: 14px;
-       }
-
-       .Pagination-number{
-        /* gap:2px;
-        margin-left: 10px;
-        margin-top: 20px;
-        display: flex; */
-        display: none;
-    
-       }
-    
-       /* .Pagination-number li{
-        font-size: 10px;
-       padding: 2px 5px;
-       
-    
-       } */
-    
-       .pagination-pagination{
-        display: grid;
-        grid-template-columns: auto auto;
-        justify-content: space-around;
-         
-      }
-
-
-       
-
-
-      .pagination-pagination .page p{
-        
-        margin-top: 5px;
-       
-      }
-      .Pagination-number{
-        display: none;
-        
-      }
-      
-      .pagination-next{
-        vertical-align: middle;
-       padding: 5px 10px;
-
-      }
-     
-      .pagination-next p{
-       font-size: 12px;
-       
-
-      }
-
-      .pagination-next  .arrow-next{
-       align-self: center;
-       font-size: 12px;
-       vertical-align: top;
-       margin-top: 2.5px; 
-       
-         
-    }
-
-}
-
-
-@media screen and (min-width: 601px) and (max-width:767px) {
-
-
-    .first-left-side1 p{
-        font-size: 13px;
-    }
-
-    .first-left-side1 p span{
-        font-size: 13px;
-    }
-
-    .first-left-side2{
-        margin-top: -15px;
-    }
-
-    .first-left-side2 p{
-        font-size: 13px;
-       }
-
-
-       .first-left-side2 p span{
-        font-size: 13px;
-       }
-
-
-      .FilterSection{
-        flex-basis:auto;
-       }
-     
-       .Filter-title{
-        font-size: 14px;
-       }
-     
-    
-.vertical-filter-section .gender-list input[type="radio"]
-    {
-        margin: 0 8px 0 0;
-        width: 12px ;
-        height: 12px;
-    
-    } 
-
-    .gender-list  li label{
-        font-size: 12px;
-    }
-    
-    
-    .Category-products-list input{
-        margin: 0 5px 0 0;
-        width:12px;
-       height: 12px;
-    }
-    
-    .category-section-header{
-        font-size: 12px;
-        margin: 0 0 18px;
-    }
-    
-    .Category-products-list .number{
-        font-size: 7px;
-    }
-    
-    .Category-more{
-        font-size: 12px;
-        margin-left: 15px;
-    }
-    
-    .filter-category-section .filter-search-inputBox{
-    font-size: 12px;
-    height: 25px;
-    width: 80%;
-    top:15px;
-    
-    }
-    
-    .filter-search-inputBox::placeholder {
-    font-size: 8px;
-    
-    }
-    
-    .filter-category-section .filter-search-icon{
-    padding:3px 3px;
-    right: 3px;
-    top: 11.5px;
-    padding:3px 3px;
-    }
-    
-    .search-logo{
-    width:16px;
-    height:16px ;
-    }
-    
-    .cancel-logo{
-    width:16px;
-    height:16px ;
-    background-color: transparent;
-    }
-    .Category-products-list label{
-        font-size: 12px;
-    }
-    
-    
-    .Brand-section-header{
-        font-size: 12px;
-    }
-    
-    
-    .Brand-products-list input{
-    margin: 0 8px 0 0;
-    width:12px;
-    height: 12px;
-    }
-    
-    
-    .Brand-products-list li{
-        font-size: 10px;
-        text-transform: capitalize;
-    }
-    
-    .Brand-products-list .number{
-        font-size: 7px;
-    
-    }
-    
-    .Brand-more{
-        font-size: 12px;
-        margin-left: 15px;
-    }
-    
-    .Brand-category-section .Brand-search-inputBox{
-    font-size: 12px;
-    height: 25px;
-    width: 80%;
-    top:15px;
-    }
-    
-    .Brand-search-inputBox::placeholder {
-    font-size: 8px;
-    
-    }
-    
-    .Brand-category-section .Brand-search-icon{
-    padding:3px 3px;
-    right: 3px;
-    top: 11px;
-    }
-    
-    .Price-header{
-        font-size: 12px;
-    }
-    
-    
-    .Price-products-list input{
-        margin: 0 8px 0 0;
-       width:12px;
-       height: 12px;
-    }
-    
-    .Price-products-list li{
-        font-size: 10px;
-    } 
-    
-    .Price-products-list .number{
-        font-size: 7px;
-    }
-    
-    
-    /* color */
-    .color-white-icon{
-        width:12px;
-        height: 12px;
-        margin-right: 2px;
-        margin-left: 6px;
-    
-    }
-    
-    .color-Pink-icon{
-        width:12px;
-        height: 12px;
-        margin-right: 2px;
-        margin-left: 6px;
-    
-    }
-    
-    .color-Multi-icon{
-        width:12px;
-        height: 12px;
-        margin-right: 2px;
-        margin-left: 6px;
-    
-    
-    }
-    
-    .color-Black-icon{
-        width:12px;
-        height: 12px;
-        margin-right: 2px;
-        margin-left: 6px;
-    
-    
-    }
-    
-    
-    .color-Brown-icon{
-        width:12px;
-        height: 12px;
-        margin-right: 2px;
-        margin-left: 6px;
-    
-    
-    }
-    
-    .color-Red-icon{
-        width:12px;
-        height: 12px;
-        margin-right: 2px;
-        margin-left: 6px;
-    
-    
-    } 
-    
-    .color-Green-icon{
-        width:12px;
-        height: 12px;
-        margin-right: 2px;
-        margin-left: 6px;
-    
-    
-    }
-    
-    .color-filter-lists  input{
-    margin: 0 1px 0 0;
-    width:14px;
-    height: 14px;
-    }
-    
-    
-    .color-header{
-        font-size: 12px;
-    }
-    
-    
-    .color-searchinput-searchicon .color-input-search-input{
-    font-size: 12px;
-    height: 25px;
-    width: 82%;
-    top:15px;
-    
-    }
-    
-    .color-input-search-input::placeholder {
-    font-size: 8px;
-    
-    }
-    
-    .color-filter-lists  li{
-        font-size: 12px;
-    }
-    
-     
-    .color-searchinput-searchicon .color-searhIcon{
-    padding:3px 3px;
-    right: -3px;
-    top: 11px;
-    }
-    .color-filter-lists  input{
-    
-        margin: 0 0px 0 0;
-        width:12px;
-        height: 12px;
-    }
-    
-    .color-product-label  .number{
-    font-size: 8px;
-    }
-    
-    .Color-more{
-        font-size: 12px;
-        margin-left: 15px;
-    }
-    
-    .Discount-header{
-        font-size: 12px;
-         margin-left: -10px;
-    
-    }
-    .Discount-range-lists   li{
-        font-size: 12px;
-    }
-    
-    .Discount-range-lists   input{
-        margin: 0 8px 0 0;
-       width:12px;
-       height: 12px;
-    }
-
-
-    .products-display-container-section .dropdown-dropdown-menu-conatiner{
-        grid-template-columns: auto ;
-        justify-content: center
-    }
-    
-    .dropdown-Bundles{
-        left:200px;
-        margin-top: 4px;
-    
-    }
-
-    .dropdown-Bundles label{
-        font-size: 14px;
-    }
-    .Filter-dropmenu .checkbox{
-        width: 10px;
-        height: 10px;
-    }
-    
-    .dropdown-Country{
-        left:200px;
-        margin-top: 8px;
-        margin-right: 10px;
-    }
-
-    .dropdown-Country label{
-        font-size: 14px;
-    }
-    
-    .dropdown-Size{
-        left:200px;
-        margin-top: 0px; 
-    }
-    .checkbox3 .checkbox{
-        width: 10px;
-        height: 10px;
-        margin-right: 2px;
-    }
-    
-    .checkbox3 label{
-        font-size: 14px;
-        margin-right: 15px;
-        text-transform: capitalize;
-    }
-    
-    
-    .ShopCatagory-sort{
-        position: absolute;
-        top:-50px;
-        right: 0;
-    }
-    
-    .Sort-sort-by{
-        width:230px
-    }
-    
-    .sort-list{
-        width:150px;
-        font-size: 14px;
-       margin-top: 3px;
-        
-    }
-    
-    .Beauty-card-content{
-        grid-template-columns: auto auto   ;
-        row-gap: 20px;
-        column-gap: 30px;
-        /* border: 2px solid red; */
-          }
-    
-          .Beauty-Product-image{
-            width: 145px;
-            height: 140px;
-            margin-left: 10px;
-            margin-bottom: 15px;
-             /* border: 1px solid green; */
-        }
-    
-        .rating-rate span{
-            font-size: 12px;
-        }
-        .rating-rate .greenstar {
-            width: 12px;
-            height: 12px;
-        }
-      
-    .Bauty-Product-title{
-        font-size: 14px;
-    }
-    
-    .Beauty-Product-Discription header{
-        font-size: 12px;
-    
-    }
-    
-    .Beauty-Product-amount .newamount{
-        font-size: 8px;
-    }
-    
-    .Beauty-Product-amount .oldamount
-    {
-        font-size: 8px;
-    }
-    .Beauty-Product-amount .offer{
-        font-size: 5px;
-    }
-
-    .pagination-pagination{
-         display: grid;
-         grid-template-columns: auto auto;
-         justify-content: space-around;
-       
-       }
-
-
-       .pagination-pagination .page p{
-        align-self: center;
-        vertical-align: center;
-        margin-top: 10px;
-        margin-right:20px ;
-        
-        
-       }
-       .Pagination-number{
-         display: none;
-       }
-       
-       .pagination-next{
-         vertical-align: middle;
-       }
-      
-       .pagination-next p{
-        font-size: 12px;
-        
-
-       }
-
-       .pagination-next  .arrow-next{
-        align-self: center;
-        font-size: 12px;
-        vertical-align: top;
-        margin-top: 2.5px; 
-          
-     }
-}

@@ -1,31 +1,19 @@
- import React, { useEffect, useState,useRef } from 'react'
+ import React, {  useState,useRef } from 'react'
  import './Navigation.css'
- import './NavTab.css'
- import './NavMobile.css'
-import { Outlet,Link } from "react-router-dom";
-import { FaBarsStaggered } from "react-icons/fa6";
- import myntra from './myntranew.png'
+ import { Link } from "react-router-dom";
+ import myntra from './myntra.png'
  import Studio from './studio.png'
-//  import { IoSearchOutline } from "react-icons/io5";
  import { CiUser } from "react-icons/ci";
  import { CiHeart } from "react-icons/ci";
  import { HiOutlineShoppingBag } from "react-icons/hi2";
-//  import search  from './search.png'
-import { IoIosSearch } from "react-icons/io"; 
-import SideBar from '../pages/SideBar'
-import search3 from '../Navbar/search3.png' 
+ import { BiSearchAlt2 } from "react-icons/bi"; 
 
 
  function Navigation() {
   const [menu ,setMenu]=useState("shop")
-  const [openSideBar ,setOpenSideBar] =useState(false)
   const [profilebutton, setProfileButton] =useState(false)
-  let sideref=useRef();
-  
-const handler=()=>{
-  setOpenSideBar(!openSideBar)
-}
-
+   
+ 
 const loginHandler=()=>{
   setMenu("Login")
   if(profilebutton){
@@ -33,41 +21,9 @@ const loginHandler=()=>{
   }
 } 
 
-useEffect(()=>{
-  let handleOutsideClick = (event) => {
-    if(!sideref.current.contains(event.target)){
-      setOpenSideBar(false)
-    }
-   
-  };
-
-  document.addEventListener("mouseover", handleOutsideClick)
-})
-
- 
-
- 
-
- 
-
-   
-
-
-return (
-      <div className='Navigation-container' ref={sideref} >
-       
-       <div className='Bicon'>
-
-      <FaBarsStaggered className='BarIcon'  onClick={handler}  />
-      </div> 
-    <div className='sidebar'  >
-      <SideBar open={openSideBar} className="sidebar-sidebar"/>
-    </div>
-
-
-         <div className='Myntra-text'>
-         <Link to="/">  <p className='myntra-text'> Myntra  </p></Link>
-         </div>
+ return (
+      <div className='Navigation-container'   >
+         
         <div className='Myntra-image '  onClick={()=>{setMenu("shop")}}>
           <Link to ='/' ><img src={myntra} alt="noimg"   className='image-myntra-image'/>{menu==="shop"?<></>:<></>}</Link>
         </div>
@@ -76,7 +32,7 @@ return (
          
           <div className ='Nav-Menu'>
               
-              <li className='Mens' onClick={()=>{setMenu("Men")}}> <Link to="/Men" className='Men-achor'> <a href="#"  >MEN{menu==="Men"?<></>:<></>}</a></Link>
+              <li className='Mens' onClick={()=>{setMenu("Men")}}> <Link to="/Men" className='Men-achor' onClick={window.scrollTo(0,0)}> <a href="#"  >MEN{menu==="Men"?<></>:<></>}</a></Link>
                   
                   <div className='Mens-dropmenu'>
                     <div className='Mens-dropmenu-conatiner'>
@@ -1062,12 +1018,18 @@ return (
          
 
 
-         <div className='Nav-input-input'>
-          <img src={search3}  className='search-img'/>  <input type='text' className='search' placeholder='Search for products,brands and more'/>
+         <div className='Nav-input-input '>
+
+         
+             <li> <BiSearchAlt2  className='Search-icon '/></li>
+            <li> <input type='text' className='search-input ' placeholder='Search for products,brands and more'/></li>
          </div>
 
          <div className='Nav-about-menu'>
-            <div className='li'  >   <li className='Profile ' onClick={()=>setProfileButton(!profilebutton)}  ><Link to =""><CiUser className='p1'/></Link> <p className='Profile-p'>Profile</p></li>  
+                <ul className='ul' onClick={()=>setProfileButton(!profilebutton)}  > 
+                     <li className='Profile '   ><Link to =""><CiUser className='logo1'/></Link></li>
+                    <li className='Profile-p'>Profile</li>  
+
            {profilebutton && <div className='Profile-dropmenu'>
                     <div className='Profile-dropmenu-conatiner'>
                        <div className='colProfile'>
@@ -1100,7 +1062,7 @@ return (
                              <li>Saved Addresses</li>
 
 
-                               </ul>
+                             </ul>
                             
 
 
@@ -1108,15 +1070,20 @@ return (
                          
                          
                          
-                       </div>
+               </div>
                </div>
                 </div> }
-            </div> 
-            <div className='li heart'> <Link to="/wishlist"><li><CiHeart className='p1'/></li> <p>Wishlist</p></Link> </div>
-            <div className='li bag'> <Link to="/Bag"> <li><HiOutlineShoppingBag className='p2'/></li><p>Bag</p> </Link></div>
-            {/* <div className='Msearch-container'>
-          <img src={Msearch} alt="" className='Msearch '/>
-         </div> */}
+            </ul> 
+
+            <ul className='ul'> <Link to="/wishlist"><li><CiHeart className='logo2'/></li>
+             <li>Wishlist</li></Link> 
+             </ul>
+
+
+            <ul className='ul'> <Link to="/Bag"> <li><HiOutlineShoppingBag className='logo3'/></li>
+            <li>Bag</li> </Link>
+            </ul>
+             
          </div>
          
           

@@ -1,19 +1,15 @@
 import React from 'react';
 import WCategoriesImage from './WCategoriesdata.jsx';
 import './WCategories.css'
+import ItemCategory from '../../ItemCategory/ItemCategory.jsx'
 const WCategories = () => {
     return (
         <div className='Wcategory-image-container'>
             <div className='WCategory-Items'>
 
 { WCategoriesImage.map((item,index)=>{
-  return(
-      <div className=' '>
-          <div className='Image-Image-Wcategory' key={index}>
-               <img src={item.Image} alt="" className='Img-Wcategory-img' />
-          </div>
-      </div>
-  )
+  return<ItemCategory key={index} Image={item.Image} />
+   
 })}
 </div>
         </div>

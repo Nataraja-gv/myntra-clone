@@ -1,0 +1,158 @@
+
+.Total-amount-display-section{
+    width:70%;
+
+    
+}
+
+.total-amount-price-deatils{
+    
+    font-size: 16px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+.total-mrp-section{
+
+    display: flex;
+    justify-content: space-between;
+     
+     
+}
+.Total-mrp-txt{
+    color: #282c3f;
+      font-size: 16px;
+}
+
+.Total-mrp-amount{
+    color: #282c3f;
+      font-size: 16px;
+}
+
+
+
+.discount-mrp-section{
+    display: flex;
+    justify-content: space-between;
+     margin-top: 10px;
+     
+}
+
+.discount-discount-txt{
+    color: #282c3f;
+      font-size: 16px;
+}
+
+
+.discount-discount-amount{
+    color:#03a685;
+    font-size: 16px; 
+}
+
+.coupon-discount-section{
+    display: flex;
+    justify-content: space-between;
+     margin-top: 10px;
+}
+
+
+.coupon-discount-txt{
+    color: #282c3f;
+    font-size: 16px;
+}
+
+.coupon-discount-coupon{
+    font-size: 16px;
+    color:orangered
+}
+
+.platform-fee-section{
+    display: flex;
+    justify-content: space-between;
+     margin-top: 10px;
+}
+
+
+.platform-fee-txt{
+    color: #282c3f;
+    font-size: 16px;
+}
+
+
+.platform-fee-txt span{
+    color: orangered;
+    font-weight: 700;
+}
+
+.platform-fee-amount{
+    color: #282c3f;
+    font-size: 16px;
+
+}
+
+
+.shipping-fee-section{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+
+.shipping-fee-txt{
+    color: #282c3f;
+    font-size: 16px;
+}
+
+.shipping-fee-txt span{
+    color: orangered;
+    font-weight: 700; 
+}
+
+.shipping-fee-txt2{
+    font-size: 12px;
+}
+
+
+.shipping-fee-free{
+    color:#03a685;
+    font-size: 16px; 
+}
+
+.total-amount-final-section{
+    display: flex;
+    justify-content: space-between;
+}
+
+.total-amount-final-txt{
+    font-size: 20px;
+    font-weight: 700;
+
+}
+
+.total-amount-final-amount{
+    font-size: 20px;
+    font-weight: 700; 
+}
+
+.total-amount-btn-section{
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    margin-bottom: 50px;
+     
+}
+
+.total-amount-btn{
+    font-size: 14px;
+    padding: 15px 16px;
+    width:100%;
+    letter-spacing: 1px;
+    font-weight: 700;
+    border-radius: 2px;
+    border-width: 0px;
+    background-color: rgb(255, 63, 108);
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    text-transform: uppercase;
+}

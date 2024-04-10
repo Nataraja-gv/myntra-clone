@@ -1,0 +1,120 @@
+.HoverBeauty-main-container{
+    position: absolute;
+    top:0px;
+    left:0px;
+    width:230px;
+    height: 380px;
+    background-color: white;
+    justify-content: center;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    /* display: none; */
+    transition: all 0.3s ease-in-out;
+    /* border: 1px solid green; */
+     transition: all 0.2s ease-in-out;
+     /* border: 1px solid pink; */
+}
+
+
+.Image-container{
+   width:100%;
+   
+
+}
+
+ 
+
+.hover-beauty-deatils .wishlist-container{
+ display: flex;
+ list-style-type: none;
+  justify-content: center;
+  border: 1px solid rgb(211,211,211);
+  width: 90%;
+  margin: 10px auto;
+  padding: 3px;
+  margin-top: 20px;
+  gap: 2px;
+  align-items: center;
+  justify-content: center;
+  vertical-align: middle;
+     
+}
+
+.heart-beauty{
+    width: 15px;
+    height: 15px;
+    /* background-color: aqua; */
+    align-self: center;
+}
+
+.hover-beauty-deatils .wishlist-container .wishlist{
+    font-size: 14px;
+   /* background-color: aqua; */
+   font-weight: 700;
+   letter-spacing: 0.5px;
+   align-self: center;
+}
+
+.hover-size-section{
+    list-style-type: none;
+    margin-left: 5%;
+}
+
+.hover-size-section li{
+    font-size: 16px;
+    color: gray;
+}
+
+ .hover-price-offer{
+    display: flex;
+    list-style-type: none;
+    gap:5px;
+    margin:5px 0 5px 5%;
+    align-items: center;
+ }
+
+ .hover-newprice{
+    font-weight: 700;
+ }
+
+ .hover-oldprice{
+    color:gray;
+    text-decoration-line: line-through;
+ }
+
+ .hover-offer{
+
+    color:red;
+
+ }
+
+
+.react-multi-carousel-dot-list {
+    top:260px;
+    cursor: pointer;
+    font-size: 5px;
+   }
+
+    
+   .custom-dot-list {
+      margin-top: 20px;  
+    }
+    
+    .custom-dot {
+      width: 6px;
+      height: 6px;
+      background-color: #eee9e9; 
+      border-radius: 50%;
+      margin-right: 5px;  
+      border: none;
+    }
+    
+    .custom-dot.active {
+      background-color: #c60d0d;  
+    }   
+ 
+
+    
+ 
+
+ 
+ 

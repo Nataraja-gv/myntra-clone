@@ -15,63 +15,9 @@
 }
 
 .Img-Brands-img{
-    width: 250px;
+    width: 200px;
     height: 200px;
 }
 
 
-@media screen  and (min-width :1150px)  and (max-width :1423px)
-{
-    .Img-Brands-img{
-        width: 200px;
-        height: 200px;
-    }
-}
-
-@media screen and (min-width: 991px) and (max-width: 1150px) 
-{
-    .Img-Brands-img{
-        width: 150px;
-        height: 180px;
-    }
-}
-
-
-@media screen and (min-width: 768px) and (max-width: 991px) 
-{
-    .Img-Brands-img{
-        width: 100px;
-        height: 150px;
-    }
-}
-
-@media screen and (max-width:600px) {
-
-    .Brands-Brands-Items{
-        display: grid;
-        margin-top: 80px;
-        grid-template-columns: auto auto auto;
-        justify-content: space-evenly;
-    }
-    
-    .Img-Brands-img{
-        width: 130px;
-        height: 150px;
-    }
-
-}
-
-@media screen and (min-width: 601px) and (max-width:767px) {
-    .Brands-Brands-Items{
-        display: grid;
-        margin-top: 80px;
-        grid-template-columns: auto auto auto;
-        justify-content: space-evenly;
-    }
-    
-    .Img-Brands-img{
-        width: 130px;
-        height: 150px;
-    }
-
-}
+ 

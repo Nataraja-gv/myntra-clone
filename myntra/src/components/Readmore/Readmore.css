@@ -1,0 +1,63 @@
+.readmore-main-container{
+    display: inline-block;
+    border: 1px solid rgb(227, 225, 225);
+    margin: 10px;
+    margin-top: 10px;
+    padding: 10px;
+    border-radius: 4px;
+     width:660px;
+}
+
+.Available-offer-section{
+    display: flex;
+     
+}
+
+.readmore-offer{
+    /* vertical-align: middle; */
+}
+
+.available-offer{
+    font-size: 14px;
+    font-weight: 700;
+    margin-left: 10px;
+    margin-bottom: 12px;
+    /* vertical-align: middle; */
+  
+
+}
+
+.readmore-offer li{
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.readmore-offer li::marker{
+    color:gray
+}
+
+
+.readmore-offer button{
+    border: none;
+    outline: none;
+    background-color: transparent;
+}
+
+.readmore-offer .showmore-btn{
+   font-size: 14px;
+   font-weight: 600;
+   color: orangered;
+    
+}
+
+.readmore-arrow{
+    /* display: block; */
+    /* align-self: center;
+    align-items: center; */
+    color: orangered;
+}
+
+.readmore-btn-section{
+    display: flex;
+}
+ 

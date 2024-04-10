@@ -1,0 +1,10 @@
+.mynta-holi-image-section{
+    display:grid;
+    grid-template-columns: auto auto auto auto auto auto;
+    justify-content: space-evenly;
+    /* gap:30px */
+}
+
+.Item-details-main-section{
+    display: none;
+}

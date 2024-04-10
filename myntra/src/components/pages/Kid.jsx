@@ -10,6 +10,8 @@ import Space from '../../components/KidFolder/Space/Space.jsx'
 import Budget from '../../components/KidFolder/Budget/Budget.jsx'
 import Brand from '../../components/KidFolder/Brand/Brand.jsx'
 import Footer from '../../components/Footer/Footer.jsx'
+import './styles/heading.css'
+
 
 
 const Kid = () => {
@@ -21,16 +23,16 @@ const Kid = () => {
         </div>
          
 
-        <div className='Favourite-deals-brands'>
-          <h1 className='h1'>FAVOURITE BRANDS</h1>
+        <div className='heading-bold '>
+          <h1 className='h1' style={{marginLeft:"130px"}}>FAVOURITE BRANDS</h1>
         </div>
 
         <div className='Kid-Favourite-deals-Slider'>
         <FBrands/>
         </div>
 
-        <div className='TopPicks-deals-brands'>
-          <h1 className='h1'>TOP PICKS</h1>
+        <div className='heading-bold'>
+          <h1 className='h1' style={{marginLeft:"130px"}}>TOP PICKS</h1>
         </div>
 
 
@@ -38,8 +40,8 @@ const Kid = () => {
         <TopPicks/>
         </div>
 
-        <div className='Iconic-deals-brands'>
-          <h1 className='h1'>ICONIC BRANDS</h1>
+        <div className='heading-bold'>
+          <h1 className='h1' style={{marginLeft:"130px"}}>ICONIC BRANDS</h1>
         </div>
 
 
@@ -47,8 +49,8 @@ const Kid = () => {
         <Iconic/>
         </div>
 
-        <div className='Iconic-deals-brands'>
-          <h1 className='h1'>FASHION & ESSENTIALS</h1>
+        <div className='heading-bold'>
+          <h1 className='h1' style={{marginLeft:"130px" ,marginTop:"70px"}}>FASHION & ESSENTIALS</h1>
         </div>
 
         <div className='Kid-Fashion-deals-Slider'>
@@ -56,24 +58,24 @@ const Kid = () => {
         </div>
 
 
-        <div className='Iconic-deals-brands'>
-          <h1 className='h1'>EXPLORE MORE</h1>
+        <div className='heading-bold'>
+          <h1 className='h1'style={{marginLeft:"130px"}}>EXPLORE MORE</h1>
         </div>
 
         <div className='Kid-Fashion-deals-Slider'>
         <Explore/>
         </div>
 
-        <div className='Iconic-deals-brands'>
-          <h1 className='h1'> THE KIDS SPACE</h1>
+        <div className='heading-bold'>
+          <h1 className='h1'style={{marginLeft:"130px"}}> THE KIDS SPACE</h1>
         </div>
 
         <div className='Kid-Fashion-deals-Slider'>
         <Space/>
         </div>
 
-        <div className='Iconic-deals-brands'>
-          <h1 className='h1'>BUDGET BUY</h1>
+        <div className='heading-bold'>
+          <h1 className='h1' style={{marginLeft:"130px"}}>BUDGET BUY</h1>
         </div>
 
 
@@ -82,8 +84,8 @@ const Kid = () => {
         </div>
 
 
-        <div className='Iconic-deals-brands'>
-          <h1 className='h1'>SHOP MORE BRANDS</h1>
+        <div className=' heading-bold'>
+          <h1 className='h1' style={{marginLeft:"130px"}}>SHOP MORE BRANDS</h1>
         </div>
    
 

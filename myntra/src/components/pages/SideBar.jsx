@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 // import './styles/SideBar.css';
 import  bar1 from '../images/bar1.png'
 import bar2 from '../images/bar2.png';
-import '../Navbar/NavMobile.css'
+ 
 import { Link } from 'react-router-dom';
 import { MdOutlineKeyboardArrowRight } from "react-icons/md";
 import { MdKeyboardArrowDown } from "react-icons/md";

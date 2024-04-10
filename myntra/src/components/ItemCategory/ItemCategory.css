@@ -1,0 +1,16 @@
+.ItemCategory-container{
+    width:100% ;
+}
+
+.ItemCategory-Images{
+    width:180px;
+    height: 200px;
+    margin-top: 50px;
+
+
+}
+.ItemCategory-container{
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto;
+    justify-content: space-evenly;
+}

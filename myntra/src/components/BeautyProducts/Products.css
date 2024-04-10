@@ -1,0 +1,27 @@
+.Product-display-main-section{
+    width: 100%;
+    margin-top: 20px;
+     display:grid;
+     grid-template-columns: 800px auto;
+    
+}
+
+
+
+.product-left-side-section{
+     
+}
+
+.product-right-side-section{
+     
+    
+}
+
+
+.view-similar-similar-section p{
+    font-size: 20px;
+    font-weight: 700;
+    width: 95%;
+    margin: 100px auto 30px;
+    text-transform: uppercase;
+}

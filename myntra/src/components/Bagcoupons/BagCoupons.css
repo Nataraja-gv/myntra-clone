@@ -1,0 +1,93 @@
+.Bag-coupon-main-container h1{
+    font-size: 20px;
+    font-weight: bold;
+    line-height: normal;
+    margin: 30px 0px 20px ;
+    text-transform: uppercase;
+}
+
+
+.Apply-coupon-section{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+
+.coupon-tag{
+    display: inline-block;
+    align-self: center;
+    vertical-align: middle;
+}
+
+
+.coupon-txt{
+    font-weight: 700;
+    font-size: 20px;
+    margin-left: 10px;
+}
+
+.Coupons-apply{
+    border: 1px solid orangered;
+    padding: 5px 30px;
+    margin-left: 150px;
+    font-size: 14px;
+    font-weight: bold;
+    color: orangered;
+    border-radius: 4px;
+    vertical-align: middle;
+    text-transform: uppercase;
+}
+
+.coupon-hr{
+    width: 85%;
+    margin: 30px 0px;
+    border: 0.5px solid rgb(225, 222, 222);
+}
+
+.support-coupon-social{
+    font-size: 16px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+
+.donate-checkbox-Container{
+    display: flex;
+    align-items: center;
+    gap:20px;
+    margin: 20px 0px;
+}
+
+input[type="checkbox"]{
+    width:15px;
+    height: 15px;
+    accent-color: red;
+}
+
+
+.donate-checkbox-Container .donate-txt{
+    font-size: 14px;
+    font-weight: 700;
+}
+
+
+.donate-amount-section{
+    list-style-type: none;
+    display: flex;
+    gap:20px;
+    align-items: center;
+}
+
+.donate-amount-section li{
+    border: 1px solid rgb(160, 156, 155);
+    font-size: 14px;
+    font-weight: 700;
+    padding: 5px 15px;
+    border-radius: 20px;
+}
+
+.coupon-know-more{
+    margin: 20px 0px ;
+    color: orangered;
+}

@@ -4,83 +4,26 @@
     box-sizing: border-box;
 }
 
-
 .CrazyImages-container{
-    position: relative;
-    width:100%;
-    height: 200px;
-    border: 2px solid white;
-    border-radius: 10px;
-    transition: all 1s ease;
-    margin-top: 20px;
+    margin-top: 80px;
 }
 
-.crazyImages{
-    width:100%;
+.crazy-carousel-images{
+    width:250px;
     height: 250px;
 }
+.itemimage{
+    /* border: 2px solid red; */
+    /* position: static; */
 
-
-.dispaly-index .index-btn {
-    border: none;
-    outline: none;
-    background: transparent;
-     
 }
 
-.dispaly-index{
-    display: flex; 
-    justify-content: center;
-    gap:5px;
-    
-    
-    /* margin-top: 2px; */
-}
-.dotBtn{
-    cursor: pointer;
-     fill: gray;
-    font-size: 15px;
-    transition: scale 100ms ease-in-out;
-    cursor: pointer;
+.index{
+      /* position: absolute;
+      
+      border:2px solid rgb(0, 255, 42); */
 }
 
-.DotFill{
-    font-size: 15px;
-    fill: gray;
-    cursor: pointer;
-}
-
-.dotBtn:hover{
-    scale:1.2;
-}
-
-
-
-.CrazyImages-container{
-    position: relative;
-    width:100%;
-    height: 200px;
-    border: 2px solid white;
-    border-radius: 10px;
-    transition: all 1s ease;
-    margin-top: 20px;
-}
-
-
-@media screen and (max-width: 600px){
-    .CrazyImages-container{
-        position: relative;
-        width:100%;
-        height: 130px;
-         
-    }
-
-    .crazyImages{
-        width:100%;
-        height: 200px;
-    }
-    
-}
-
+ 
 
  

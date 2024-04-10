@@ -1,0 +1,42 @@
+.address-container{
+     display: flex;
+     border: 1px solid rgb(227, 225, 225);
+     margin: 10px;
+     margin-top: 40px;
+     padding: 10px;
+     border-radius: 4px;
+     background-color: #fff6f4;
+}
+
+.address-list{
+    display: inline-block;
+
+}
+
+.address-deliver{
+    font-size: 16px;
+}
+.address-details-deliver{
+    font-size: 14px;
+    margin-top: 5px;
+}
+
+
+
+.address-change-main-section{
+   border: 1px solid orangered;
+    border-radius: 4px;
+    padding: 0px 25px;
+    margin-left: 10px;
+  }
+
+.change-address{
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: bold;
+    display: inline-block;  
+   vertical-align: bottom;
+   color: orangered;
+   margin-top: 10px;
+    
+}

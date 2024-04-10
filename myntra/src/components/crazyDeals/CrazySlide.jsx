@@ -1,37 +1,36 @@
-import React, { useEffect, useState } from 'react';
+import React  from 'react';
 import './carzy.css'
-import { GoDotFill } from "react-icons/go";
-import { GoDot } from "react-icons/go";
-const Crazy = ({CrazyImages}) => {
-  const [useimages ,setUseImages]=useState(0)
-
-  useEffect(()=>{
-    const Interval=setInterval(()=>{
-      setUseImages((index)=>{
-        if(index===0)return CrazyImages.length -1
-        return index-1
-      });
-
-       
-    },3000) 
-
-    return()=>(clearInterval(Interval));
-
-  },[CrazyImages.length])
+import Carousel from 'react-multi-carousel';
+import 'react-multi-carousel/lib/styles.css';
+import crazyImg from './Cdata' 
 
 
-
-    return (
+ const Crazy = () => {
+  const responsive = {
+     
+    desktop: {
+      breakpoint: { max: 3000, min: 1000 },
+      items: 6,
+      slidesToSlide: 6,
+      
+      
+    },
+    
+  };
+  
+   
+    
+ 
+ return (
         <div className='CrazyImages-container'>
-        <img src={CrazyImages[useimages]} alt='' className='crazyImages'/>
-            
-
-            <div className='dispaly-index'>
-              {CrazyImages.map((_,index)=>{
-
-                return (<button className='index-btn' onClick={()=>setUseImages(index)}>{index===useimages ?<GoDot  className='dotBtn'/>:<GoDotFill  className='DotFill'/>}</button>)
-              })}
-            </div>
+             <Carousel responsive={responsive}   infinite={true} showDots={true} autoPlay={true}   autoPlaySpeed={2000} dotListClass="custom-dot-list-style index" itemClass="carousel-item-padding-40-px itemimage">
+               {crazyImg.map((item,index)=>{
+                return(
+                <img key={index} src={item.Image} alt='' className='crazy-carousel-images'/>
+                )
+               })}
+             </Carousel>
+        
         </div>
 
 

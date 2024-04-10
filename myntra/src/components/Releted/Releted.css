@@ -1,0 +1,86 @@
+.beauty-relted-container{
+    width: 100%;
+     border: 2px solid #f6f6f5;
+    justify-content: center;
+    position: relative;
+    padding: 5px;
+}
+
+
+.releted-img-image{
+    width : 228px;
+    height : 250px;
+    margin-bottom : 15px;
+}
+
+.releted-beauty-details{
+    text-align: start;
+    margin-left: 20px;
+}
+.releted-rating-section{
+  display: inline-flex;
+  align-items: center;
+  background-color: rgb(221, 219, 219);
+  padding: 3px 5px;
+  border: 1px solid #f5f5f6;
+  border-radius: 4px;
+  position: absolute;
+  left:20px;
+  top:230px;
+
+
+}
+
+.related-rating{
+ font-size: 12px;
+ font-weight: bold;
+
+}
+
+
+ .related-green-image{
+    width: 15px;
+    height: 15px;
+   margin: 0 4px;
+}
+
+
+.releted-Title{
+    font-weight: bold;
+    color:rgb(48, 47, 47);
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+.releted-description{
+    font-size: 14px;
+    color:grey;
+    margin-top: 10px;
+
+}
+
+
+.related-amount-section{
+    display: flex;
+    margin-top: 10px;
+
+}
+.related-Namount{
+    font-size: 15px;
+    align-self: center;
+    font-weight: bolder;
+}
+
+.related-Oamount{
+    text-decoration: line-through;
+    align-self: center;
+    margin: 0 5px;
+    color:gray;
+    font-size: 13px;
+}
+
+.related-offer{
+    font-size: 14px;
+    align-self: center;
+    color: red;
+}

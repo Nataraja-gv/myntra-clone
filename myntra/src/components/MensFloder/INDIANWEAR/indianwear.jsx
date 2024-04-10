@@ -1,6 +1,7 @@
 import React from 'react';
 import './indianwear.css'
 import indianwearImage from './indianweardata'
+import Item from '../../ITEM/Item.jsx'
 
 const Indianwear = () => {
     return (
@@ -8,13 +9,7 @@ const Indianwear = () => {
         <div className='Indianwear-Items'>
 
 {indianwearImage.map((item,index)=>{
-return(
-  <div className=' '>
-      <div className='Image-Image-Indianwear' key={index}>
-           <img src={item.Image} alt="" className='Img-Indianwear-img' />
-      </div>
-  </div>
-)
+    return <Item key={index} image={item.Image} />
 })}
 </div>
     </div>

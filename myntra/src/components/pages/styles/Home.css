@@ -12,13 +12,8 @@
 }
 
 .Footer-Home-conatiner{
-    margin-top: 80px;
+    margin-top: 100px;
 }
 
 
 
-@media screen and (max-width: 600px){
-    .featured-Brands-conatiner p{
-        font-size: 15px;
-    }
-}

@@ -1,0 +1,20 @@
+.heading-bold h1{
+    font-size: 36px;
+    font-weight: 700;
+    color:rgb(62, 65, 82);
+    line-height: normal;
+    font-style: normal;
+    text-transform: uppercase;
+    color: #3e4152;
+    letter-spacing : .15em;
+    margin: 50px 0 10px 30px;
+    max-height: 5em;
+     
+
+     
+}
+
+a{
+    text-decoration: none;
+    color:black;
+}

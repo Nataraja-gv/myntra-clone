@@ -7,8 +7,9 @@
 }
 
 .Footer-container{
- background-color: rgb(245,245,245);
+ background-color: rgb(245, 245, 245);
  font-family: "Assistant", sans-serif;
+ 
 }
 
 .Footer-container-Footer{
@@ -67,7 +68,7 @@
 
 
 .Playstore{
-    width: 300px;;
+    width: 150px;;
     height: 50px;
 }
 
@@ -127,53 +128,64 @@
       color: gray;
 }
 
-.original  span{
-    font-size: 20px;
-    color:rgb(40, 44, 63);
+.original-days14{
+    width: 260px;
+    
+}
+
+.original-container{
+    margin: 50px 0 40px;
+    color: #696b79;
+}
+
+.original-section{
+    display: inline-block;
+    float: left;
+    margin-left: -10px;
+    margin-right: 15px;
+    width:50px;
+    height: 50px;
+}
+
+.orginal-image{
+    width:58px;
+    height: 45px;
+}
+
+.original-details strong{
+    color: black;
     font-weight: 700;
-    line-height: normal;
-    text-transform: uppercase;
-    margin-left: 6px;
 }
 
-.original p{
-    font-size: 20px;
-    color: rgb(105, 107, 121);
-    font-weight: 400;
-    line-height: normal;
-    font-style: normal;
-}
-
-.original{
-    display: flex;
-    flex-direction: column;
-    margin-top: 50px;
-    margin-bottom: 25px;
-}
-
-
-
-.days14  span{
-    font-size: 20px;
-    color:rgb(40, 44, 63);
+.days14-conatainer strong{
+    color: black;
     font-weight: 700;
-    line-height: normal;
-     
-}
-
-.original .Guarantee{
-    text-align: center;
-
-    margin-top: -20px;
 }
 
 
-.days14 p{
-    font-size: 20px;
-    color: rgb(105, 107, 121);
-    font-weight: 400;
-    line-height: normal;
-    font-style: normal;
+.days14-conatainer{
+    color: #696b79;
+
+}
+
+.days14-section{
+    width:58px;
+    height: 50px;
+    margin-left: -10px;
+    margin-right: 15px;
+    width:50px;
+    height: 50px;
+}
+
+.days-image{
+    width:58px;
+    height: 45px;
+}
+
+.days14-section{
+    display: inline-block;
+    float: left;
+
 }
 
 
@@ -186,21 +198,17 @@
 }
 
 .POPULAR-SEARCHES .p-seaches p{
-font-size: 12px;
+font-size: 14px;
 font-weight: 700;
 line-height: normal;
 color:rgb(40, 44, 63);
-margin-left: 210px;     
+/* margin-left: 200px;      */
      
-}
-
-.POPULAR-SEARCHES .p-seaches{
-    display: flex;
 }
 
 .Popular-brand{
      align-self: center;
-     margin-left: -20px;
+     margin-left: -40px;
 }
 
 .Popular-brand p{
@@ -286,10 +294,10 @@ margin-left: 210px;
 }
 
 .ONLINE-SHOPPING{
-    display: flex;
+    display: inline-block;
     justify-content: center;
     margin-top: 50px ;
-    margin-left: 180px;
+    margin-left: 200px;
     margin-right: 180px;
 }
 
@@ -317,7 +325,7 @@ margin-left: 210px;
     display: flex;
     justify-content: center;
     margin-top: 50px ;
-    margin-left: 180px;
+    margin-left: 200px;
     margin-right: 180px;
 
 }
@@ -345,7 +353,7 @@ margin-left: 210px;
     display: flex;
     justify-content: center;
     margin-top: 50px ;
-    margin-left: 180px;
+    margin-left: 200px;
     margin-right: 180px;
     margin-bottom: 10px;
 
@@ -375,7 +383,7 @@ margin-left: 210px;
     display: flex;
     justify-content: center;
     margin-top: 50px ;
-    margin-left: 180px;
+    margin-left: 200px;
     margin-right: 180px;
     margin-bottom: 10px;
 
@@ -397,7 +405,7 @@ margin-left: 210px;
     display: flex;
     justify-content: center;
     margin-top: 50px ;
-    margin-left: 180px;
+    margin-left: 200px;
     margin-right: 180px;
     margin-bottom: 10px;
 
@@ -427,7 +435,7 @@ margin-left: 210px;
     display: flex;
     justify-content: center;
     margin-top: 50px ;
-    margin-left: 180px;
+    margin-left: 200px;
     margin-right: 180px;
     margin-bottom: 10px;
 
@@ -493,7 +501,7 @@ margin-left: 210px;
     display: flex;
     justify-content: center;
     margin-top: 50px ;
-    margin-left: 180px;
+    margin-left: 200px;
     margin-right: 180px;
     margin-bottom: 10px;
 
@@ -524,7 +532,7 @@ margin-left: 210px;
     display: flex;
     justify-content: center;
     margin-top: 50px ;
-    margin-left: 250px;
+    margin-left: 200px;
     margin-right: 180px;
     margin-bottom: 10px;
 
@@ -564,7 +572,7 @@ margin-left: 210px;
     display: flex;
     justify-content: center;
     margin-top: 50px ;
-    margin-left: 180px;
+    margin-left: 200px;
     margin-right: 180px;
     margin-bottom: 10px;
 
@@ -592,7 +600,7 @@ margin-left: 210px;
     display: flex;
     justify-content: center;
     margin-top: 50px ;
-    margin-left: 180px;
+    margin-left: 200px;
     margin-right: 180px;
     margin-bottom: 10px;
 
@@ -622,9 +630,9 @@ margin-left: 210px;
     display: flex;
     justify-content: center;
     margin-top: 50px ;
-    margin-left: 180px;
+    margin-left: 200px;
     margin-right: 180px;
-    margin-bottom: 10px;
+     
 
 }
 
@@ -658,914 +666,4 @@ margin-left: 210px;
 
 }
 
-@media screen  and (min-width :1150px)  and (max-width :1423px){
-
-    
-    .Footer-container-Footer{
-        display: flex;
-        justify-content: center;
-        gap: 40px;
-        
-    
-    }
-
-
-
-    .footer-mobile-Container{
-        display: none;
-    }
-
-     
-
-    .POPULAR-SEARCHES .p-seaches p{
-        font-size: 12px;
-        font-weight: 700;
-        line-height: normal;
-        color:rgb(40, 44, 63);
-        text-align: start;    
-         justify-content: center;    
-        }
-
-
-        .Popular-brand{
-            align-self: center;
-            margin-left: -75px;
-       }
-
-       .Flipkart {
-        display: flex;
-        justify-content: center;
-        gap:45px;
-        margin-top: 20px;
-    }
-
-
-       .Popular-brand p{
-        font-size: 12px;
-        font-weight: 400;
-        line-height:25px;
-        color:rgb(105, 107, 121);
-         
-        margin: 0 70px;
-        
-    }
-
-    .Register-Address-conatiner{
-        display: flex;
-        justify-content: center;
-        gap:400px;
-        margin-top: 50px;
-    }
-
-    .telephone-address p span{
-        color:rgb(82, 108, 208);
-        font-weight: 500;
-    }
-    .insider-container{
-        display: flex;
-        justify-content: center;
-        /* /* margin-top: 50px ; */
-        margin-left: -100px;
-        /* margin-right: 180px; */
-        margin-bottom: 10px;
-    
-    }
-    
-       
-    
-
-}
-
-
-@media screen and (min-width: 991px) and (max-width: 1150px) {
-    .Footer-container-Footer{
-        display: flex;
-        justify-content: center;
-        gap: 30px;
-        
-    
-    }
-
-
-    .footer-mobile-Container{
-        display: none;
-    }
-
-    .online-online header{
-        font-size: 10px;
-        color:rgb(40, 44, 63);
-        font-weight: 700;
-        line-height: normal;
-        text-transform: uppercase;
-        margin-top: 50px;
-        margin-bottom: 15px;
-    
-    
-    }
-
-    .customer-Policies header{
-        font-size: 10px;
-    }
-
-
-    .Playstore{
-        width: 250px;;
-        height: 45px;
-    }
-
-    .Myntra-app-playstore header{
-        font-size: 10px;
-    }
-
-    .original-logo{
-        width:45px;
-        height: 45px;
-        position: relative;
-       
-    
-    }
-
-    .Social-media header{
-        font-size: 10px;
-    }
-
-    .original-first span{
-        margin-left: 12px;
-    }
-
-    .days14  span{
-        font-size: 16px;
-        color:rgb(40, 44, 63);
-        font-weight: 700;
-        line-height: normal;
-         
-    }
-
-    .days14 .days14-recive{
-        font-size: 14px;
-        color: rgb(105, 107, 121);
-        font-weight: 400;
-        line-height: normal;
-        font-style: normal;
-        margin-left: -100px;
-    }
-
-
-    .original  span{
-        font-size: 16px;
-    }
-
-    .original p{
-        font-size: 14px; 
-    }
-
-
-    .POPULAR-SEARCHES .p-seaches p{
-        font-size: 10px;
-        font-weight: 700;
-        line-height: normal;
-        color:rgb(40, 44, 63);
-        margin-left: 110px;     
-             
-        }
-
-
-        .Popular-brand p{
-            font-size: 10px;
-            font-weight: 400;
-            line-height: 25px;
-            color:rgb(105, 107, 121);
-            margin-left: -55px;
-            
-        }  
-        
-        .Flipkart {
-            gap:76px;
-            margin-top: 20px;
-        }
-
-        .contact-us p{
-            color: rgb(105, 107, 121);
-            font-weight: 400;
-            font-size: 15px;
-            line-height: normal;
-        }
-
-        .contact-us  span{
-            color: rgb(82, 108, 208);
-            font-weight: 600;
-        }
-
-        .url p{
-            color: rgb(105, 107, 121);
-            font-weight: 400;
-            font-size: 15px;
-            line-height: normal;
-        }
-
-        .Flipkart-company header{
-            font-size: 15px;
-        }
-
-
-        .Register-Address-conatiner{
-            display: flex;
-            justify-content: center;
-            gap:300px;
-            margin-top: 50px;
-        }
-
-        .register-address header{
-            font-size: 12px;
-        }
-
-        .register-address p{
-            font-size: 12px; 
-        }
-
-        .telephone-address p{
-            font-size: 12px;
-        }
-
-        .insider-container{
-            display: none;
-        }
-
-
-        
-}
-
-
-@media screen and (min-width: 768px) and (max-width: 991px) {
-    .Footer-container-Footer{
-        display: flex;
-        justify-content: center;
-        gap: 10px;
-        
-    
-    }
-
-
-    .footer-mobile-Container{
-        display: none;
-    }
-
-
-    .online-online header{
-        font-size: 10px;
-        margin-bottom: 10px;
-    }
-
-    .online-online li{
-        font-size: 10px;
-        line-height: 15px;
-    }
-
-    .customer-Policies header{
-        font-size: 10px;
-        margin-bottom: 10px;
-    }
-
-    .customer-Policies li{
-        font-size: 10px;
-        line-height: 16px;
-    }
-
-    .Playstore{
-        width: 200px;;
-        height: 40px;
-    }
-
-    .original-logo{
-        width:30px;
-        height: 30px;
-        position: relative;
-       
-    
-    }
-    .days14-logo{
-        width: 30px;
-        height: 30px;
-    }
-    .Store-Store header{
-        font-size: 10px;
-    }
-    .Social-media header{
-        font-size: 10px;
-        margin-bottom: 10px;
-    }
-    .original  span{
-        font-size: 15px; 
-        margin-bottom: 10px;
-    }
-
-     
-
-    .original p{
-        font-size: 15px;
-        margin-left: 20px;
-        
-    }
-    .original .Guarantee{
-        text-align: center;
-    
-        margin-top: -10px;
-        margin-left: -10px;
-    }
-    .days14 p{
-        font-size: 16px;
-        margin-top: 1px;  
-    }
-    .days14  span{
-        font-size: 15px;
-    }
-    .POPULAR-SEARCHES .p-seaches p{
-        font-size: 10px;
-        margin-left: 25px; 
-    }
-    .Popular-brand{
-        align-self: center;
-        
-   }
-
-   .Popular-brand p{
-    font-size: 10px;
-    font-weight: 400;
-    line-height: 20px;
-    color:rgb(105, 107, 121);
-    margin: 0 10px;
-    
-}
-
-.Flipkart {
-    gap:20px;
-    justify-content: center;
-}
-.contact-us p{
-    font-size: 15px;
-}
-
-.contact-us  span{
-    color: rgb(82, 108, 208);
-    font-weight: 500;
-}
-
-.url p{
-    font-size: 15px;  
-}
-
-.Flipkart-company header{
-    font-size: 15px; 
-}
-
-.Register-Address-conatiner{
-    gap:100px;
-}
-
-.ONLINE-SHOPPING{
-    display: none;
-}
-.insider-container{
-    display: none;
-}
-.Myntra-studio-list{
-    margin-left: 100px
-    
-     
-}
-
  
-}
-
-
-@media screen and (max-width:600px){
-
-    .Footer-container{
-        display: block;
-        width: 100%;
-    }
-
-    .Footer-container-Footer{
-        display: block;
-        
-
-    }
-    .online-online{
-        display: none;
-    }
-
-     
-    .footer-mobile-Container{
-        display:block;
-        width: 100%;
-        
-         
-    }
-
-    .Shop-For{
-         display: flex;
-         flex-direction: column;
-         margin-left: 20px;
-        font-family: "Assistant", sans-serif;
-         font-size: 14px;
-    }
-
-
-    .Shop-For .Header{
-        font-size: 15px;
-        font-weight: bold;
-        margin-bottom: 15px;
-        margin-top: 25px;
-         
-        
-    }
-
-
-    .Shop-For  .list{
-        text-align: start;
-        color:rgb(105, 107, 121);
-        text-transform: uppercase;
-    }
-
-
-    .customer-policies-policy{
-        margin-left: 20px;
-        
-    }
-
-
-    .customer-policies-policy  .Header{
-        font-size: 15px;
-        font-weight: bold;
-        margin-bottom: 15px;
-        margin-top: 15px;
-        
-
-    }
-    .customer-policies-policy ul{
-        display: flex;
-        flex-direction: column;
-        gap:10px;
-        font-size: 14px;
-        color: rgb(105, 107, 121);;
-        
-    }
-     
-    .customer-Policies{
-        display: none;
-    }
-
-    .Store-Store{
-        display: none;
-    }
-    
-    .Social-media{
-        margin-left: 20px;
-    }
-
-    .Social-media header{
-        font-size: 20px;
-        font-weight: bold;
-        /* margin-bottom: 15px;
-        margin-top: 15px; */
-    }
-
-    .Social-media .logo{
-      font-size: 30px;
-      gap: 20px;
-    }
-     
-    .original-days14{
-        display: none;
-    }      
-     
-    .POPULAR-SEARCHES{
-        display: flex;
-        flex-direction: column;
-        margin-top: 50px;
-      }
-     
-     .POPULAR-SEARCHES .p-seaches p{
-        font-size: 20px;
-        margin-left: 25px;  
-     }
-     
-
-     .Popular-brand{
-        justify-content: center;
-        margin: 0 25px;
-        
-        
-   }
-     
-   .Popular-brand p{
-    font-size: 15px;
-    font-weight: 400;
-    line-height: 35px;
-    color:rgb(105, 107, 121);
-    
-}
-
-.Flipkart {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    margin-top: 20px;
-    margin-left: 20px;
-}
-
-.contact-us p{
-    font-size: 20px;
-    text-align: start;
-    margin-top: 20px;
-   
-}
-
-.url p{
-    margin-top: -50px;
-}
-
-.Flipkart-company header{
-    margin-top: -80px; 
-}
-
-
-.Register-Address-conatiner{
-    display: block;
-     
-    justify-content: center;
-    gap:50px;
-    margin-top: 50px;
-    margin-left: 20px;
-
-}
-
-
-.register-address p{
-    font-size: 15px;
-    font-family: "Assistant", sans-serif;
-    
-}
-
-.telephone-address p{
-    font-size: 15px; 
-    margin-top: 20px;
-     
-}
-
-.telephone-address{
-    margin-top: 20px;
-       
-}
-
-.ONLINE-SHOPPING{
-    display: block;
-    justify-content: center;
-    margin-top: 50px ;
-    margin-left: 50px;
-    margin-right: 50px;
-}
-
-.Best-SHOPPING{
- display: block;
- margin-left: 50px;
- margin-right: 50px;
-
-}
-
-.online-shoping-list{
-    display: block;
-    margin-left: 50px;
-    margin-right: 50px;
-}
-
-
-.para-para {
-    display: block;
-    margin-left: 50px;
-    margin-right: 50px;
-}
-
-.AFFORDABLE {
-    display: block;
-    margin-left: 50px;
-    margin-right: 50px;
-}
-
-.MYNTRA-INSIDER{
-    display: block;
-    margin-left: 50px;
-    margin-right: 50px;
-}
-
-
-.insider-container{
-    display: none;
-}
-
-.MYNTRA-studio{
-    display: block;
-    margin-left: 50px;
-    margin-right: 50px;
-}
-
-
-.Myntra-studio-list{
-    display: block;
-    margin-left: 50px;
-    margin-right: 50px;
-}
-
-
-.MYNTRA-App-App{
-    display: block;
-    margin-left: 50px;
-    margin-right: 50px;
-
-}
-
-.MYNTRA-History{
-    display: block;
-    margin-left: 50px;
-    margin-right: 50px; 
-}
-
-.COMPLETE-CONVENIENCE{
-    display: block;
-    margin-left: 50px;
-    margin-right: 50px; 
-}
-
-
-}
-
-
-
-@media screen and (min-width: 601px) and (max-width:767px) {
-
-    *{
-      padding: 0;
-      margin: 0;
-      box-sizing: border-box;
-    } 
-
-    .Footer-container{
-        display: block;
-        width: 100%;
-        /* border:2px solid green; */
-    }
-
-    .Footer-container-Footer{
-        display: block;
-        
-
-    }
-    .online-online{
-        display: none;
-    }
-
-     
-    .footer-mobile-Container{
-        display:block;
-        width: 100%;
-        
-         
-    }
-
-    .Shop-For{
-         display: flex;
-         flex-direction: column;
-         margin-left: 20px;
-        font-family: "Assistant", sans-serif;
-        font-size: 14px; 
-    }
-
-
-    .Shop-For .Header{
-        font-size: 15px;
-        font-weight: bold;
-        margin-bottom: 15px;
-        margin-top: 25px;
-         
-        
-    }
-
-
-    .Shop-For  .list{
-        text-align: start;
-        color:rgb(105, 107, 121);
-        text-transform: uppercase;
-    }
-
-
-    .customer-policies-policy{
-        margin-left: 20px;
-    }
-
-
-    .customer-policies-policy  .Header{
-        font-size: 15px;
-        font-weight: bold;
-        margin-bottom: 15px;
-        margin-top: 15px;
-        
-
-    }
-    .customer-policies-policy ul{
-        display: flex;
-        flex-direction: column;
-        gap:10px;
-        font-size: 14px;
-        color: rgb(105, 107, 121);;
-        
-    }
-     
-    .customer-Policies{
-        display: none;
-    }
-
-    .Store-Store{
-        display: none;
-    }
-    
-    .Social-media{
-        margin-left: 20px;
-    }
-
-    .Social-media header{
-        font-size: 20px;
-        font-weight: bold;
-        /* margin-bottom: 15px;
-        margin-top: 15px; */
-    }
-
-    .Social-media .logo{
-      font-size: 30px;
-      gap: 20px;
-    }
-     
-    .original-days14{
-        display: none;
-    }      
-     
-    .POPULAR-SEARCHES{
-        display: flex;
-        flex-direction: column;
-        margin-top: 50px;
-      }
-     
-     .POPULAR-SEARCHES .p-seaches p{
-        font-size: 20px;
-        margin-left: 25px;  
-     }
-     
-
-     .Popular-brand{
-        justify-content: center;
-        margin: 0 25px;
-        
-        
-   }
-     
-   .Popular-brand p{
-    font-size: 15px;
-    font-weight: 400;
-    line-height: 35px;
-    color:rgb(105, 107, 121);
-    
-}
-
-.Flipkart {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    margin-top: 20px;
-    margin-left: 20px;
-}
-
-.contact-us p{
-    font-size: 20px;
-    text-align: start;
-    margin-top: 20px;
-   
-}
-
-.url p{
-    margin-top: -50px;
-}
-
-.Flipkart-company header{
-    margin-top: -80px; 
-}
-
-
-.Register-Address-conatiner{
-    display: block;
-     
-    justify-content: center;
-    gap:50px;
-    margin-top: 50px;
-    margin-left: 20px;
-
-}
-
-
-.register-address p{
-    font-size: 15px;
-    font-family: "Assistant", sans-serif;
-    
-}
-
-.telephone-address p{
-    font-size: 15px; 
-    margin-top: 20px;
-     
-}
-
-.telephone-address{
-    margin-top: 20px;
-       
-}
-
-.ONLINE-SHOPPING{
-    display: block;
-    justify-content: center;
-    margin-top: 50px ;
-    margin-left: 50px;
-    margin-right: 50px;
-}
-
-.Best-SHOPPING{
- display: block;
- margin-left: 50px;
- margin-right: 50px;
-
-}
-
-.online-shoping-list{
-    display: block;
-    margin-left: 50px;
-    margin-right: 50px;
-}
-
-
-.para-para {
-    display: block;
-    margin-left: 50px;
-    margin-right: 50px;
-}
-
-.AFFORDABLE {
-    display: block;
-    margin-left: 50px;
-    margin-right: 50px;
-}
-
-.MYNTRA-INSIDER{
-    display: block;
-    margin-left: 50px;
-    margin-right: 50px;
-}
-
-
-.insider-container{
-    display: none;
-}
-
-.MYNTRA-studio{
-    display: block;
-    margin-left: 50px;
-    margin-right: 50px;
-}
-
-
-.Myntra-studio-list{
-    display: block;
-    margin-left: 50px;
-    margin-right: 50px;
-}
-
-
-.MYNTRA-App-App{
-    display: block;
-    margin-left: 50px;
-    margin-right: 50px;
-
-}
-
-.MYNTRA-History{
-    display: block;
-    margin-left: 50px;
-    margin-right: 50px; 
-}
-
-.COMPLETE-CONVENIENCE{
-    display: block;
-    margin-left: 50px;
-    margin-right: 50px; 
-}
-
-
-}  
-
-

@@ -1,6 +1,6 @@
 import React, { useState ,useEffect} from 'react';
-import { GoDotFill } from "react-icons/go";
-import { GoDot } from "react-icons/go";
+import {GoDotFill} from "react-icons/go";
+import {GoDot} from "react-icons/go";
 import './KidSlider.css'
 
 

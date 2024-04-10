@@ -6,30 +6,18 @@
     .Navigation-container{
         display: flex;
         justify-content: space-between;
-        background-color: white; 
+        background-color: rgb(255, 255, 255); 
         width: 100%;
-        height: 80px;
+        height: 85px;
         box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
         font-family: "Assistant", sans-serif;
         position: sticky;
         top: 0;
         left: 0;
-        z-index: 1;
-    }
-    .BarIcon{
-      display: none;
-    }
-
-    .Myntra-text {
-      display: none;
+        z-index: 4;
     }
     
-    .sidebar{
-      display: none;
-    }
-
-
-    .Myntra-image{
+      .Myntra-image{
         align-self: center;
         margin-left: 63px;
          
@@ -37,9 +25,11 @@
     }
     
     .image-myntra-image{
-        width:40px;
-        height: 30px;
-        margin-left: -65px;
+      width: 53px;
+      height: 36px;
+      vertical-align:middle;
+
+       
     }
      
    .Nav-Menu{
@@ -47,11 +37,10 @@
     list-style-type: none;
     gap: 30px;
     align-self: center;
-    /* margin-left:-50px; */
     cursor: pointer;
     transition: all 0.3s ease;
-     position: relative;
-  
+    position: relative;
+    vertical-align: middle;
       
       
    } 
@@ -59,12 +48,11 @@
     
 
    .Nav-Menu li{
-    font-size: 14px;
+    font-size: 16px;
     font-weight:bold; 
     letter-spacing:0.5px;
     color:rgb(40, 44, 63);
-      
-     align-self: center;
+    align-self: center;
     
    }
 
@@ -81,107 +69,115 @@
 
 
    .Nav-Menu li span{
-    color:orangered;
+    color:red;
     font-size: 10px;
-     position:absolute;
-      
+    position:absolute; 
+    top:-4.5px;
+    right:-25px;
+    
      
 
-   }
+  }
+
+
    
     
      
   input::placeholder{
-  font-size: 16px;
+  font-size: 14px;
   font-family: "Assistant", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
   font-weight: 400;
   text-align: start;
-   margin-bottom: 20px;
    
-} 
+   
+ } 
 
 .Nav-input-input{
-  background-color:#f4efe4;
-  align-self: center;
-  padding: 5px;
-  border-radius: 5px;
-  border: 1px solid rgb(242, 240, 240);
-}
-
-
-.search-img{
-  align-self: center;
-  width: 15px;
-  height: 15px;
-  margin-right: 15px; 
-  margin-left: 10px;
+ align-self: center;
+  list-style-type: none;
+ display: flex;
    
-
 }
 
+/* input[type="text"]:focus {
+  background-color: #f0f0f0;  
+} */
+
+
+.Search-icon{
+   
+  width: 30px;
+  height: 30px;
+  vertical-align: middle;
+  background: #f5f5f6;
+   
+  height: 40px;
+  padding-left: 10px;
+  border-radius: 4px 0 0 4px ;
+  opacity: 0.8;
+}
  
-.Nav-input-input  input{
-    width: 400px;
-    height: 30px;
-    padding-top: 5px 0px;
-    outline: none;
-    border: none;
-    background: transparent;
+.search-input{
+    display: inline-block;
+    font-size: 14px;
+    height: 20px;
+    line-height: 24px;
+    color: #696e79;
+    box-sizing: content-box;
+    padding: 8px 10px 10px;
+    margin: 0;
+    outline: 0;
+    border: 1px solid #f5f5f6;
+    border-radius: 0 4px 4px 0;
+    border-left: 0;
+    background: #f5f5f6;
+    width: 300px;
+} 
+
+
+
+.Nav-about-menu{
+  display:grid;
+  grid-template-columns: auto auto auto;
+  align-self: center;
+  gap:20px;
+  justify-content: center;
+  margin-right: 50px;  
+   
 }
 
+.Nav-about-menu .ul{
+  list-style-type: none;
+  font-size: 14px;
+  text-align: center;
+  font-weight: bold;
+  color:black;
+}
+
+
+.Nav-about-menu .ul a{
+  color: black;
+  text-decoration: none;
+}
+
+.Nav-about-menu .logo1 ,.logo2 ,
+.logo3 {
+  font-size: 20px;
+}
+
+
+.Profile-dropmenu .colProfile ul{
+  text-align: start;
+  list-style-type: none;
+}
   
-
- .Nav-about-menu {
-    display: flex;
-    align-self: center;
-     gap:5px ;
-     margin-right: 50px;
-     
-    }
-
-    .Profile{
-      visibility: visible;
-    }
-    .Hide-Profile{
-      visibility: hidden;
-    }
-
-   .Nav-about-menu li{
-    list-style-type: none;
-    position: relative;
-   }
-
-   .Nav-about-menu  div{
-    align-items: center;
-     
-   }
-
-   .li {
-     margin-top: 11px;
-     gap:10px
-   }
-
-   .li p{
-    margin-top: -5px;
-    font-size: 11px;
-    margin-right: 20px;
-     
-    font-weight: bold;
-   }
-   .p1{
-    margin-left: 8px;
-   }
-   .p2{
-    margin-right: 7px;
-   }
-
-
-    
-   .Mens-dropmenu {
+ 
+  
+.Mens-dropmenu {
      position: absolute;
-     top:51px;
-     width:1100px;
-     left:-30px;
+     top:55px;
+     width:1150px;
+     left:-50px;
      height: 450px;
      opacity: 0;
      visibility: hidden;
@@ -217,7 +213,7 @@
    .colm:nth-child(even){
     /* background-color:rgb(241, 240, 240); */
     background-color:#F0F0F0;
-    width:240px;
+    width:230px;
     height: 450px;
     align-self: self-start;
     
@@ -231,7 +227,8 @@
   }
 
   .Mens-dropmenu-conatiner .colm li:hover{
-    font-weight: bold;
+    transform: scale(1.05);
+    font-weight: 450;
   }
 
   .Mens-dropmenu-conatiner .colm header{
@@ -273,9 +270,9 @@
 
 .Women-dropmenu {
   position: absolute;
-  top:51px;
-  width:1100px;
-  left:-30px;
+  top:55px;
+  width:1150px;
+  left:-50px;
   height: 450px;
   opacity: 0;
   visibility: hidden;
@@ -304,7 +301,8 @@
 }
 
 .Women-dropmenu-conatiner .colw li:hover{
- font-weight: bold;
+  transform: scale(1.05);
+  font-weight: 450;
  
 }
 
@@ -368,10 +366,10 @@ gap:0px;
 
 .Kids-dropmenu {
   position: absolute;
-  top:51px;
-  width:1100px;
-  left:-30px;
-  height: 550px;
+  top:55px;
+  width:1150px;
+  left:-50px;
+  height: 450px;
   opacity: 0;
   visibility: hidden;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
@@ -390,7 +388,7 @@ gap:0px;
   /* background-color:rgb(241, 240, 240); */
   background-color:#F0F0F0;
   width:250px;
-  height: 550px;
+  height: 450px;
  }
 
 .Kids-dropmenu-conatiner .colk li{
@@ -398,8 +396,9 @@ gap:0px;
  margin-left: 20px;
 }
 
-.kids-dropmenu-conatiner .colk li:hover{
- font-weight: bold;
+.Kids-dropmenu-conatiner .colk li:hover{
+ transform: scale(1.05);
+ font-weight: 450;
 }
 
 .Kids-dropmenu-conatiner .colk header{
@@ -466,9 +465,9 @@ gap:0px;
 /* home and living */
 .Home-dropmenu {
   position: absolute;
-  top:51px;
+  top:55px;
   width:1150px;
-  left:-30px;
+  left:-50px;
   height: 480px;
   gap:10px;
   opacity: 0;
@@ -501,7 +500,8 @@ gap:0px;
 }
 
 .Home-dropmenu-conatiner .col li:hover{
- font-weight: bold;
+  transform: scale(1.05);
+  font-weight: 450;
 }
 
 .Home-dropmenu-conatiner .col header{
@@ -516,7 +516,7 @@ gap:0px;
 
 
 
-  .Home:hover .Home-dropmenu{
+.Home:hover .Home-dropmenu{
  opacity: 1;
  visibility: visible;
 }
@@ -557,16 +557,16 @@ gap:0px;
 
 .Beauty-dropmenu {
   position: absolute;
-  top:51px;
-  width:1100px;
-  left:-30px;
-  height: 450px;
+  top:55px;
+  width:1000px;
+  left:-50px;
+  height: 420px;
   opacity: 0;
   visibility: hidden;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
  background-color: white;
  line-height: 20px;
- padding-left: 20px;
+ padding-left: 10px;
  align-self: self-start;
  padding-right: 10px;
  /* border-top: 2px solid rgb(13, 183, 175); */
@@ -576,8 +576,9 @@ gap:0px;
 
 .colb:nth-child(even){
   background-color:#F0F0F0;
-  width:250px;
-  height: 450px;
+  width:220px;
+  height: 420px;
+
  }
  
 .Beauty-dropmenu-conatiner .colb li{
@@ -586,7 +587,8 @@ gap:0px;
 }
 
 .Beauty-dropmenu-conatiner .colb li:hover{
- font-weight: bold;
+  transform: scale(1.05);
+  font-weight: 450;
 }
 
 .Beauty-dropmenu-conatiner .colb header{
@@ -818,339 +820,3 @@ cursor: pointer;
 
  }
 
-
-/* for desktop media query */
-
-
-@media screen  and (min-width :1150px)  and (max-width :1423px)
-{
-  .Navigation-container{
-    display: flex;
-    position: sticky;
-
-    z-index: 1;
-    background-color: rgb(239, 244, 241); 
-    width: 100%;
-    height: 80px;
-   }  
-
-   .Myntra-image{
-    align-self: center;
-   }
-
-   .image-myntra-image{
-    width:40px;
-    height: 32px;
-
-   }
-
-   .Nav-Menu{
-    display: flex;
-    list-style-type: none;
-    gap:15px;
-    cursor: pointer;
-    align-self: center;
-    transition: all 0.3s ease;
-     position: relative;
-     margin-left: -50px;
-   }
-   .Nav-Menu li{
-    font-size: 12px;
-    font-weight:bold; 
-    letter-spacing:0.5px;
-    color:rgb(40, 44, 63);
-      
-     align-self: center;
-    
-   }
-
-   .Nav-Menu li a{
-     
-    text-decoration: none;
-    color:rgb(40, 44, 63);
-   }
-   
-   .Nav-Menu li span{
-    color:orangered;
-    font-size: 10px;
-     position:absolute;
-      
-     
-
-   }
-
-   .Nav-input-input {
-    align-self: center;
-    outline: none;
-    border: none;
-     
-   }
-   
-   .Nav-input-input input {
-    align-self: center;
-    outline: none;
-    border: none;
-  background-color:#f4efe4;
-    
-   }
-
-   .search-img{
-    width:15px;
-    height:15px;
-     
-    
-     
-     
-   }
-
-   .Nav-input-input button{
-    margin-left:-100px;
-    outline:none;
-    border:none;
-    height:35px;
-    border-radius:4px;
-    background-color:#F8F8FF;
-    margin-left: 10px;
-     
- }
-
- .Nav-input-input  input{
-  width:300px;
-  height:30px;
-  background-color:#f4efe4;
-   
-}
-
-.Nav-about-menu li{
-  list-style-type: none;
-  position: relative;
-  margin-right: 10px;
- }
-
-
- .Nav-about-menu  div{
-  align-items: center;
-   
- }
- .li p{
-  margin-top: -5px;
-  font-size: 12px;
-  margin-right: 20px;
-   
-  font-weight: bold;
- }
-
- .Mens-dropmenu {
-  position: absolute;
-  top:51px;
-  width:900px;
-  left:-30px;
-  height: 400px;
-  opacity: 0;
-  visibility: hidden;
-  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-  background-color: white;
-  line-height: 20px;
-  padding-left: 20px;
-  align-self: self-start;
-  padding-right: 10px;
- /* border-top: 2px solid orangered; */
- transition: all 0.3s ease-in-out;
- 
-}
-
-.colm:nth-child(even){
-  /* background-color:rgb(241, 240, 240); */
-  background-color:#F0F0F0;
-  width:250px;
-  height: 400px;
- }
-
- 
-.Mens-dropmenu{
-  line-height: 20px;
-}
-
-.Mens-dropmenu-conatiner .colm header{
-  text-align: start;
-  font-size:13px ;
-}
-
-.Mens:hover .Mens-dropmenu{
-  opacity: 1;
-  visibility: visible;
- }
-
- .Mens-dropmenu-conatiner .colm li{
-  font-weight: lighter;
-}
-
-
-
-
-/* women */
-.Women-dropmenu{
-  position: absolute;
-  top:51px;
-  width:900px;
-  height: 400px;
-  opacity: 0;
-  visibility: hidden;
-  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-  background-color: white;
-  line-height: 20px;
-  padding-left: 20px;
-  align-self: self-start;
-  padding-right: 10px;
- /* border-top: 2px solid orangered; */
- transition: all 0.3s ease-in-out;
-}
-
-.colw:nth-child(even){
-  /* background-color:rgb(241, 240, 240); */
-  background-color:#F0F0F0;
-  width:250px;
-  height: 400px;
- }
-
- .Women-dropmenu .Women-dropmenu-conatiner{
-  display: flex;
- justify-content: space-between;
- gap:10px;
- }
-
- .Women-dropmenu-conatiner .colw header{
-  text-align: start;
-  font-size:13px ;
- }
- .Women-dropmenu-conatiner .colw li{
-  font-weight: lighter;
- }
-
- .Women-dropmenu{
-  line-height:20px;
- }
- 
-/* kid */
-.Kids-dropmenu {
-  position: absolute;
-  top:51px;
-  width:900px;
-  left:-30px;
-  height: 410px;
-  opacity: 0;
-  visibility: hidden;
-  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
- background-color: white;
- line-height: 20px;
- padding-left: 20px;
- align-self: self-start;
- padding-right: 10px;
- /* border-top: 2px solid rgb(242, 106, 16); */
- transition: all 0.3s ease-in-out;
-}
-
-
-.colk:nth-child(even){
-  /* background-color:rgb(241, 240, 240); */
-  background-color:#F0F0F0;
-  width:250px;
-  height: 410px;
- }
-
- .Kids-dropmenu-conatiner .colk li{
-  font-weight: lighter;
- }
-
- .Kids-dropmenu-conatiner .colk header{
-  text-align: start;
-  font-size:13px ;
- }
-
- .Kids-dropmenu{
-  line-height: 20px;
- }
- .Kids-dropmenu .Kids-dropmenu-conatiner{
-  display: flex;
- justify-content: space-between;
- gap:10px;
- }
-
-/* Home */
-
-.Home-dropmenu {
-  position: absolute;
-  top:51px;
-  width:900px;
-  left:-30px;
-  height: 400px;
-  gap:10px;
-  opacity: 0;
-  visibility: hidden;
-  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
- background-color: white;
- line-height: 20px;
- padding-left: 20px;
- align-self: self-start;
- padding-right: 10px;
- /* border-top: 2px solid rgb(242, 194, 16); */
- transition: all 0.3s ease-in-out;
- 
-}
-.col:nth-child(even){
-  /* background-color:rgb(241, 240, 240); */
-  background-color:#F0F0F0;
-  width:250px;
-  height: 400px;
- }
-
-.Home-dropmenu-conatiner .col header{
-  text-align: start;
-  font-size:13px ;
- }
-
- .Home-dropmenu{
-  line-height: 20px;
- }
-
-/* beauty */
-
-.Beauty-dropmenu {
-  position: absolute;
-  top:51px;
-  width:900px;
-  left:-30px;
-  height: 450px;
-  opacity: 0;
-  visibility: hidden;
-  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
- background-color: white;
- line-height: 20px;
- padding-left: 20px;
- align-self: self-start;
- padding-right: 10px;
- /* border-top: 2px solid rgb(13, 183, 175); */
- transition: all 0.3s ease-in-out;
-}
-
-.colb:nth-child(even){
-  background-color:#F0F0F0;
-  width:250px;
-  height: 450px;
- }
-
- .Beauty-dropmenu-conatiner .colb header{
-  text-align: start;
-  font-size:13px ;
- }
- .Beauty-dropmenu{
-  line-height: 25px;
- }
-
- .Beauty-dropmenu .Beauty-dropmenu-conatiner{
-  display: flex;
- justify-content: space-between;
- gap:20px;
- }
- 
-}

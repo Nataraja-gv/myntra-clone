@@ -1,0 +1,19 @@
+.Breadcrum-container{
+    display: block;
+    margin-top: 40px;
+    font-size: 14px;
+     margin-left: 40px;
+    font-size: 14px;
+    color: #282c3f;
+    text-transform: capitalize;
+    text-decoration: none;
+    padding-bottom: 1px;
+    border-bottom: 1px solid transparent;
+    
+}
+
+.Breadcrum-container a{
+    text-decoration: none;
+    font-size: 14px;
+    color:#282C3f;
+}

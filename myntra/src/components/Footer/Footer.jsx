@@ -1,14 +1,14 @@
 import React from 'react';
 import './Footer.css'
-import playstore from './playstore.png';
-import applestore from './applestore.jpg'
 import { FaFacebookF } from "react-icons/fa6";
 import { FaTwitter } from "react-icons/fa";
 import { IoLogoYoutube } from "react-icons/io5";
 import { FaInstagram } from "react-icons/fa";
+// import store from './playstore_and_apple-removebg-preview.png'
 import original from './original.png'
-import days14 from './days14.png'
-import store from './playstore_and_apple-removebg-preview.png'
+import days from './14days.png'
+import playstore from './playstore.png'
+import applestore from './Applestore.png'
 
 const Footer = () => {
     return (
@@ -79,7 +79,8 @@ const Footer = () => {
                 <div className='Myntra-app-playstore'>
                 <div className='Store-Store'> 
                 <header>EXPERIENCE MYNTRA APP ON MOBILE</header>
-                    <img src={store} alt="" className='Playstore'/>
+                    <img src={playstore} alt="" className='Playstore'/>
+                    <img src={applestore} alt="" className='Playstore'/>
                      
                 </div>
 
@@ -102,25 +103,26 @@ const Footer = () => {
                 </div>
                     
                 <div className='original-days14'>
-                    <div className='original'>
-                      <div className='original-first'> 
-                       <img src={original} alt="" className='original-logo'/>
-                       <span>100% ORIGINAL</span>
-                       </div>
+                     <div className='original-container'>
+                      <div className='original-section'>
+                        <img src={original} alt='' className='orginal-image'/>
+                      </div>
+                      <div className='original-details'>
+                      <strong className='hundred'>100% ORIGINAL </strong>
+                      guarantee for all products at myntra.com 
+                      </div>
 
-                       <p className='Guarantee'>guarantee for all</p>
-                       <p> products at myntra.com</p>
-                    </div>
+                     </div>
+                     <div className='days14-conatainer'>
+                     <div className='days14-section'>
+                        <img src={days} alt='' className='days-image'/>
+                      </div>
+                      <div className='days-details'>
+                      <strong className='hundred'>Return within  14days </strong>
+                      of receiving your order
+                      </div>
+                     </div>
 
-                    <div className='days14'>
-                    <div className='days14-first'> 
-                      <img src={days14} alt="" className='days14-logo'/>
-                       <span>Return within 14days</span>
-                    </div>   
-
-                    <p className='days14-recive'>of receiving your order</p>
-
-                    </div>
                 </div>
 
             </div>
@@ -132,13 +134,13 @@ const Footer = () => {
 
             <div className='POPULAR-SEARCHES'>
 
-                   <div className='p-seaches'>
+                   
+               
+                <div className='Popular-brand'>
+                     <div className='p-seaches'>
                     <p>POPULAR SEARCHES   </p>
                        
                    </div>
-               
-                <div className='Popular-brand'>
-
                 
                     <p>Makeup | Dresses For Girls  | T-Shirts | Sandals | Headphones | Babydolls | Blazers For Men | Handbags | Ladies Watches | Bags | Sport Shoes | Reebok Shoes | Puma Shoes |</p>
                     <p>Boxers | Wallets | Tops | Earrings | Fastrack Watches | Kurtis | Nike | Smart Watches | Titan Watches | Designer Blouse | Gowns | Rings | Cricket Shoes | Forever 21 | Eye</p>
@@ -196,10 +198,10 @@ const Footer = () => {
    </div>        
    
             <div className='ONLINE-SHOPPING '>
-            <div> 
+               
                 <header>ONLINE SHOPPING MADE EASY AT MYNTRA</header>
                 <p>If you would like to experience the best of online shopping for men, women and kids in India, you are at the right place. Myntra is the ultimate destination for fashion and lifestyle, being host to a wide array of merchandise including clothing, footwear, accessories, jewellery, personal care products and more. It is time to redefine your style statement with our treasure-trove of trendy items. Our online store brings you the latest in designer products straight out of fashion houses. You can shop online at Myntra from the comfort of your home and get your favourites delivered right to your doorstep.</p>
-                </div>
+                 
             </div>
 
 

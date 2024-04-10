@@ -12,9 +12,12 @@ import Navigation   from './components/Navbar/Navigation.jsx'
 import Wishlist from './components/Wishlist/Wishlist.jsx'
 import Bag from './components/BagCart/Bag.jsx'
 // import SideBar from './components/pages/SideBar.jsx'
-
+import Product from './components/BeautyProducts/Product.jsx'
+import CartBag from './components/CartToBag/CartBag.jsx'
  import MensTypeProducts from './components/ItemsCategoryFolder/MensTypeProducts.jsx' 
-function App() {
+import WishlistProduct from './components/WishlistProducts/WishlistProduct.jsx'
+import Footer from './components/Footer/Footer.jsx'
+ function App() {
   return (
     <div>
      
@@ -29,13 +32,11 @@ function App() {
         <Route path="/Home" element={<Home/>}></Route>
         <Route path="/Login" element={<Login/>}></Route>
         <Route path="/Beauty" element={<Beauty/>}></Route>
-        <Route path="/wishlist" element={<Wishlist/>}></Route>
-        <Route path="/Bag" element={<Bag/>}></Route>
+        <Route path="/wishlist" element={<WishlistProduct/>}></Route>
+        <Route path="/Bag" element={<CartBag/>}></Route>
      
-         <Route path='/product' element={<MensTypeProducts/>}>
-          <Route path=":productid" element={ <MensTypeProducts category="shirt"/>}  ></Route>
-          <Route path=":productid" element={ <MensTypeProducts category="tshirt"/>}  ></Route>
-          <Route path=":productid" element={ <MensTypeProducts  category="jeans"/>} ></Route>
+         <Route path='/Product' element={<Product/>}>
+            <Route path=':ProductId' element={<Product/>}/> 
          </Route>  
              
         

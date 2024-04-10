@@ -32,12 +32,12 @@ const Bag = () => {
         </div>
 
 
-    <div class="bag-second-section">
+    {/* <div class="bag-second-section">
     <img src={bag} alt=""  className='BagImage'/>
     <div className="emptyCart-base-emptyText">Hey, it feels so light!</div>
     <div className="emptyCart-base-emptyDesc">There is nothing in your bag. Let's add some items.</div>
     <div data-testid="button" className="bag-wishlist-description">ADD ITEMS FROM WISHLIST</div>
-    </div>
+    </div> */}
 
 
         </div>

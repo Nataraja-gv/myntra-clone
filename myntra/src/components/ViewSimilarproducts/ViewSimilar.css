@@ -1,0 +1,9 @@
+.view-releted-products-container{
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    column-gap:20px;
+    row-gap: 50px;
+    justify-content: space-around;
+}
+
+ 

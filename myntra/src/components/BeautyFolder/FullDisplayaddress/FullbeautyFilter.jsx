@@ -1,25 +1,35 @@
-import React, { useState } from 'react';
+import React, { useContext, useState } from 'react';
 import './FullBeautyFilter.css'
 import { IoIosArrowForward } from "react-icons/io";
-import Beautyproducts from '../BeautyProducts/BeautyProducts.jsx';
+// import HoverBeautyproducts from '../../HoverComponent/HoverData.jsx';
 import { MdOutlineKeyboardArrowDown } from "react-icons/md";
 import { MdOutlineKeyboardArrowUp } from "react-icons/md";
 import { IoSearch } from "react-icons/io5";
 import { MdCancel } from "react-icons/md";
-// import './Media.css'
+import HoverBeauty from '../../HoverComponent/HoverBeauty.jsx'
 
-
+import 'react-multi-carousel/lib/styles.css';
+import { RiHeart3Line } from "react-icons/ri";
+import view from './view.png';
+import { ContextBeauty } from '../../Context/Context.jsx';
+ 
 const FullbeautyFilter = () => {
+
+  const {HoverBeautyproducts} = useContext(ContextBeauty)
+ 
 
     const [arrowOpen ,setArrowOpen]=useState(false);
     const[countryOpen,setCountryOpen]=useState(false);
-    // const [close ,setClose]=useState(false);
+     
     const[sizeopen,setSizeOpen]=useState(false);
     const[opensearch,setOpenSearch]=useState(false);
     const[openBrandsearch,setOpenBrandSearch]=useState(false);
     const[openColorsearch,setOpenColorSearch]=useState(false);
 
+    const [isHovered, setIsHovered] = useState(false);
+    const [hoveropen,setHoverOpen] = useState(false);
 
+    const [sortby, setSortBy] = useState(false);
     const BundlesHandler=()=>{
         setArrowOpen(!arrowOpen)
         if (countryOpen){
@@ -54,7 +64,13 @@ const FullbeautyFilter = () => {
       }
      }
 
-
+     const responsive = {
+      desktop: {
+         breakpoint: { max: 3000, min: 1000 },
+         items: 1,
+         },
+       
+     };
 
 
     return (
@@ -122,7 +138,7 @@ const FullbeautyFilter = () => {
    <span className="category-section-header">Categories</span>
 <div className="category-searchbox-content ">
   
- <span className='filter-search-icon'  >{!opensearch ?<IoSearch className='search-logo' onClick={()=>setOpenSearch(!opensearch)}/>:<MdCancel  className='cancel-logo' onClick={()=>setOpenSearch(!opensearch)}/> }  </span>
+ <span className='filter-search-icon'  >{!opensearch ? <IoSearch className='search-logo' onClick={()=>setOpenSearch(!opensearch)}/>:<MdCancel  className='cancel-logo' onClick={()=>setOpenSearch(!opensearch)}/> }  </span>
  {opensearch && <input type="text" className="filter-search-inputBox " placeholder="Search for Categories"/>}
 </div>
 
@@ -473,7 +489,7 @@ const FullbeautyFilter = () => {
         <span className='color-Red-icon'></span>
         Red
         <span className='number'>(6725)</span>
-
+          
       </label>
     </li>
      
@@ -665,62 +681,21 @@ const FullbeautyFilter = () => {
 
 
   <div className='ShopCatagory-sort'>
-   <div className='Sort-sort-by'>
-     Sort by: 
-     
-     <select  className='sort-list'>
+   <div className='Sort-sort-by' onMouseEnter={()=>{setSortBy(!sortby)}} onMouseLeave={()=>{setSortBy(false)}}>
+     Sort by: <strong style={{fontSize:"15px"}}>Recommended </strong><MdOutlineKeyboardArrowDown className='sort-downarrow'/>
+     {sortby &&
+      <ul className='shop-catagory-dropmenu'> 
+      <li>Recommended</li>
+      <li>What's News</li>
+      <li>Popularity</li>
+      <li>Better Discount</li>
+      <li>Price : High to Low</li>
+      <li>Price : Low to High</li>
+      <li>Customer Rating</li>
+      </ul>
       
-      <option>
-       <label class="sort-label"> 
-         Recommended  
-       </label>
-        
-      </option>
-
-
-
-
-      <option> 
-      <label class="sort-label "> 
-      What's New
-      </label>
-      </option>
-
-      <option>
-      <label class="sort-label ">
-          Popularity 
-        </label>
-      </option>
-
-
-      <option>
-      <label class="sort-label ">
-      Better Discount </label>
-      </option>
-
-      <option>
-      <label class="sort-label ">
-      Price: High to Low  </label>
-      </option>
-
-      <option>
-      <label class="sort-label ">
-      Price: Low to High 
-      </label>
-      </option>
-
-      <option>
-      <label class="sort-label ">
-      Customer Rating  
-      </label>
-      </option>
-          
-      
-     </select>
-     
-      
-      
-      
+     }
+       
   </div>
          
           
@@ -732,14 +707,15 @@ const FullbeautyFilter = () => {
  
 
  <div className='Beauty-card-Container'>
-          <div className='Beauty-card-content'>
+          <div className='Beauty-card-content'  >
              {
-                Beautyproducts.map((item ,index)=>{
+              HoverBeautyproducts.map((item ,index)=>{
                     return(
-                    <div className='Card-Card-Beauty'>
+                    <div className='Card-Card-Beauty' key={index} id={item.id} onMouseEnter={() => setIsHovered(item.id)}
+                     onMouseLeave={() => setIsHovered(false)}>
                       
                         <div className='Card-Card-Image'>
-                        <img src={item.Image} alt='' className='Beauty-Product-image'/>
+                          <img src={item.Image} alt='' className='Beauty-Product-image'/>
                         </div>
                         <div className='beauty-deatils-beauty'> 
                         <div className='rating-rate'>
@@ -762,6 +738,15 @@ const FullbeautyFilter = () => {
                         </div>
 
                         </div>
+                   
+                        { isHovered === item.id && <div> <HoverBeauty key={item.id} id={item.id}  Image={item.Image}  Image2={item.Image2}  Image3={item.Image3}  Size={item.Size} newAmount={item.newAmount} oldAmount={item.oldAmount} offer={item.offer} className="HoverBeautyHover"/>
+                            <div className='viewsimilar-main-container'>
+                            <ul> 
+                               <span className='view-img-section view-first'> <img src={view} alt=""  className='view-first-image'/> </span> 
+                              <span className='view-text'>View Similer</span>
+                              </ul></div>
+                             
+                            </div>}
                         </div>    
                      
                     )
