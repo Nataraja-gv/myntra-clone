@@ -5,6 +5,7 @@ import './styles/Beauty.css'
 // import { MdOutlineKeyboardArrowUp } from "react-icons/md";
 // import Beautydisplay from '../../components/BeautyFolder/Beautydisplay/Beautydisplay.jsx'
 import Footer from '../../components/Footer/Footer.jsx'
+ 
 import FullbeautyFilter from '../../components/BeautyFolder/FullDisplayaddress/FullbeautyFilter.jsx'
 const Beauty = () => {
 
@@ -14,7 +15,8 @@ const Beauty = () => {
   // const[sizeopen,setSizeOpen]=useState(false);
 
     return (
-        <div className='Beauty-Main-conatiner'> 
+        <div className='Beauty-Main-conatiner'>
+       
           {/* <div className='Beauty-Main-firstcontainer'>
               <div className='first-left-side1'>
                 <p>Home  / <span>Personal Care</span> </p>

@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import './styles/Men.css';
  import './styles/heading.css'
 import Biggest from '../../components/MensFloder/BiggestDeals/Biggest.jsx';
@@ -14,8 +14,11 @@ import Footer from '../../components/Footer/Footer.jsx'
 import Holi from '../../components/Holi/Holi.jsx'
 import Puma from '../../components/Puma/Puma.jsx'
 import HoverBeauty from '../HoverComponent/HoverBeauty.jsx'
+import { ThemeContext } from '../ThemeContext/Theme.jsx';
 
 const Men = () => {
+  const {theme} =useContext(ThemeContext)
+
     return (
         <div className='Men-Myntra-Container'>
          
@@ -24,7 +27,7 @@ const Men = () => {
           </div>
 
           <div className='heading-bold'>
-          <h1 className='h1'>BIGGEST DEALS ON TOP BRANDS</h1>
+          <h1 className='h1' style={theme==="light"?{color:"rgb(62, 65, 82)"}:{color:"white"}}>BIGGEST DEALS ON TOP BRANDS</h1>
         </div>
 
         <div className='Biggest-deals-container'>
@@ -32,7 +35,7 @@ const Men = () => {
         </div>
 
         <div className='heading-bold '>
-          <h1> CATEGORIES TO BAG</h1>
+          <h1 style={theme==="light"?{color:"rgb(62, 65, 82)"}:{color:"white"}}> CATEGORIES TO BAG</h1>
         </div>
 
 
@@ -42,7 +45,7 @@ const Men = () => {
 
 
         <div className='heading-bold'>
-          <h1>EXPLORE TOP BRANDS</h1>
+          <h1 style={theme==="light"?{color:"rgb(62, 65, 82)"}:{color:"white"}}>EXPLORE TOP BRANDS</h1>
         </div>
 
 
@@ -52,7 +55,7 @@ const Men = () => {
 
 
         <div className='heading-bold'>
-          <h1>MYNTRA LUXE</h1>
+          <h1 style={theme==="light"?{color:"rgb(62, 65, 82)"}:{color:"white"}}>MYNTRA LUXE</h1>
         </div>
 
 
@@ -62,7 +65,7 @@ const Men = () => {
 
 
         <div className='heading-bold'>
-          <h1>TRENDING IN SPORTS  WEAR</h1>
+          <h1 style={theme==="light"?{color:"rgb(62, 65, 82)"}:{color:"white"}}>TRENDING IN SPORTS  WEAR</h1>
         </div>
 
 
@@ -72,7 +75,7 @@ const Men = () => {
 
 
         <div className='heading-bold'>
-          <h1>TRENDING IN INDIAN WEAR</h1>
+          <h1 style={theme==="light"?{color:"rgb(62, 65, 82)"}:{color:"white"}}>TRENDING IN INDIAN WEAR</h1>
         </div>
 
 
@@ -82,7 +85,7 @@ const Men = () => {
 
 
         <div className='heading-bold'>
-          <h1> TRENDING IN FOOTWEAR</h1>
+          <h1 style={theme==="light"?{color:"rgb(62, 65, 82)"}:{color:"white"}}> TRENDING IN FOOTWEAR</h1>
         </div>
 
 
@@ -92,7 +95,7 @@ const Men = () => {
 
 
         <div className='heading-bold'>
-          <h1> TRENDING IN ACCESSORIES</h1>
+          <h1 style={theme==="light"?{color:"rgb(62, 65, 82)"}:{color:"white"}}> TRENDING IN ACCESSORIES</h1>
         </div>
 
             

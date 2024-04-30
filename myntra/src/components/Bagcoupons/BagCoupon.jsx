@@ -9,17 +9,20 @@ const BagCoupon = () => {
           <h1>coupons</h1>
 
           <div className='Apply-coupon-section'>
-            <span><GoTag className='coupon-tag' /></span>
-            <p className='coupon-txt'>Apply Coupons</p>
+             
+            <p className='coupon-txt'><span><GoTag className='coupon-tag' /></span>Apply Coupons</p>
+            <ul className='Coupon-main-apply'> 
+             
             <p className='Coupons-apply'>Apply</p>
-           
+            
+            </ul>
             </div>
            <hr className='coupon-hr'/>
 
            <h2 className='support-coupon-social'>support Transformative social work in india</h2>
 
            <div className='donate-checkbox-Container'>
-            <input type='checkbox' name='donate' />
+            <input type='checkbox' name='donate' style={{cursor:"pointer"}} />
             <p className='donate-txt'>Donate and make a difference</p>
            </div>
 

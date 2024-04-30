@@ -1,5 +1,7 @@
 import React, { useContext } from 'react';
 import './HoverBeauty.css'
+import { FcLike } from "react-icons/fc";
+
 // import Beautyproducts from '../BeautyFolder/BeautyProducts/BeautyProducts.jsx'
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
@@ -7,9 +9,10 @@ import { CiHeart } from "react-icons/ci";
 import { Link } from "react-router-dom";
 import { ContextBeauty } from '../Context/Context';
 
+
 const HoverBeauty = (props) => {
 
-    const {addtoWishlist} = useContext(ContextBeauty)
+    const {addtoWishlist,addToWishlist,isWishlist} = useContext(ContextBeauty)
     const responsive = {
        desktop: {
           breakpoint: { max: 3000, min: 1000 },
@@ -17,11 +20,12 @@ const HoverBeauty = (props) => {
           },
         
       };
-
-//  const [productId,setProductId]     
+    
+const isInWishlist = isWishlist.some((item) => item.id === props.id);
 
 
     return (
+
         <div className='HoverBeauty-main-container' >
             <div className='hover-conatiner'>
                      <div className='Image-container'>
@@ -38,9 +42,16 @@ const HoverBeauty = (props) => {
                      </div>
                      <div className='hover-beauty-deatils'>
 
-                        <ul className='wishlist-container'>
-                        <li><CiHeart className='heart-beauty' /></li> 
-                        <li   className='wishlist' onClick={()=>{addtoWishlist(props.id)}}>WISHLIST</li>
+                        <ul className='wishlist-container' onClick={()=> addToWishlist(props)}>
+                        {isInWishlist ? <ul className='hover-wishlisted-section'><li><FcLike className='heart-beauty hover-wish' /></li><li className='wishlist'>WISHLISTED</li></ul>:
+                        <ul  className='hover-wishlist-section'><li><CiHeart className='heart-beauty' /></li> <li className='wishlist'>WISHLIST</li></ul>}
+                 
+
+                         
+
+                         
+
+                        
                         </ul>
 
                          <ul className='hover-size-section'> 

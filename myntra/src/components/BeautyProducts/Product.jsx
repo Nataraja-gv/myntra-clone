@@ -7,12 +7,16 @@ import { useParams } from 'react-router-dom';
 import ProductImage from '../ProductImage/ProductImage.jsx'
 import ProductInfo from '../productInfo/ProductInfo.jsx'
 import ViewSimilarproducts from '../ViewSimilarproducts/ViewSimilarproducts.jsx'
+// import Shimmer from '../Shimmerfolder/Shimmer.jsx'
+import useOnline from '../utilits/useOnline.jsx'
 const Product = ( ) => {
     const {HoverBeautyproducts} = useContext(ContextBeauty);
     const {ProductId} = useParams();
     const product = HoverBeautyproducts.find((item)=>{return item.id === parseInt(ProductId)});
-    
-    return (
+       
+
+
+    return   (
         <div>
         <div className=''> 
            <Breadcrum product={product} />

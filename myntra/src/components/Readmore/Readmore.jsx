@@ -1,15 +1,18 @@
-import React, { useState } from 'react';
+import React, { useContext, useState } from 'react';
 import './Readmore.css';
 import { BiSolidOffer } from "react-icons/bi";
 import { MdKeyboardArrowUp } from "react-icons/md";
 import { RiArrowDownSLine } from "react-icons/ri";
+import { ThemeContext } from '../ThemeContext/Theme';
 const Readmore = () => {
+  const { theme } = useContext(ThemeContext);
+
     const [more,setMore]=useState(false)
     return (
-        <div className='readmore-main-container'>
+        <div className='readmore-main-container' style={theme==="light"?{borderColor:""}:{borderColor:"black",backgroundColor:"#d6ccfe"}} >
            <div className='Available-offer-section'>
-            <BiSolidOffer className='readmore-offer' /> 
-            <div className='available-offer'>Available Offers</div>
+            <BiSolidOffer className='readmore-offer' style={theme==="light"?{color:""}:{color:"white"}}/> 
+            <div className='available-offer' style={theme==="light"?{color:""}:{color:"white"}}>Available Offers</div>
           </div>
 
           <div className='readmore-offer'>

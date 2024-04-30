@@ -1,106 +1,101 @@
-import React, { createContext, useState } from 'react';
-import HoverBeautyproducts from '../../components/HoverComponent/HoverData.jsx'
+import React, { createContext, useMemo, useState } from 'react';
+import HoverBeautyproducts from '../../components/HoverComponent/HoverData.jsx';
+
+
+export const ContextBeauty = createContext(null);
+
+const ContextProvider = ({ children }) => {
+   
+ 
+const [cart, setCart] = useState([]);
+const [isWishlist,setIsInWishlist]=useState([]);
+
+const addToCart = (item) => {
+
+  // console.log(item,"item");
+  const existingItem = cart.find((cartItem) => cartItem.id === item.id);
+  // console.log(existingItem,"itemmmmmm")  
+  if (existingItem) {
+    setCart(cart.map((cartItem) =>cartItem.id === item.id ? cartItem : cartItem));
+  } 
+
+  else {
+   setCart([...cart, { ...item, quantity: 1 }]);
+  }
+};
+
 
  
 
-
-const DefaultCartBag=()=>{
-     let  Cart={}
-     for ( let index=0;index<HoverBeautyproducts.length+1;index++) {
-          Cart[index]=0;
-     }
-     return Cart;
-} 
-
-
-
- 
-export  const ContextBeauty =createContext(null)
-const ContextProvider = ({children}) => {
-
-      const[cart,setCart]=useState(DefaultCartBag()) 
-      const[wishlist,setWishlist]=useState(DefaultCartBag()) 
+const addToWishlist=(item)=>{
+  const existingItem = isWishlist.find((cartItem) => cartItem.id === item.id);
+  if (existingItem) {
+    setIsInWishlist(
        
-      const addToBag =(item)=>{
-          setCart((prob)=>({...prob,[item]:prob[item]+1}))
-          // console.log(cart)
-      }
-
-      const removeFormBag =(item)=>{
-          setCart((prob)=>({...prob,[item]:prob[item]-1}))
-          
-      }
-
-      const addtoWishlist =(wishlistitem)=>{
-           setWishlist((prob)=>({...prob,[wishlistitem]:prob[wishlistitem]+1}))
-              // console.log(wishlist)
-      }
-
-      const removeFromWishlist =(wishlistitem)=>{
-          setWishlist((prob)=>({...prob,[wishlistitem]:prob[wishlistitem]-1}))
-          // console.log(wishlist)
-      }
-
+      isWishlist.map((cartItem) =>
        
-      const calculateTotalAmount = () => {
-          let totalAmount = 0;
-          for (const item in cart) {
-            if (cart[item] > 0) {
-               
-              const itemInfo = HoverBeautyproducts.find((product) => product.id === parseInt(item));
-              if (itemInfo) {
-               
-                totalAmount += itemInfo.Namount * cart[item];
-              }
-            }
-          }
-          return totalAmount ;
-        };
-
-        const discountMrp= ()=>{
-          let  discountamount=0;
-          for (const item in cart){
-               if (cart[item]>0){
-                    const  discountinfo =HoverBeautyproducts.find((prob)=>prob.id===parseInt(item))
-     
-                    if(discountinfo){
-                         discountamount += (discountinfo.Oamount - discountinfo.Namount) * cart[item]
-                    }
-                     
-     
-          }
-          }
-          return discountamount
-     
-         };
-
-    const CalculatetotalMRP = ()=>{
-     let totalmrp=0;
-     for(const item  in cart){
-          if (cart[item]>0){
-               const  mrpinfo =HoverBeautyproducts.find((prob)=>prob.id===parseInt(item))
-
-               if (mrpinfo){
-                    totalmrp +=mrpinfo.Oamount * cart[item];
-               }     
-          }
-     }
-     return totalmrp;
-    } ;
-
-     
-
-
-     
-
-
-
-      const ContextValue={discountMrp,CalculatetotalMRP,HoverBeautyproducts,cart,calculateTotalAmount,removeFromWishlist,addToBag,removeFormBag,wishlist,setWishlist,addtoWishlist}
-    return (
-         <ContextBeauty.Provider value={ContextValue}>
-              {children}
-         </ContextBeauty.Provider>
+        cartItem.id === item.id
+          ?    cartItem
+          : cartItem,
+      )
     );
+  } else {
+    setIsInWishlist([...isWishlist, { ...item, quantity: 1 }]);
+  }
+  
 }
+
+
+const removeFromCart = (itemId) => {
+  setCart(cart.filter((cartItem) => cartItem.id !== itemId));
+};
+
+
+const removeFromWishlist = (itemId) => {
+  setIsInWishlist(isWishlist.filter((cartItem) => cartItem.id !== itemId));
+};
+
+ 
+const clearCart = () => {
+  setCart([]);
+};
+
+
+const setItemsQty = (productId, quantity) => {
+  setCart((prevCart) => {
+    return prevCart.map((item) =>
+      item.id === productId ? { ...item, quantity } : item
+    );
+  });
+};
+
+
+
+const calculateTotals = useMemo(() => {
+  let total = 0;
+  let discount = 0;
+  let mrp = 0;
+
+  cart.forEach((cartItem) => {
+    total += (cartItem.Namount) * cartItem.quantity;
+    discount += (cartItem.Oamount-cartItem.Namount) * cartItem.quantity;
+    mrp += cartItem.Oamount * cartItem.quantity;
+  });
+
+  return { total, discount, mrp };
+}, [cart]);
+
+
+
+ 
+
+const ContextValue = {HoverBeautyproducts ,setItemsQty,addToWishlist,isWishlist,addToCart,cart,removeFromCart,removeFromWishlist,clearCart ,total: calculateTotals.total,discount: calculateTotals.discount,mrp: calculateTotals.mrp,};
+    
+  return (
+    <ContextBeauty.Provider value={ContextValue}>
+      {children}
+    </ContextBeauty.Provider>
+  );
+};
 
 export default ContextProvider;

@@ -6,6 +6,7 @@
      padding: 10px;
      border-radius: 4px;
      background-color: #fff6f4;
+     cursor: pointer;
 }
 
 .address-list{
@@ -28,6 +29,7 @@
     border-radius: 4px;
     padding: 0px 25px;
     margin-left: 10px;
+    cursor: pointer;
   }
 
 .change-address{

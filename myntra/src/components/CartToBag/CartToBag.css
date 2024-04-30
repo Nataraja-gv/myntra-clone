@@ -1,6 +1,7 @@
 .cartbag-image-image{
     width:150px;
     height: 200px;
+    cursor: pointer;
 }
 
 .cart-bag-item-container{
@@ -14,6 +15,28 @@
     position: relative;
 }
 
+
+.clearCart-btn{
+    border: 1px solid rgb(227, 225, 225);
+    border-radius: 4px;
+    padding: 10px;
+    margin: 10px;
+    text-transform: capitalize;
+    font-size: 14px;
+    font-weight: 700;
+    color: red;
+    cursor: pointer;
+    background: transparent;
+    
+}
+
+.clearCart-section{
+    display: inline-block;
+}
+
+.clearCart-section:hover .clearCart-btn{
+    border: 1px solid red;
+}
 
 .container-container-main-container{
      
@@ -54,6 +77,7 @@ ul{
     gap:30px;
     align-items: center;
     margin: 10px 0px;
+    /* cursor: pointer; */
 }
 
 .cartbag-size{
@@ -65,6 +89,7 @@ ul{
     text-align: center;
     padding: 2px 5px;
     border-radius: 4px;
+    cursor: pointer;
 }
 
 .cartbag-size-text{
@@ -72,6 +97,7 @@ ul{
     vertical-align: middle;
     font-size: 14px;
     font-weight:  bold;
+    cursor: pointer;
 
 }
 .cartbag-size-icon{
@@ -81,23 +107,66 @@ ul{
     vertical-align: middle;
     
 }
+.cartbag-qty {
+    align-items: center;
+    position: relative;
+    align-items: center;
+}
 
-.cartbag-qty{
-    display: flex;
-    gap:5px;
-    align-items: center; 
+.qty-inc-dec-qty-section{
+   position: absolute;
+   top:-20px;
+   left:80px;
+   display: grid;
+   grid-template-columns: 20px 20px 20px 20px 20px;
+   background-color: white;
+   border: 1px  solid rgb(227, 225, 225);
+   padding: 15px;
+   border-radius: 4px;
+   gap:5px;
+
+}
+
+.qty-cancel-btn{
+    position: absolute;
+    top:0px;
+    right: 0px;
+    font-size: 15px;
+     margin: 2px;
+     cursor: pointer;
+}
+
+.qty-inc-dec-qty-section li{
     background-color: #f5f5f6;
-    color: #282c3f;
-    padding: 2px 5px;
-    border-radius: 4px;
+    border-radius: 50%;
+    border: 0.1px solid red;
+    font-size: 12px;
+    text-align: center;
+    cursor: pointer;
+    margin: 2px;
 }
-.cartbag-qty-text{
-    display: inline-block;
-    vertical-align: middle;
-    font-size: 14px;
-    font-weight: bold;
+ 
+.cartbag-qty h1{
+ font-size: 14px;
+ background-color: #f5f5f6;
+ color: #282c3f;
+ padding: 2px 5px;
+ border-radius: 4px;
+ cursor: pointer;
+  
+  
+}
 
+.FaAngleRight-arrow{
+     vertical-align: middle;
 }
+
+ 
+ 
+
+ 
+
+
 
 .cartbag-payment-section{
     display: flex;
@@ -105,6 +174,16 @@ ul{
     gap:10px;
     /* border:2px solid green; */
     vertical-align: center;
+}
+
+.qty-arrow-right{
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.qty-icon{
+    font-size: 18px;
+    margin: 0px 5px;
 }
 
 .cartbag-namount{
@@ -116,6 +195,7 @@ ul{
     width: 14px;
     height: 14px;
     display: inline-block;
+    /* cursor: pointer; */
   
 }
 
@@ -191,3 +271,11 @@ ul{
     right: 30px;
     top:10px;
 }
+
+.cart-incre-decre{
+    font-size: 14px;
+    margin: 0px 2px;
+    align-self: center;
+}
+
+ 

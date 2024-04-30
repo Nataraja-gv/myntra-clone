@@ -190,6 +190,8 @@ const HoverBeautyproducts=[
         Namount:379,
         Oamount:399,
         Sizes:"75-100 ML",
+        inCart:false,
+        isWishlist:false
 
         
     },
@@ -212,9 +214,11 @@ const HoverBeautyproducts=[
         video:'https://www.youtube.com/embed/ZJHU4x3JolA?si=1u9dFp44R5ZCGs4P&amp;start=3',
        Image4:image24,
        Image5:image25,
-       Namount:379,
-       Oamount:399,
+       Namount:450,
+       Oamount:499,
        Sizes:"75-100 ML",
+       inCart:false,
+       isWishlist:false
        
 
   
@@ -239,9 +243,11 @@ const HoverBeautyproducts=[
         video:'https://www.youtube.com/embed/IkqLiDvKtz4?si=17XLrMvApSRHqD2Z&amp;start=3',
         Image4:image34,
         Image5:image35,
-        Namount:379,
-       Oamount:399,
+        Namount:899,
+        Oamount:999,
        Sizes:"75-100 ML",
+       inCart:false,
+        isWishlist:false
 
     },
 
@@ -262,10 +268,11 @@ const HoverBeautyproducts=[
         video:"https://www.youtube.com/embed/JOAyYxz5Wh8?si=JYv_Td6NdKvD8UjY&amp;start=3" ,
         Image4:image44,
         Image5:image45,
-        Namount:379,
-        Oamount:399,
+        Namount:279,
+        Oamount:310,
         Sizes:"75-100 ML",
-   
+        inCart:false,
+        isWishlist:false
         
     },
 
@@ -289,7 +296,8 @@ const HoverBeautyproducts=[
         Image5:image55,
         Namount:379,
        Oamount:399 ,
-       Sizes:"75-100 ML",  
+       Sizes:"75-100 ML", 
+        
 
        
     },
@@ -314,9 +322,11 @@ const HoverBeautyproducts=[
         video:"https://www.youtube.com/embed/YRmKyn2Tq-s?si=Lr0JvUhf1_1TYSxw&amp;start=3" ,
         Image4:image64,
         Image5:image65,
-        Namount:379,
-       Oamount:399,
+        Namount:300,
+       Oamount:350,
        Sizes:"75-100 ML",
+       inCart:false,
+        isWishlist:false
          
     },
 
@@ -338,11 +348,12 @@ const HoverBeautyproducts=[
         Size:"Sizes: 75-100 ML ",
         video:"https://www.youtube.com/embed/gvOhgd1JcBQ?si=bTJlTQYTOaxOANAh&amp;start=3" ,
         Image4:image74,
-
         Image5:image75,
-        Namount:379,
+        Namount:300,
         Oamount:399,
         Sizes:"75-100 ML",
+        inCart:false,
+        isWishlist:false
 
     },
 
@@ -365,9 +376,11 @@ const HoverBeautyproducts=[
         video:'https://www.youtube.com/embed/DcVj7RebqFA?si=JdQwOG8M3UkIg99j&amp;start=3',
         Image4:image84,
         Image5:image85,
-        Namount:379,
-        Oamount:399,
+        Namount:399,
+        Oamount:499,
         Sizes:"75-100 ML",
+        inCart:false,
+        isWishlist:false
         
     },
 
@@ -390,9 +403,11 @@ const HoverBeautyproducts=[
         Image4:image94,
         Image5:image95,
    
-        Namount:379,
-        Oamount:399,
+        Namount:999,
+        Oamount:1299,
         Sizes:"75-100 ML",
+        inCart:false,
+        isWishlist:false
        
     },
 
@@ -415,9 +430,12 @@ const HoverBeautyproducts=[
         video:"https://www.youtube.com/embed/xRxm22bQytM?si=h1ktt8H7u5IhFcZf&amp;start=3",
         Image4:imagex4,
         Image5:imagex5,
-        Namount:379,
-       Oamount:399,
+        Namount:899,
+       Oamount:999,
        Sizes:"75-100 ML",
+       inCart:false,
+       isWishlist:false,
+      
         
     },
 
@@ -448,7 +466,7 @@ const HoverBeautyproducts=[
         Image:img12,
         Image2:e2,
         Image3:e3, 
-       Title:"Garnier",
+        Title:"Garnier",
         Discription:"Micellar Cleansing Water",
         rating:4.8,
         greenstar:greenstar,
@@ -469,7 +487,7 @@ const HoverBeautyproducts=[
         Image:img13,
         Image2:ttwo2,
         Image3:ttwo3, 
-       Title:"SAMISHA",
+        Title:"SAMISHA",
         Discription:"Natural Hair Color-Black",
         rating:3.5,
         greenstar:greenstar,
@@ -479,7 +497,7 @@ const HoverBeautyproducts=[
         offer:"(Rs 80 OFF)",
         Size:"Sizes: 75-100 ML ",
         Namount:379,
-       Oamount:399
+        Oamount:399
 
     },
 

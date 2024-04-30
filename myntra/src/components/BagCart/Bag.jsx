@@ -1,8 +1,11 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import './Bag.css'
 import { CgBorderStyleDotted } from "react-icons/cg";
 import bag from './empty-bag.png'
+import { ThemeContext } from '../ThemeContext/Theme';
 const Bag = () => {
+   const {theme}=useContext(ThemeContext)
+
     return (
         <div className='Bag-main-conatiner'>
 
@@ -10,22 +13,22 @@ const Bag = () => {
 
                    <div className='bag-ol-section'> 
            
-                         <ol class="checkout-steps"> 
-                          <li class="step step1 active">BAG</li> 
-                            <li class="divider"><CgBorderStyleDotted className='dotted' /></li>
-                            <li class="step step2">ADDRESS</li> 
-                            <li class="divider"><CgBorderStyleDotted className='dotted' /></li>
-                            <li class="step step3">PAYMENT</li>
+                         <ol className="checkout-steps"> 
+                          <li className="step step1 active">BAG</li> 
+                            <li className="divider"><CgBorderStyleDotted className='dotted' /></li>
+                            <li className="step step2">ADDRESS</li> 
+                            <li className="divider"><CgBorderStyleDotted className='dotted' /></li>
+                            <li className="step step3">PAYMENT</li>
                          </ol>
                     </div>
 
   
-                       <div class="secureContainer">
+                       <div className="secureContainer">
                             <div className='Img'> 
                             <img src="https://constant.myntassets.com/checkout/assets/img/sprite-secure.png" className="secureIcon" width="26" height="28"/> 
                       </div>
 
-                    <div class="secure">100% SECURE</div> 
+                    <div className="secure" style={theme==="light"?{color:"#535766"}:{color:"black"}} >100% SECURE</div> 
              </div> 
              
            

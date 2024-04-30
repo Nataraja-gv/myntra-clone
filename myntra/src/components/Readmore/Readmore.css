@@ -59,5 +59,6 @@
 
 .readmore-btn-section{
     display: flex;
+    cursor: pointer;
 }
  

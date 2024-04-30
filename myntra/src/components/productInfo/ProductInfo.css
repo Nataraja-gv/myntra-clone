@@ -34,6 +34,16 @@
     border-radius: 4px;
     gap:10px;
     align-items: center;
+    cursor: pointer;
+}
+
+.rating-main-container{
+    display: inline-block;
+}
+
+.rating-main-container:hover .rating-container{
+    border: 1px solid #6b6b6b;
+
 }
 
 .rating-container .rating{
@@ -67,6 +77,7 @@
   font-size: 20px;
   font-weight: bold;
   color:black;
+  cursor: pointer;
 }
 
 .rupee{
@@ -83,6 +94,7 @@
 }
 .old-amount{
     text-decoration: line-through;
+    font-size: 16px;
     
 }
   
@@ -104,11 +116,18 @@
 
 .Select-Size-container{
     margin-top: 30px;
-    display: block;
+    display: inline-block;
+}
+
+.selct-size-size{
+      font-size: 20px;
+      font-weight: bold;
+      text-transform: uppercase;
+
 }
 
 .btn-size{
-    border: 1px solid red;
+    border: 1px solid rgb(101, 100, 100);
     padding: 12px 16px;
     display: inline-block;
     margin-top: 30px;
@@ -116,9 +135,15 @@
     font-weight: 700;
     color: red;
     border-radius: 20px;
+    cursor: pointer;
      
 
 } 
+
+.Select-Size-container:hover .btn-size{
+    border: 1px solid rgb(236, 23, 23);
+
+}
 
 .add-wishlist-container{
     display: flex;
@@ -144,6 +169,15 @@
     border-radius: 4px;
 }
 
+.add-wishlist-container:hover .add-bag{
+    opacity: 0.9;
+}
+
+.bag-icon-arrow{
+    font-size: 25px;
+    align-self: center;
+}
+
 .add-tobag-text{
  font-size: 16px;
  margin-left: 5px;
@@ -167,6 +201,11 @@
     align-items: center;
     justify-content: center; 
     border-radius: 4px;
+}
+
+.add-wishlist-section:hover .add-wishlist{
+    border: 1px solid black;
+
 }
 
 .wishlist-text-wishlist{
@@ -226,6 +265,13 @@
 
  .offer-conform{
     color:red;
+    font-size: 16px;
+    
+
+}
+
+.offer-offer{
+    font-weight: bolder;
     font-size: 16px;
 
 }
@@ -302,6 +348,7 @@
 
 .Delivery-option-section{
     margin: 30px 0px 30px;
+    
 }
 
  
@@ -329,6 +376,7 @@
     display: flex;
     align-items: center;
     list-style-type: none;border-radius: 4px;
+    cursor: pointer;
 }
 
 .address-pincode .pincode{
@@ -379,6 +427,7 @@
 .delivary-part-text .more-by{
     margin-left:150px ;
     color:red;
+    cursor: pointer;
 }
 
 .original-products{
@@ -416,6 +465,7 @@
     color:red;
     font-size: 18px;
     margin: 20px 0px;
+    cursor: pointer;
 }
 
 
@@ -435,6 +485,7 @@
     color:red;
     font-size: 18px;
     margin: 20px 0px;
+    cursor: pointer;
 }
 
 

@@ -1,14 +1,17 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import './Nice.css'
 import NiceImageContent from './NiceData.jsx'
+import { ThemeContext } from '../../ThemeContext/Theme.jsx';
 
 const Nice = () => {
+   const {theme} =useContext(ThemeContext)
+
     return (
         <div className='Nice-main-container'>
         <div className='Nice-Divide-container'>
             <div className='Nice-LeftSide'>
                <div className='Nice-heading'>
-                  <header>NICE TO SEE YOU, COME ON IN!</header>
+                  <header style={theme==="light"?{color:"rgb(62, 65, 82)"}:{color:"white"}}>NICE TO SEE YOU, COME ON IN!</header>
                </div>
                <div className='Nice-Images-container'>
 

@@ -1,7 +1,7 @@
 .heading-bold h1{
     font-size: 36px;
     font-weight: 700;
-    color:rgb(62, 65, 82);
+    /* color:rgb(62, 65, 82); */
     line-height: normal;
     font-style: normal;
     text-transform: uppercase;
@@ -14,7 +14,17 @@
      
 }
 
+ 
+
 a{
     text-decoration: none;
     color:black;
+}
+
+
+.offline-container{
+     
+     text-align: center;
+     margin-top:250px;
+     
 }

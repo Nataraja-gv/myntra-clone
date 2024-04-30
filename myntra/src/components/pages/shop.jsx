@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useContext, useState } from 'react'
 import './styles/shop.css';
 import shop1 from '../images/shop1.png'
  import Coupan from '../Coupans/Coupan.jsx' 
@@ -10,9 +10,15 @@ import Footer from '../Footer/Footer.jsx'
 import { MdKeyboardArrowDown } from "react-icons/md";
 import { MdKeyboardArrowUp } from "react-icons/md";
 import Crazy from '../crazyDeals/CrazySlide.jsx'
+import { ThemeContext } from '../ThemeContext/Theme.jsx';
 
 function Shop() {
+   const {theme} =useContext(ThemeContext)
    const[footerdropmenu,setFooterDropMenu]=useState(false)
+
+    
+     
+
 
   return (
     <div className='Shop-Myntra-Container'>
@@ -26,7 +32,7 @@ function Shop() {
       </div>
 
       <div className='heading-bold'>
-          <h1 className='h1'>BIGGEST DEALS ON TOP BRANDS</h1>
+          <h1  style={theme==="light"?{color:"rgb(62, 65, 82)"}:{color:"white"}} >BIGGEST DEALS ON TOP BRANDS</h1>
       </div>
 
      <div className=''>
