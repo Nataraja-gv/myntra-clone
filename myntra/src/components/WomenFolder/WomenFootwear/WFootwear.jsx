@@ -1,6 +1,6 @@
 import React from 'react';
 import './WFootwear.css'
-import   WFOOTWEARImage from './WFootweardata.jsx'
+import   WFOOTWEARImage from "./WFootweardata.jsx"
 import Item from '../../ITEM/Item.jsx'
 const WFootwear = () => {
     return (

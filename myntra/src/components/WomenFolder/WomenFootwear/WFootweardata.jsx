@@ -2,7 +2,7 @@ import f1 from './WFootwear1.png'
 import f2 from './WFootwear2.png'
 import f3 from './WFootwear3.png'
 import f4 from './WFootwear4.png'
-import f5 from './WFootwear5.png'
+import f5 from './WFootwear4.png'
 
 
 const WFOOTWEARImage=[ 
