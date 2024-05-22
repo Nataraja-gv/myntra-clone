@@ -83,11 +83,12 @@
    
     
      
-  input::placeholder{
-  font-size: 14px;
+ .Nav-input-input input::placeholder{
+  font-size: 12px;
   font-family: "Assistant", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-  font-weight: 400;
+  font-weight: 300;
   text-align: start;
+  text-transform: capitalize;
    
    
  } 
